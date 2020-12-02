@@ -255,6 +255,11 @@ ifdef::vsphere[]
 :!vsphere:
 endif::[]
 
+[discrete]
+== NTP configuration
+
+An {product-title} cluster that is installed in a restricted network is configured to use the public NTP server `rhel.pool.ntp.org` by default. To avoid clock skew, reconfigure the cluster to use a private NTP server instead. See the documentation for _Configuring chrony time service_ for more information.
+
 ifeval::["{context}" == "installing-ibm-z"]
 :!ibm-z:
 endif::[]
