@@ -189,7 +189,7 @@ spec:
 ----
 endif::google-cloud-platform[]
 
-. Create YAML files for secrets in the `openshift-install` manifests directory that you generated previously. The secrets must be stored using the namespace and secret name defined in the `spec.secretRef` for each `credentialsRequest`. The format for the secret data varies for each cloud provider.
+. Create YAML files for secrets in the `openshift-install` manifests directory that you generated previously. The secrets must be stored using the namespace and secret name defined in the `spec.secretRef` for each `CredentialsRequest` object. The format for the secret data varies for each cloud provider.
 
 . From the directory that contains the installation program, proceed with your cluster creation:
 +

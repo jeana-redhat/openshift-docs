@@ -6,6 +6,13 @@ include::modules/common-attributes.adoc[]
 toc::[]
 
 include::modules/cloud-credential-operator.adoc[leveloffset=+1]
+[discrete]
+[id="red-hat-operators-cco-addtl-resources"]
+=== Additional resources
+
+* xref:../rest_api/security_apis/credentialsrequest-cloudcredential-openshift-io-v1.adoc#credentialsrequest-cloudcredential-openshift-io-v1[CredentialsRequest custom resource]
+* Manually creating IAM for xref:../installing/installing_aws/manually-creating-iam.adoc#manually-creating-iam-aws[AWS], xref:../installing/installing_azure/manually-creating-iam-azure.adoc#manually-creating-iam-azure[Azure], and xref:../installing/installing_gcp/manually-creating-iam-gcp.adoc#manually-creating-iam-gcp[GCP]
+
 include::modules/cluster-authentication-operator.adoc[leveloffset=+1]
 include::modules/cluster-autoscaler-operator.adoc[leveloffset=+1]
 include::modules/cluster-image-registry-operator.adoc[leveloffset=+1]

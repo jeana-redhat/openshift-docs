@@ -1,0 +1,78 @@
+// Module included in the following assemblies:
+//
+// * post_installation_configuration/cluster-tasks.adoc
+
+[id="manually-rotating-cloud-creds_{context}"]
+= Rotating cloud provider credentials manually
+
+If your cloud provider credentials are changed for any reason, you must manually update the secret that the Cloud Credential Operator (CCO) uses to manage cloud provider credentials.
+
+.Prerequisites
+
+* Your cluster is installed on a platform that supports rotating cloud credentials manually with the CCO. Supported platforms are AWS, Azure, and GCP.
+// verify
+
+* You have changed the credentials that are used to interface with your cloud provider.
+
+* The new credentials have sufficient permissions for the mode CCO is configured to use in your cluster.
+
+.Procedure
+
+. Update the admin credentials root secret for your cloud provider. Secrets are stored as `CredentialsRequest` CRs in the kube-system namespace.
+
+ - need oc command example. Probably just demo AWS and refer to other docs for other secret formats (confirm this exists!)
+
+. Delete each component secret that is referenced by the individual `CredentialsRequest` objects.
+
+ - need oc command example
+
+ . Verification step needed.
+
+[discrete]
+[id="manually-rotating-cloud-creds-addtl-resources"]
+== Additional resources
+
+* AWS secret format
+* Azure secret format
+* GCP secret format
+
+
+////
+scratch notes follow:
+
+The process for rotating cloud credentials depends on the mode that the CCO is configured to use.
+
+// Does it actually differ for mint vs passthrough in 4.7?
+
+[id="cred-rotation-cco-mode-mint"]
+=== Rotating credentials with the Cloud Credential Operator in mint mode
+When the CCO is configured to operate in _mint mode_, it uses the provided admin-level cloud credential to create new credentials for each component with only the specific permissions that are required.
+
+To rotate credentials in mint mode, you must manually remove the component credentials that were created by the removed credential.
+
+. Update the admin credentials root secret for your cloud provider.
+
+. Delete each component secret that is referenced by the individual `CredentialsRequest` objects.
+
+///
+mjudeikis: I missing here:
+
+    Where these credentials are located
+    How to rotate them (oc command example)
+    Which pods need to be deleted and how.
+    How to verify it was rotated (for example how to check main secrets in cloud-credentials, router, registry, etc)
+
+This does not help average user to understand what is needed to be done.
+///
+
+The CCO uses the new admin-level cloud credential to create new credentials for each component.
+
+[id="cred-rotation-cco-mode-passthrough"]
+=== Rotating credentials with the Cloud Credential Operator in passthrough mode
+When the CCO is configured to operate in _passthrough mode_, it passes the provided cloud credential to the components that request cloud credentials. The credential must have permissions to perform the installation and complete the operations that are required by components in the cluster, but does not need to be able to create new credentials.
+
+After rotating the passthrough mode cloud credential, it can take up to 11 hours to propagate the new credential to all of the components that need it. During this time, the cluster might not be fully operational. To reduce the time to propagate the new credential, delete the CCO pod. Deleting the CCO pod causes the CCO to immediately propagate the new credential, which can take up to an hour to complete.
+
+///
+lwan-wanglin: The only step the user need to do [in 4.7+] is manually rotating the admin credentials root secret in kube-system namespace. The thing we need to care is that all related components respect the credentials update, but I haven't finished the joint tests.
+////

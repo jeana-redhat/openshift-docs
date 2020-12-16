@@ -3,6 +3,8 @@
 include::modules/common-attributes.adoc[]
 :context: manually-creating-iam-aws
 
+//TO-DO: this should be one file for AWS, Azure, and GCP with conditions for specifics.
+
 toc::[]
 
 In environments where the cloud identity and access management (IAM) APIs are not reachable, or the administrator prefers not to store an administrator-level credential secret in the cluster `kube-system` namespace, you can put the Cloud Credential Operator (CCO) into manual mode before you install the cluster.
@@ -10,6 +12,9 @@ In environments where the cloud identity and access management (IAM) APIs are no
 include::modules/alternatives-to-storing-admin-secrets-in-kube-system.adoc[leveloffset=+1]
 
 .Additional resources
+
+// Not supported in Azure. Condition out if combining topic for AWS/Azure/GCP.
+To learn how to remove the administrator-level credential secret after installing {product-title}, see xref:../../post_installation_configuration/cluster-tasks.adoc#manually-rotating-cloud-creds_post-install-cluster-tasks[Rotating cloud provider credentials manually].
 
 See xref:../../operators/operator-reference.adoc#cloud-credential-operator_red-hat-operators[Cloud Credential Operator] for a detailed description of all available CCO credential modes and their supported platforms.
 
