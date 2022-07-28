@@ -212,9 +212,9 @@ For more information, see xref:../post_installation_configuration/cluster-capabi
 [id="ocp-4-111-developer-perspective"]
 ==== Developer Perspective
 
-* With this update, in the developer perspective, you can add your GitHub repository containing pipelines to the Openshift Container Platform cluster. You can now run pipelines and tasks from your GitHub repository on the cluster when relevant Git events, such as push or pull requests are triggered.
+* With this update, in the developer perspective, you can add your GitHub repository containing pipelines to the {product-title} cluster. You can now run pipelines and tasks from your GitHub repository on the cluster when relevant Git events, such as push or pull requests are triggered.
 
-** In the administrator perspective, you can configure your GitHub application with the OpenShift cluster to use a pipeline as code. With this configuration, you can execute a set of tasks required for build deployment.
+** In the administrator perspective, you can configure your GitHub application with the {product-title} cluster to use a pipeline as code. With this configuration, you can execute a set of tasks required for build deployment.
 
 * With this update, you can create a customized pipeline using your own set of curated tasks. You can search, install, and upgrade your tasks directly from the developer console.
 
@@ -629,7 +629,7 @@ For more information, see xref:../operators/operator_sdk/osdk-bundle-validate.ad
 [id="ocp-4-11-jenkins"]
 === Jenkins
 
-* This enhancement adds a new Jenkins environment variable, `JAVA_FIPS_OPTIONS`, that controls how the JVM operates when running on a FIPS node. For more information, see link:https://access.redhat.com/documentation/en-us/openjdk/11/html-single/configuring_openjdk_11_on_rhel_with_fips/index#config-fips-in-openjdk[OpenJDK support article] (link:https://bugzilla.redhat.com/show_bug.cgi?id=2066019[BZ#2066019])
+* This enhancement adds a new Jenkins environment variable, `JAVA_FIPS_OPTIONS`, that controls how the JVM operates when running on a FIPS node. For more information, see link:https://access.redhat.com/documentation/en-us/openjdk/11/html-single/configuring_openjdk_11_on_rhel_with_fips/index#config-fips-in-openjdk[OpenJDK support article] (link:https://bugzilla.redhat.com/show_bug.cgi?id=2066019[*BZ#2066019*])
 
 [id="ocp-4-11-machine-api"]
 === Machine API
@@ -843,9 +843,9 @@ The `openshiftVersion` parameter of the `AgentServiceConfig` custom resource (CR
 [id=ocp-4-11-ne-livenessProbe-readinessProbe-startupProbe-timeout-configuration]
 // This is a 4.11 Network Edge feature that is located in the Scalability and Performance area of the docs, requested to be placed here by Miciah Masters -Sara T.
 ==== Configuring Ingress Controller (router) Liveness, Readiness, and Startup probes
-{product-title} 4.11 introduces the ability to configure the timeout values for the kubelet’s liveness, readiness, and startup probes for router deployments that are managed by the OpenShift Container Platform ingress operator. The ability to set larger timeout values can reduce the risk of unnecessary and unwanted restarts that are caused by short default timeout of 1 second.
+{product-title} 4.11 introduces the ability to configure the timeout values for the kubelet’s liveness, readiness, and startup probes for router deployments that are managed by the {product-title} ingress operator. The ability to set larger timeout values can reduce the risk of unnecessary and unwanted restarts that are caused by short default timeout of 1 second.
 
-For more information see, xref:../scalability_and_performance/routing-optimization.adoc#configuring-ingress-controller-router-liveness-readiness-and-startup-probes[Configuring Ingress Controller (router) Liveness, Readiness, and Startup probes]
+For more information, see xref:../scalability_and_performance/routing-optimization.adoc#configuring-ingress-controller-router-liveness-readiness-and-startup-probes[Configuring Ingress Controller (router) Liveness, Readiness, and Startup probes]
 
 [id=ocp-4-11-nto-offlined-cpu]
 ==== New power reduction CPU capability
@@ -1195,7 +1195,7 @@ See link:https://access.redhat.com/articles/6955985[Navigating Kubernetes API de
 [id="ocp-4-11-bare-metal-hardware-bug-fixes"]
 ==== Bare Metal Hardware Provisioning
 
-* Previously, when writing the RHCOS image onto some disks, the `qemu-img` was allocating space onto the entire disk, including sparse areas. This extended the time of the writing process on some hardware. This update disables the `qemu-img` sparse in image creation. As a result, the image writing would no longer take a long time on affected hardware. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2002009[*BZ#2002009*])
+* Previously, when writing the {op-system} image onto some disks, the `qemu-img` was allocating space onto the entire disk, including sparse areas. This extended the time of the writing process on some hardware. This update disables the `qemu-img` sparse in image creation. As a result, the image writing would no longer take a long time on affected hardware. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2002009[*BZ#2002009*])
 
 * Previously, if the `rotational` field was set for `RootDeviceHints`, the host could fail the provision. With this update, the `rotational` field in `RootDeviceHints` is properly copied and checked. As a result, the provisioning will succeed when using the `rotational` field. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2053721[*BZ#2053721*])
 
@@ -1244,7 +1244,7 @@ sourceStrategy:
 
 * Previously, the procedural name generator for Azure availability sets exceeded the 80 character maximum limit. This might cause the Machine API to reuse the same sets during the name truncation, rather than creating multiple availability sets. With this release, the procedural name generator is updated to ensure that the name is no longer than 80 characters and the cluster name is not duplicated in the set name. As a result, Azure availability sets are no longer truncated in unexpected ways by the procedural name generator. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2093044[*BZ#2093044*])
 
-* Because the Cluster Autoscaler Operator was deploying the cluster autoscaler without setting any leader election parameters, the cluster autoscaler could unexpectedly fail and restart after a cluster restart. With this fix, the Cluster Autoscaler Operator now deploys the cluster autoscaler with well-defined leader election flags. As a result, the cluster autoscaler operates as expected after restarts. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2063194[*BZ#2063194*])"
+* Because the Cluster Autoscaler Operator was deploying the cluster autoscaler without setting any leader election parameters, the cluster autoscaler could unexpectedly fail and restart after a cluster restart. With this fix, the Cluster Autoscaler Operator now deploys the cluster autoscaler with well-defined leader election flags. As a result, the cluster autoscaler operates as expected after restarts. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2063194[*BZ#2063194*])
 
 * Previously, certificate signing request (CSR) renewal was handled by `kube-controller-manager` and correctly left pending by the machine approver, which increased `mapi_current_pending_csr` to `1`. Afterwards, the `kube-controller-manager` approved the CSR, but the machine approver would ignore it, which left the metric unchanged. Consequently, the `mapi_current_pending_csr` was stuck at `1` until another machine approver reconciled it. With this update, CSR approvals are reconciled from other controllers to update metrics properly. As a result, `mapi_current_pending_csr` is always up-to-date after every reconcile. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2072195[*BZ#2072195*])
 
@@ -1383,7 +1383,7 @@ In this update, `systemd` service only sets the default RPS mask for virtual int
 
 * Previously, it was hard to understand from the logs when fallback inspect occured. The logs are now improved to make this more explicit. As a result, the output of `must-gather run` is much more clear. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2035717[*BZ#2035717*])
 
-* Previously, if you ran `must-gather` with invalid arguments, it did not consistently report the error and instead might attempt to collect data even when that is not possible. Now if `must-gather` is called with invalid options, it provides useful error output. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1999891[BZ#1999891])
+* Previously, if you ran `must-gather` with invalid arguments, it did not consistently report the error and instead might attempt to collect data even when that is not possible. Now if `must-gather` is called with invalid options, it provides useful error output. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1999891[*BZ#1999891*])
 
 * Previously, if the `oc adm catalog mirror` command resulted in errors, it still continued and returned a `0` exit code. A `--continue-on-error` flag is now available that allows users to determine whether the command should continue if there are errors, or exit with a non-zero exit code. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2088483[*BZ#2088483*])
 
@@ -1425,13 +1425,13 @@ In this update, `systemd` service only sets the default RPS mask for virtual int
 
 * Before this update, the package server was not aware of pod topology when defining its leader election duration, renewal deadline, and retry periods. As a result, the package server strained topologies with limited resources, such as single-node environments. This update introduces a `leaderElection` package that sets reasonable lease duration, renewal deadlines, and retry periods. This fix reduces strain on clusters with limited resources. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2048563[*BZ#2048563*])
 
-* Previously, there was a bad catalog source in the `openshift-marketplace` namespace. Because of this, all subscriptions were blocked. With this update, if there is a bad catalog source in the `openshift-marketplace` namespace, users can subscribe to an operator from a quality catalog source of their own namespace with the original annotation. As a result, if there is a bad catalog source in the local namespace, the user cannot subscribe to any operator in the namespace. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2076323[*BZ2076323])
+* Previously, there was a bad catalog source in the `openshift-marketplace` namespace. Because of this, all subscriptions were blocked. With this update, if there is a bad catalog source in the `openshift-marketplace` namespace, users can subscribe to an operator from a quality catalog source of their own namespace with the original annotation. As a result, if there is a bad catalog source in the local namespace, the user cannot subscribe to any operator in the namespace. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2076323[*BZ#2076323*])
 
 * Previously, info-level logs were generated during `operator-marketplace` project polling, which caused log spam. This update uses the command line flag to reduce the log line to the debug level, and adds more control of the log levels for the user. As a result, this reduces log spam. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2057558[*BZ#2057558*])
 
-* Previously, each component managed by the Cluster Version Operator (CVO) consisted of YAML files defined in the `/manifest` directory in the root of a project's repo. When removing a YYAML file from the `/manifest` directory, you needed to add the `release.openshift.io/delete: “true”` annotation, otherwise the CVO would not delete the resources from the cluster. This update reintroduces any resources that were removed from the `/manifest` directory and adds the `release.openshift.io/delete: “true”` annotation so that the CVO cleans up the resources. As a result, resources that are no longer required for the OLM component are removed from the cluster. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1975543[*BZ#1975543*])
+* Previously, each component managed by the Cluster Version Operator (CVO) consisted of YAML files defined in the `/manifest` directory in the root of a project's repo. When removing a YAML file from the `/manifest` directory, you needed to add the `release.openshift.io/delete: “true”` annotation, otherwise the CVO would not delete the resources from the cluster. This update reintroduces any resources that were removed from the `/manifest` directory and adds the `release.openshift.io/delete: “true”` annotation so that the CVO cleans up the resources. As a result, resources that are no longer required for the OLM component are removed from the cluster. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1975543[*BZ#1975543*])
 
-* Previously, the CheckRegistryServer function used by GRPC catalog sources did not confirm the existence of the service account associated with the catalog source. This caused the existence of an unhealthy catalog source with no service account. With this update, the GRPC `CheckRegistryServer` function checks if the service account exists and recreates the service if it is not found. As a result, the OLM recreates service accounts owned by GRPC catalog souces if they do not exist. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1975543[*BZ#1975543*])
+* Previously, the `CheckRegistryServer` function used by GRPC catalog sources did not confirm the existence of the service account associated with the catalog source. This caused the existence of an unhealthy catalog source with no service account. With this update, the GRPC `CheckRegistryServer` function checks if the service account exists and recreates the service if it is not found. As a result, the OLM recreates service accounts owned by GRPC catalog souces if they do not exist. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1975543[*BZ#1975543*])
 
 * Previously, in an error message that occurred when users ran `opm index prune` against a file-based catalog image, imprecise language made it unclear that this command does not support that catalog format. This update clarifies the error message so users understand that the command `opm index prune` only supports SQLite-based images. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2039135[*BZ#2039135*])
 
@@ -1451,9 +1451,9 @@ In this update, `systemd` service only sets the default RPS mask for virtual int
 [id="ocp-4-11-rhcos-bug-fixes"]
 ==== {op-system-first}
 
-* Before this update, if a machine was booted through PXE and the `BOOTIF` argument was on the kernel command line, the machine would boot with DHCP enabled on only a single interface. With this update, the machine boots with DHCP enabled on all interfaces even if the `BOOTIF` argument is provided. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2032717[BZ#2032717])
+* Before this update, if a machine was booted through PXE and the `BOOTIF` argument was on the kernel command line, the machine would boot with DHCP enabled on only a single interface. With this update, the machine boots with DHCP enabled on all interfaces even if the `BOOTIF` argument is provided. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2032717[*BZ#2032717*])
 
-* Previously, nodes that were provisioned from VMware OVA images did not delete the Ignition config after initial provisioning. Consequently, this created security issues when secrets are stored within the Ignition config. With this update, the Ignition config is now deleted from the VMware hypervisor after initial provisioning on new nodes and when upgrading from a previous {product-title} release on existing nodes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2082274[BZ#2082274])
+* Previously, nodes that were provisioned from VMware OVA images did not delete the Ignition config after initial provisioning. Consequently, this created security issues when secrets are stored within the Ignition config. With this update, the Ignition config is now deleted from the VMware hypervisor after initial provisioning on new nodes and when upgrading from a previous {product-title} release on existing nodes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2082274[*BZ#2082274*])
 
 * Previously, any arguments provided to the `toolbox` command were ignored when the command wasfirst invoked. This fix updates the toolbox script to initiate the `podman container create` command followed by the `podman start` and `podman exec` commands. It also modifies the script to handle multiple arguments and whitespaces as an array. As a result, the arguments passed to the `toolbox` command are executed every time as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2039589[*BZ#2039589*])
 
@@ -2017,7 +2017,7 @@ This issue does not affect clusters upgraded from a previous minor version.
 No workaround exists for this issue.
 (link:https://bugzilla.redhat.com/show_bug.cgi?id=2103127[*BZ#2103127*])
 
-* In the {rh-openstack-first}, a potential issue can affect Kuryr when the ports pools are populated with a variety of bulk port creation requests made at the same time. During these bulk requests, if the IP allocation for one of the IP addresses fails, the Neutron retries the operation for all ports. This issue was resolved in a previous errata; however, Red Hat suggests setting a small value for the ports pools batch to avoid large bulk port creation requests. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2024690[*BZ2024690*])
+* In the {rh-openstack-first}, a potential issue can affect Kuryr when the ports pools are populated with a variety of bulk port creation requests made at the same time. During these bulk requests, if the IP allocation for one of the IP addresses fails, the Neutron retries the operation for all ports. This issue was resolved in a previous errata; however, Red Hat suggests setting a small value for the ports pools batch to avoid large bulk port creation requests. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2024690[*BZ#2024690*])
 
 * The oc-mirror CLI plug-in cannot mirror {product-title} catalogs earlier than version 4.9. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2097210[*BZ#2097210*])
 
@@ -2029,9 +2029,9 @@ As a workaround, remove the previous version of the MetalLB Operator. Do not del
 +
 For more information, see xref:../networking/metallb/metallb-upgrading-operator.adoc#metallb-upgrading-operator[Upgrading the MetalLB Operator]. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2100180[*BZ#2100180*])
 
-* The OpenShift CLI (`oc`) for {product-title} 4.11 does not work properly on macOS due to a change in error handling of untrusted certificates in Go 1.18 libraries. Due to this change, `oc login` and other `oc` commands can fail with a `certificate is not trusted` error without proceeding further when running on macOS. Until the error handling is properly fixed in Go 1.18 (tracked by link:https://github.com/golang/go/issues/52010[Go issue #52010]), the workaround is to use the {product-title} 4.10 `oc` CLI instead. Note that when using the {product-title} 4.10 `oc` CLI with an {product-title} 4.11 cluster, it is no longer possible to get a token by using the `oc serviceaccounts get-token <service_account>` command. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2097830[*BZ#2097830*]) (link:https://bugzilla.redhat.com/show_bug.cgi?id=2109799[*BZ#2109799*])
+* The OpenShift CLI (`oc`) for {product-title} 4.11 does not work properly on macOS due to a change in error handling of untrusted certificates in Go 1.18 libraries. Due to this change, `oc login` and other `oc` commands can fail with a `certificate is not trusted` error without proceeding further when running on macOS. Until the error handling is properly fixed in Go 1.18 (tracked by link:https://github.com/golang/go/issues/52010[Go issue #52010]), the workaround is to use the {product-title} 4.10 `oc` CLI instead. Note that when using the {product-title} 4.10 `oc` CLI with an {product-title} 4.11 cluster, it is no longer possible to get a token by using the `oc serviceaccounts get-token <service_account>` command. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2097830[*BZ#2097830*], link:https://bugzilla.redhat.com/show_bug.cgi?id=2109799[*BZ#2109799*])
 
-* There is currently a known issue in the *Add Helm Chart Repositories* form to extend the Developer Catalog of a project. The *Quick Start* guides shows that you can add the `ProjectHelmChartRepository` CR in the desired namespace whereas it does not mention that to perform this you need permission from the kubeadmin. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2054197[BZ#2054197])
+* There is currently a known issue in the *Add Helm Chart Repositories* form to extend the Developer Catalog of a project. The *Quick Start* guides shows that you can add the `ProjectHelmChartRepository` CR in the desired namespace whereas it does not mention that to perform this you need permission from the kubeadmin. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2054197[*BZ#2054197*])
 
 * There is currently a known issue. If you create an instance of `ProjectHelmChartRepository` custom resource (CR) that uses TLS verification, you cannot list the repositories and perform Helm-related operations. There is currently no workaround for this issue. (link:https://issues.redhat.com/browse/HELM-343[*HELM-343*])
 
@@ -2049,7 +2049,7 @@ Identify the disk that holds the live image, in this example `nvme0n1p3`, and ru
 # kexec -l vmlinuz-*.ppc64le -i initramfs-*.img -c "ignition.firstboot rd.neednet=1 ip=dhcp $(grep options /var/petitboot/mnt/dev/nvme0n1p3/loader/entries/ostree-1-rhcos.conf | sed 's,^options ,,')" && kexec -e
 ----
 +
-(link:https://bugzilla.redhat.com/show_bug.cgi?id=2107674[BZ#2107674])
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2107674[*BZ#2107674*])
 
 [id="ocp-4-11-asynchronous-errata-updates"]
 == Asynchronous errata updates
