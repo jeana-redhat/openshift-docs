@@ -1,0 +1,64 @@
+// Module included in the following assemblies:
+//
+// * machine_management/cluster_api_machine_management/cluster-api-getting-started.adoc
+
+:_mod-docs-content-type: PROCEDURE
+[id="obtaining-value-cluster-id_{context}"]
+= Obtaining the cluster ID value
+
+You can find the cluster ID by using the {oc-first}.
+
+.Prerequisites
+
+* You have deployed an {product-title} cluster.
+
+* You have access to the cluster using an account with `cluster-admin` permissions.
+
+* You have installed the {oc-first}.
+
+.Procedure
+
+. List the Machine API compute machine sets:
++
+[source,terminal]
+----
+$ oc get machinesets \
+  -n openshift-machine-api <1>
+----
+<1> Specify the `openshift-machine-api` namespace.
++
+.Example output
+[source,text]
+----
+NAME                                DESIRED   CURRENT   READY   AVAILABLE   AGE
+agl030519-vplxk-worker-us-east-1a   1         1         1       1           55m
+agl030519-vplxk-worker-us-east-1b   1         1         1       1           55m
+agl030519-vplxk-worker-us-east-1c   1         1         1       1           55m
+agl030519-vplxk-worker-us-east-1d   0         0                             55m
+agl030519-vplxk-worker-us-east-1e   0         0                             55m
+agl030519-vplxk-worker-us-east-1f   0         0                             55m
+----
+
+. Display the contents of a specific compute machine set CR:
++
+[source,terminal]
+----
+$ oc get machineset <machineset_name> \
+  -n openshift-machine-api \
+  -o yaml
+----
++
+.Example output
+[source,yaml]
+----
+# ...
+template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: agl030519-vplxk # <1>
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: agl030519-vplxk-worker-us-east-1a
+# ...
+----
+<1> The cluster ID, which you use for the `<cluster_name>` parameter.
