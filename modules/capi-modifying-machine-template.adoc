@@ -37,21 +37,25 @@ NAME              AGE
 <template_name>   77m
 ----
 
-. Edit the machine template resource for your cluster by running the following command:
+. Write the machine template resource for your cluster to a file that you can edit by running the following command:
 +
 [source,terminal]
 ----
-$ oc edit <template_name>
+$ oc get <template_name> -o yaml > <template_name>.yaml
 ----
+
+. Use a text editor to make changes to the machine template resource for your cluster.
 +
 The parameters in the `spec` stanza are provider specific. For more information, see the sample Cluster API machine template YAML for your provider.
 
-. Save your changes.
+. Save your modified YAML file with a new name.
 
 . Apply the machine template CR by running the following command:
 +
 [source,terminal]
 ----
-$ oc apply -f <machine_template_resource_file>.yaml
+$ oc apply -f <modified_template_name>.yaml <1>
 ----
-//I think this is probably incorrect but not sure how to actually do this.
+<1> Use the edited YAML file with a new name.
+
+//Todo: resolve question of if this requires an update to the MachineSet spec too, some other detail: https://github.com/openshift/openshift-docs/pull/72885#discussion_r1570571446
