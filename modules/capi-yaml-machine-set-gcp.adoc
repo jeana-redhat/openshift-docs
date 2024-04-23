@@ -32,11 +32,12 @@ spec:
       infrastructureRef:
         apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
         kind: GCPMachineTemplate # <4>
-        name: <machine_set_name>
-      failureDomain: <failure_domain> # <5>
+        name: <template_name> # <5>
+      failureDomain: <failure_domain> # <6>
 ----
 <1> Specify a name for the compute machine set.
 <2> Specify the name of the cluster.
 <3> For the Cluster API Technology Preview, the Operator can use the worker user data secret from `openshift-machine-api` namespace.
 <4> Specify the machine template kind. This value must match the value for your platform.
-<5> Specify the failure domain within the GCP region.
+<5> Specify the machine template name.
+<6> Specify the failure domain within the GCP region.
