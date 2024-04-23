@@ -50,11 +50,11 @@ When editing the machine template resource, observe the following:
 ** The parameters in the `spec` stanza are provider specific.
 For more information, see the sample Cluster API machine template YAML for your provider.
 
-** You must use a value for the `name` parameter that differs from the existing value.
+** You must use a value for the `metadata.name` parameter that differs from any existing values.
 +
 [IMPORTANT]
 ====
-You must update any Cluster API compute machine sets in your cluster to reference the `name` value in the new machine template resource.
+For any Cluster API compute machine sets that reference this template, you must update the `spec.template.spec.infrastructureRef.name` parameter to match the `metadata.name` value in the new machine template resource.
 ====
 
 . Save your modified YAML file with a new name.
@@ -69,5 +69,5 @@ $ oc apply -f <modified_template_name>.yaml <1>
 
 .Next steps
 
-* Update any Cluster API compute machine sets in your cluster to reference the `name` value in the new machine template resource.
+* For any Cluster API compute machine sets that reference this template, update the `spec.template.spec.infrastructureRef.name` parameter to match the `metadata.name` value in the new machine template resource.
 For more information, see "Modifying a compute machine set by using the CLI."
