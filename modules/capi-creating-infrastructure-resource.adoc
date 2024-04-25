@@ -39,6 +39,7 @@ spec: # <3>
 <1> Specify the infrastructure kind for the cluster. This value must match the value for your platform. The following values are valid:
 * `AWSCluster`: The cluster is running on {aws-first}.
 * `GCPCluster`: The cluster is running on {gcp-first}.
+* `VSphereCluster`: The cluster is running on {vmw-first}.
 <2> Specify the name of the cluster.
 <3> Specify the details for your environment. These parameters are provider specific. For more information, see the sample Cluster API infrastructure resource YAML for your provider.
 --

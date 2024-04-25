@@ -1,0 +1,33 @@
+:_mod-docs-content-type: ASSEMBLY
+[id="cluster-api-config-options-vmw"]
+= Cluster API configuration options for {vmw-full}
+include::_attributes/common-attributes.adoc[]
+:context: cluster-api-config-options-vmw
+
+toc::[]
+
+:FeatureName: Managing machines with the Cluster API
+include::snippets/technology-preview.adoc[]
+
+You can change the configuration of your {vmw-first} Cluster API machines by updating values in the Cluster API custom resource manifests.
+
+[id="cluster-api-sample-yaml-vmw_{context}"]
+== Sample YAML for configuring {vmw-full} clusters
+
+The following example YAML files show configurations for a {vmw-full} cluster.
+
+//Sample YAML for a CAPI vSphere infrastructure resource
+include::modules/capi-yaml-infrastructure-vmw.adoc[leveloffset=+2]
+
+//Sample YAML for CAPI vSphere machine template resource
+include::modules/capi-yaml-machine-template-vmw.adoc[leveloffset=+2]
+
+//Sample YAML for a CAPI vSphere compute machine set resource
+include::modules/capi-yaml-machine-set-vmw.adoc[leveloffset=+2]
+
+// [id="cluster-api-supported-features-vmw_{context}"]
+// == Enabling {vmw-full} features with the Cluster API
+
+// You can enable the following features by updating values in the Cluster API custom resource manifests.
+
+//Not sure what, if anything, we can add here at this time.

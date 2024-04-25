@@ -8,7 +8,7 @@
 
 Using the Cluster API to manage machines is a Technology Preview feature and has the following limitations:
 
-* Only AWS and GCP clusters can use the Cluster API.
+* Only {aws-full}, {gcp-full}, and {vmw-full} clusters can use the Cluster API.
 
 * To use this feature, you must enable the `TechPreviewNoUpgrade` feature set.
 Enabling this feature set cannot be undone and prevents minor version updates.
