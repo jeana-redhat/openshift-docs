@@ -66,6 +66,11 @@ endif::openshift-dedicated,openshift-rosa[]
 
 include::modules/etcd-overview.adoc[leveloffset=+1]
 
+// This module only applies to ROSA
+ifdef::openshift-rosa[]
+include::modules/cpmso-feat-auto-update.adoc[leveloffset=+1]
+endif::openshift-rosa[]
+
 // These xrefs do not apply to OSD/ROSA
 ifndef::openshift-dedicated,openshift-rosa[]
 [role="_additional-resources"]
