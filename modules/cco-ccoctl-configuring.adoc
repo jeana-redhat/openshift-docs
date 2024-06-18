@@ -124,6 +124,10 @@ ifeval::["{context}" == "installing-restricted-networks-azure-installer-provisio
 :azure-workload-id:
 endif::[]
 
+ifeval::["{context}" == "hcp-authentication-authorization"]
+:hcp-cco:
+endif::[]
+
 :_mod-docs-content-type: PROCEDURE
 [id="cco-ccoctl-configuring_{context}"]
 ifndef::update[= Configuring the Cloud Credential Operator utility]
@@ -170,7 +174,7 @@ ifdef::update[]
 endif::update[]
 
 //AWS permissions needed when running ccoctl during install (I think we can omit from upgrade, since they already have an appropriate AWS account if they are upgrading).
-ifdef::aws-sts[]
+ifdef::aws-sts,hcp-cco[]
 * You have created an AWS account for the `ccoctl` utility to use with the following permissions:
 +
 .Required AWS permissions
@@ -239,7 +243,7 @@ If you plan to store the OIDC configuration in a private S3 bucket that is acces
 These additional permissions support the use of the `--create-private-s3-bucket` option when processing credentials requests with the `ccoctl aws create-all` command.
 =====
 ====
-endif::aws-sts[]
+endif::aws-sts,hcp-cco[]
 
 //Azure permissions needed when running ccoctl during install.
 ifdef::azure-workload-id[]
@@ -486,4 +490,8 @@ ifeval::["{context}" == "installing-azure-vnet"]
 endif::[]
 ifeval::["{context}" == "installing-restricted-networks-azure-installer-provisioned"]
 :!azure-workload-id:
+endif::[]
+
+ifeval::["{context}" == "hcp-authentication-authorization"]
+:!hcp-cco:
 endif::[]

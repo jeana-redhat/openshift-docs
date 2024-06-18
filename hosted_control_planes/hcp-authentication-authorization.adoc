@@ -9,9 +9,34 @@ toc::[]
 The {product-title} control plane includes a built-in OAuth server. You can obtain OAuth access tokens to authenticate to the {product-title} API. After you create your hosted cluster, you can configure OAuth by specifying an identity provider.
 
 include::modules/hcp-configuring-oauth.adoc[leveloffset=+1]
+
 include::modules/hcp-configuring-oauth-console.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 .Additional resources
 
 * To know more about supported identity providers, see xref:../authentication/understanding-identity-provider.adoc#understanding-identity-provider["Understanding identity provider configuration"] in _Authentication and authorization_.
+
+include::modules/cco-ccoctl-configuring.adoc[leveloffset=+3]
+
+[id="hcp-sts-mode-ccoctl_{context}"]
+== Using Credential Operator utility for {hcp}
+
+You have the following options when creating AWS resources:
+
+* You can use the `ccoctl aws create-all` command to create the AWS resources automatically. This is the quickest way to create the resources. See xref:../../../installing/installing_aws/ipi/installing-aws-network-customizations.adoc#cco-ccoctl-creating-at-once_installing-aws-network-customizations[Creating AWS resources with a single command].
+
+* If you need to review the JSON files that the `ccoctl` tool creates before modifying AWS resources, or if the process the `ccoctl` tool uses to create AWS resources automatically does not meet the requirements of your organization, you can create the AWS resources individually. See xref:../../../installing/installing_aws/ipi/installing-aws-network-customizations.adoc#cco-ccoctl-creating-individually_installing-aws-network-customizations[Creating AWS resources individually].
+
+include::modules/cco-ccoctl-creating-at-once.adoc[leveloffset=+4]
+
+include::modules/cco-ccoctl-creating-individually.adoc[leveloffset=+4]
+
+include::modules/cco-ccoctl-install-creating-manifests.adoc[leveloffset=+3]
+
+include::modules/cco-mode-sts.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Additional resources
+
+* To know about the Cloud Credential Operator, see xref:../operators/operator-reference.adoc#cloud-credential-operator_cluster-operators-ref[Cluster Operators reference page for the Cloud Credential Operator].
