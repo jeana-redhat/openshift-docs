@@ -35,6 +35,8 @@
 // * installing/installing_azure/installing-azure-private.adoc
 // * installing/installing_azure/installing-azure-vnet.adoc
 // * installing/installing_azure/installing-restricted-networks-azure-installer-provisioned.adoc
+//
+// * hosted_control_planes/hcp-authentication-authorization.adoc
 
 //Postinstall  and update content
 ifeval::["{context}" == "post-install-cluster-tasks"]
