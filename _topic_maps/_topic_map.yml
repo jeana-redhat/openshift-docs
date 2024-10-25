@@ -2327,8 +2327,6 @@ Topics:
       File: manually-scaling-machineset
     - Name: Modifying a compute machine set
       File: modifying-machineset
-    - Name: Creating infrastructure machine sets
-      File: creating-infrastructure-machinesets
   # - Name: Compute machine set configuration
   #   File: mapi-compute-configuration
   # - Name: Configuration options for compute machines
@@ -2369,6 +2367,8 @@ Topics:
       File: creating-machineset-vsphere
     - Name: Creating a compute machine set on bare metal
       File: creating-machineset-bare-metal
+    - Name: Creating infrastructure machine sets
+      File: creating-infrastructure-machinesets
   - Name: Applying autoscaling to a cluster
     File: applying-autoscaling
   # - Name: Compute resiliency and recovery
