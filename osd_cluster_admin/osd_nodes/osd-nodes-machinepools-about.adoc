@@ -33,7 +33,7 @@ If you create a new Multi-AZ cluster, the machine pools are replicated to those 
 Due to this multiplicative effect, using machine pools in Multi-AZ cluster can consume more of your project's quota for a specific region when creating machine pools.
 
 === Deploying a machine pool in a single availability zone within a Multi-AZ cluster
-{product-title} on {GCP} users can deploy a single machine pool in a specific availability zone that is part of a Multi-AZ cluster using the {cluster-manager} CLI (`ocm`). This option is especially useful in situations where a desired instance type is not available in all availability zones of a specific region as well as when your cluster does not need more than one of the desired instance types.
+{product-title} on {{gcp-short}} users can deploy a single machine pool in a specific availability zone that is part of a Multi-AZ cluster using the {cluster-manager} CLI (`ocm`). This option is especially useful in situations where a desired instance type is not available in all availability zones of a specific region as well as when your cluster does not need more than one of the desired instance types.
 
 [IMPORTANT]
 ====
@@ -78,7 +78,7 @@ To view the additional flags available for machine pool creation, run the `ocm c
 ====
 
 
-For more information about {GCP} instance types and availability zones, see the _Additional resources_ section.
+For more information about {{gcp-short}} instance types and availability zones, see the _Additional resources_ section.
 
 [role="_additional-resources"]
 == Additional resources

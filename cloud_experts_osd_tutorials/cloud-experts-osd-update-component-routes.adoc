@@ -10,7 +10,7 @@ toc::[]
 :fn-term-component-routes: footnote:[We use the term "component routes" to refer to the OAuth, Console, and Downloads routes that are provided when OCM are first installed.]
 
 //Article text
-This guide demonstrates how to modify the hostname and TLS certificate of the Web console, OAuth server, and Downloads component routes in {product-title} on {GCP} version 4.14 and above.{fn-supported-versions}
+This guide demonstrates how to modify the hostname and TLS certificate of the Web console, OAuth server, and Downloads component routes in {product-title} on {{gcp-short}} version 4.14 and above.{fn-supported-versions}
 
 The changes that we make to the component routes{fn-term-component-routes} in this guide are described in greater detail in the link:https://docs.openshift.com/container-platform/latest/authentication/configuring-internal-oauth.html#customizing-the-oauth-server-url_configuring-internal-oauth[Customing the internal OAuth server URL], link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html/web_console/customizing-web-console#customizing-the-console-route_customizing-web-console[Customing the console route], and link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html/web_console/customizing-web-console#customizing-the-download-route_customizing-web-console[Customing the download route] {product-title} documentation.
 
@@ -18,7 +18,7 @@ The changes that we make to the component routes{fn-term-component-routes} in th
 == Prerequisites
 * OCM CLI (`ocm`) version 1.0.5 or higher
 * gcloud CLI (`gcloud`)
-* An {product-title} on {GCP} cluster version 4.14 or higher
+* An {product-title} on {{gcp-short}} cluster version 4.14 or higher
 // +
 // [NOTE]
 // ====

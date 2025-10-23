@@ -1,17 +1,17 @@
 :_mod-docs-content-type: ASSEMBLY
 [id="creating-machineset-gcp"]
-= Creating a compute machine set on GCP
+= Creating a compute machine set on {gcp-short}
 include::_attributes/common-attributes.adoc[]
 :context: creating-machineset-gcp
 
 toc::[]
 
-You can create a different compute machine set to serve a specific purpose in your {product-title} cluster on Google Cloud Platform (GCP). For example, you might create infrastructure machine sets and related machines so that you can move supporting workloads to the new machines.
+You can create a different compute machine set to serve a specific purpose in your {product-title} cluster on {gcp-first}. For example, you might create infrastructure machine sets and related machines so that you can move supporting workloads to the new machines.
 
 //[IMPORTANT] admonition for UPI
 include::snippets/machine-user-provisioned-limitations.adoc[leveloffset=+1]
 
-//Sample YAML for a compute machine set custom resource on GCP
+//Sample YAML for a compute machine set custom resource on {gcp-short}
 include::modules/machineset-yaml-gcp.adoc[leveloffset=+1]
 
 //Creating a compute machine set

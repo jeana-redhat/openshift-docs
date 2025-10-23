@@ -12,7 +12,7 @@ During installation, you can configure the Cloud Credential Operator (CCO) to op
 ====
 This credentials strategy is supported for {aws-first}, {gcp-first}, and global {azure-full} only.
 
-For {aws-short} and {gcp-short} clusters, you must configure your cluster to use this strategy during installation of a new {product-title} cluster. 
+For {aws-short} and {gcp-short} clusters, you must configure your cluster to use this strategy during installation of a new {product-title} cluster.
 You cannot configure an existing {aws-short} or {gcp-short} cluster that uses a different credentials strategy to use this feature.
 
 If you did not configure your {azure-short} cluster to use {entra-first} during installation, you can xref:../../post_installation_configuration/changing-cloud-credentials-configuration.adoc#post-install-enable-token-auth_changing-cloud-credentials-configuration[enable this authentication method on an existing cluster].
@@ -70,7 +70,7 @@ include::modules/cco-short-term-creds-aws-olm.adoc[leveloffset=+2]
 // Attributes used in module with cloud-specific values (unset in module)
 :cloud-auth-first: {aws-short} {sts-first}
 :cloud-auth-short: {aws-short} {sts-short}
-include::modules/cco-short-term-creds-workloads.adoc[leveloffset=+2] 
+include::modules/cco-short-term-creds-workloads.adoc[leveloffset=+2]
 
 [role="_additional-resources"]
 .Additional resources
@@ -88,23 +88,23 @@ In manual mode with {gcp-wid-short}, the individual {product-title} cluster comp
 .Additional resources
 * xref:../../installing/installing_gcp/installing-gcp-customizations.adoc#installing-gcp-with-short-term-creds_installing-gcp-customizations[Configuring a {gcp-short} cluster to use short-term credentials]
 
-//GCP Workload Identity authentication process
+//{gcp-short} Workload Identity authentication process
 include::modules/cco-short-term-creds-auth-flow-gcp.adoc[leveloffset=+2]
 
-//GCP component secret formats
+//{gcp-short} component secret formats
 include::modules/cco-short-term-creds-format-gcp.adoc[leveloffset=+2]
 
-//GCP component secret permissions requirements (placeholder)
+//{gcp-short} component secret permissions requirements (placeholder)
 //include::modules/cco-short-term-creds-component-permissions-gcp.adoc[leveloffset=+2]
 
-//OLM-managed Operator support for authentication with GCP Workload Identity
+//OLM-managed Operator support for authentication with {gcp-short} Workload Identity
 include::modules/cco-short-term-creds-gcp-olm.adoc[leveloffset=+2]
 
 [role="_additional-resources"]
 .Additional resources
 * xref:../../operators/operator_sdk/token_auth/osdk-cco-gcp.adoc#osdk-cco-gcp[CCO-based workflow for OLM-managed Operators with {gcp-wid-first}]
 
-// Application support for GCP Workload Identity service account tokens
+// Application support for {gcp-short} Workload Identity service account tokens
 // Extra context so module can be reused within assembly (unset in module)
 :context: gcp
 // Attributes used in module with cloud-specific values (unset in module)

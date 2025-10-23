@@ -10,7 +10,7 @@
 // * installing/installing_aws/installing-aws-china.adoc
 // * installing/installing_aws/installing-aws-outposts-remote-workers.adoc
 //
-// GCP assemblies:
+// {gcp-short} assemblies:
 // * installing/installing_gcp/installing-gcp-customizations.adoc
 // * installing/installing_gcp/installing-gcp-network-customizations.adoc
 // * installing/installing_gcp/installing-restricted-networks-gcp-installer-provisioned.adoc
@@ -57,7 +57,7 @@ ifeval::["{context}" == "installing-aws-outposts-remote-workers"]
 :aws-sts:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :google-cloud-platform:
 endif::[]
@@ -105,9 +105,9 @@ Otherwise, you can create the AWS resources individually. For more information, 
 
 endif::aws-sts[]
 ifdef::google-cloud-platform[]
-= Creating GCP resources with the Cloud Credential Operator utility
+= Creating {gcp-short} resources with the Cloud Credential Operator utility
 
-You can use the `ccoctl gcp create-all` command to automate the creation of GCP resources.
+You can use the `ccoctl gcp create-all` command to automate the creation of {gcp-short} resources.
 endif::google-cloud-platform[]
 ifdef::azure-workload-id[]
 = Creating Azure resources with the Cloud Credential Operator utility
@@ -203,9 +203,9 @@ $ ccoctl gcp create-all \
   --credentials-requests-dir=<path_to_credentials_requests_directory> <4>
 ----
 <1> Specify the user-defined name for all created {gcp-short} resources used for tracking. If you plan to install the {gcp-short} Filestore Container Storage Interface (CSI) Driver Operator, retain this value.
-<2> Specify the GCP region in which cloud resources will be created.
-<3> Specify the GCP project ID in which cloud resources will be created.
-<4> Specify the directory containing the files of `CredentialsRequest` manifests to create GCP service accounts.
+<2> Specify the {gcp-short} region in which cloud resources will be created.
+<3> Specify the {gcp-short} project ID in which cloud resources will be created.
+<4> Specify the directory containing the files of `CredentialsRequest` manifests to create {gcp-short} service accounts.
 +
 [NOTE]
 ====
@@ -285,7 +285,7 @@ openshift-ingress-operator-cloud-credentials-credentials.yaml
 openshift-machine-api-gcp-cloud-credentials-credentials.yaml
 ----
 +
-You can verify that the IAM service accounts are created by querying GCP. For more information, refer to GCP documentation on listing IAM service accounts.
+You can verify that the IAM service accounts are created by querying {gcp-short}. For more information, refer to {gcp-short} documentation on listing IAM service accounts.
 endif::google-cloud-platform[]
 ifdef::azure-workload-id[]
 +
@@ -339,7 +339,7 @@ ifeval::["{context}" == "installing-aws-outposts-remote-workers"]
 :!aws-sts:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :!google-cloud-platform:
 endif::[]

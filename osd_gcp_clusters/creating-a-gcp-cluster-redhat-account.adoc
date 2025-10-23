@@ -1,6 +1,6 @@
 :_mod-docs-content-type: ASSEMBLY
 [id="osd-creating-a-gcp-cluster-rh-account"]
-= Creating a cluster on GCP with a Red Hat cloud account
+= Creating a cluster on {gcp-short} with a Red Hat cloud account
 include::_attributes/attributes-openshift-dedicated.adoc[]
 :context: osd-creating-a-gcp-cluster-rh-account
 
@@ -8,7 +8,7 @@ toc::[]
 
 :_mod-docs-content-type: PROCEDURE
 
-Through {cluster-manager-url}, you can create an {product-title} cluster on {GCP} using a standard cloud provider account owned by Red Hat.
+Through {cluster-manager-url}, you can create an {product-title} cluster on {{gcp-short}} using a standard cloud provider account owned by Red Hat.
 
 [id="osd-creating-a-cluster-on-gcp-prerequisites1_{context}"]
 == Prerequisites

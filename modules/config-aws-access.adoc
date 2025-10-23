@@ -7,7 +7,7 @@
 
 = Configuring AWS infrastructure access
 
-// TODO: I see {AWS} and {GCP} only used a handful of time, but their written out form much more. Should all hardcoded instances be updated to use the attributes?
+// TODO: I see {AWS} and {{gcp-short}} only used a handful of time, but their written out form much more. Should all hardcoded instances be updated to use the attributes?
 {AWS} infrastructure access allows link:https://access.redhat.com/node/3610411[Customer Portal Organization Administrators] and cluster owners to enable AWS Identity and Access Management (IAM) users to have federated access to the AWS Management Console for their {product-title} cluster. Administrators can select between `Network Management` or `Read-only` access options.
 
 .Prerequisites

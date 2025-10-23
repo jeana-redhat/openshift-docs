@@ -27,11 +27,11 @@ The customer is responsible for incident and operations management of customer a
 
 |Virtual networking
 |* Monitor cloud load balancers, subnets, and public cloud components necessary for default platform networking, and respond to alerts.
-* Monitor the Red Hat Management project in {GCP} and the Private Service Connect (PSC) attachments. ^[1]^
+* Monitor the Red Hat Management project in {{gcp-short}} and the Private Service Connect (PSC) attachments. ^[1]^
 |Monitor network traffic that is optionally configured through VPC to VPC connection, VPN connection, or Direct connection for potential issues or security threats.
 
 |===
-1. Applies to {product-title} on {GCP} clusters with PSC only.
+1. Applies to {product-title} on {{gcp-short}} clusters with PSC only.
 
 [id="change-management_{context}"]
 == Change management
@@ -97,7 +97,7 @@ Red Hat is responsible for enabling changes to the cluster infrastructure and se
 * Respond to Red Hat notifications regarding cluster resource requirements.
 
 |===
-1. Applies to {product-title} on {GCP} clusters with PSC only.
+1. Applies to {product-title} on {{gcp-short}} clusters with PSC only.
 
 [id="identity-access-management_{context}"]
 == Access and identity authorization

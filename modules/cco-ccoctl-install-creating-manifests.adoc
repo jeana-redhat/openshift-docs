@@ -10,7 +10,7 @@
 // * installing/installing_aws/installing-aws-china.adoc
 // * installing/installing_aws/installing-aws-outposts-remote-workers.adoc
 //
-// GCP assemblies:
+// {gcp-short} assemblies:
 // * installing/installing_gcp/installing-gcp-customizations.adoc
 // * installing/installing_gcp/installing-gcp-network-customizations.adoc
 // * installing/installing_gcp/installing-restricted-networks-gcp-installer-provisioned.adoc
@@ -42,7 +42,7 @@ ifeval::["{context}" == "installing-restricted-networks-azure-installer-provisio
 :azure-workload-id:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :google-cloud-platform:
 endif::[]
@@ -77,9 +77,9 @@ To implement short-term security credentials managed outside the cluster for ind
 .Procedure
 
 ifdef::google-cloud-platform[]
-. Add the following granular permissions to the GCP account that the installation program uses:
+. Add the following granular permissions to the {gcp-short} account that the installation program uses:
 +
-.Required GCP permissions
+.Required {gcp-short} permissions
 [%collapsible]
 ====
 * compute.machineTypes.list
@@ -166,7 +166,7 @@ ifeval::["{context}" == "installing-restricted-networks-azure-installer-provisio
 :!azure-workload-id:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :!google-cloud-platform:
 endif::[]

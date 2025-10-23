@@ -31,12 +31,12 @@ To configure this authentication method, you must meet the following requirement
 
 * In your cloud provider console, you must have access as a user with privileges to manage Identity and Access Management (IAM) and federated identity configurations.
 
-// Section to add with AWS and Azure content. Only documenting GCP at this time.
+// Section to add with AWS and Azure content. Only documenting {gcp-short} at this time.
 ////
 [id="nodes-pods-short-term-auth-compatibility_{context}"]
 === Compatibility limitations
 
-This authentication method is only supported for {aws-first}, {gcp-first}, and {azure-full} clusters. 
+This authentication method is only supported for {aws-first}, {gcp-first}, and {azure-full} clusters.
 You can only authenticate workloads with short-term credentials by using the same authentication method as the cluster.
 
 .Supported configurations for workload authentication with short-term credentials

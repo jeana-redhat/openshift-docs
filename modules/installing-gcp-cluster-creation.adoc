@@ -3,7 +3,7 @@
 
 :_mod-docs-content-type: PROCEDURE
 [id="installing-gcp-cluster-creation_{context}"]
-= Configuring user-defined labels and tags for GCP
+= Configuring user-defined labels and tags for {gcp-short}
 
 Configuring user-defined labels and tags for {gcp-full} means that you can apply key-value pairs to your cloud resources for the purposes of organizing, managing, and automating your infrastructure.
 
@@ -37,7 +37,7 @@ platform:
      value: <tag_value_short_name>
 # ...
 ----
-<1> In passthrough mode, the Cloud Credential Operator (CCO) passes the provided cloud credential to the components that request cloud credentials. 
+<1> In passthrough mode, the Cloud Credential Operator (CCO) passes the provided cloud credential to the components that request cloud credentials.
 <2> Adds keys and values as labels to the resources created on {gcp-short}.
 <3> Defines the label name.
 <4> Defines the label content.

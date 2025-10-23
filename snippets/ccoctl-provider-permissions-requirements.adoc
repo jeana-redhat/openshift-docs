@@ -127,7 +127,7 @@ ifdef::rotate-azure[]
 --
 endif::rotate-azure[]
 
-//GCP permissions needed when running ccoctl during installation and key rotation.
+//{gcp-short} permissions needed when running ccoctl during installation and key rotation.
 ifdef::google-cloud-platform[]
 * You have added one of the following authentication options to the {gcp-short} account that the `ccoctl` utility uses:
 

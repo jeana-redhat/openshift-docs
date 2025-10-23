@@ -11,8 +11,8 @@ ifeval::["{context}" == "uninstall-cluster-aws"]
 :aws-sts:
 endif::[]
 ifeval::["{context}" == "uninstalling-cluster-gcp"]
-:cp-first: Google Cloud Platform
-:cp: GCP
+:cp-first: {gcp-full}
+:cp: {gcp-short}
 :cp-name: gcp
 :gcp-workload-id:
 endif::[]
@@ -35,7 +35,7 @@ After uninstalling an {product-title} cluster that uses short-term credentials m
 * Uninstall an {product-title} cluster on {cp} that uses short-term credentials.
 
 .Procedure
-//GCP has extra prep steps
+//{gcp-short} has extra prep steps
 ifdef::gcp-workload-id[]
 . Set a `$RELEASE_IMAGE` variable with the release image from your installation file by running the following command:
 +
@@ -84,7 +84,7 @@ endif::azure-workload-id[]
 ifdef::aws-sts,azure-workload-id[<2> `<{cp-name}_region>` is the {cp} region in which to delete cloud resources.]
 ifdef::gcp-workload-id[]
 <2> `<{cp-name}_project_id>` is the {cp} project ID in which to delete cloud resources.
-<3> Optional: This parameter deletes the custom roles that the `ccoctl` utility creates during installation. GCP does not permanently delete custom roles immediately. For more information, see GCP documentation about link:https://cloud.google.com/iam/docs/creating-custom-roles#deleting-custom-role[deleting a custom role].
+<3> Optional: This parameter deletes the custom roles that the `ccoctl` utility creates during installation. {gcp-short} does not permanently delete custom roles immediately. For more information, see {gcp-short} documentation about link:https://cloud.google.com/iam/docs/creating-custom-roles#deleting-custom-role[deleting a custom role].
 endif::gcp-workload-id[]
 ifdef::azure-workload-id[<3> `<{cp-name}_subscription_id>` is the {cp} subscription ID for which to delete cloud resources.]
 ifdef::aws-sts[]
@@ -107,7 +107,7 @@ ifdef::aws-sts[]
 2021/04/08 17:51:11 IAM Role <name>-openshift-machine-api-aws-cloud-credentials deleted
 2021/04/08 17:51:39 Identity Provider with ARN arn:aws:iam::<aws_account_id>:oidc-provider/<name>-oidc.s3.<aws_region>.amazonaws.com deleted
 ----
-//Would love a GCP and Azure version of the above output.
+//Would love a {gcp-short} and Azure version of the above output.
 endif::aws-sts[]
 
 .Verification
@@ -120,8 +120,8 @@ ifeval::["{context}" == "uninstall-cluster-aws"]
 :!aws-sts:
 endif::[]
 ifeval::["{context}" == "uninstalling-cluster-gcp"]
-:!cp-first: Google Cloud Platform
-:!cp: GCP
+:!cp-first: {gcp-full}
+:!cp: {gcp-short}
 :!gcp-workload-id:
 endif::[]
 ifeval::["{context}" == "uninstall-cluster-azure"]

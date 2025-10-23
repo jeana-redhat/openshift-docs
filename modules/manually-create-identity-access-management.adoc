@@ -14,7 +14,7 @@
 // * installing/installing_aws/installing-aws-china.adoc
 // * installing/installing_aws/installing-aws-outposts-remote-workers.adoc
 //
-// GCP assemblies:
+// {gcp-short} assemblies:
 // * installing/installing_gcp/installing-gcp-customizations.adoc
 // * installing/installing_gcp/installing-gcp-network-customizations.adoc
 // * installing/installing_gcp/installing-restricted-networks-gcp-installer-provisioned.adoc
@@ -82,7 +82,7 @@ ifeval::["{context}" == "installing-aws-outposts-remote-workers"]
 :cco-multi-mode:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :google-cloud-platform:
 :cco-multi-mode:
@@ -160,9 +160,9 @@ endif::cco-manual-mode[]
 .Procedure
 
 ifdef::google-cloud-platform[]
-. Add the following granular permissions to the GCP account that the installation program uses:
+. Add the following granular permissions to the {gcp-short} account that the installation program uses:
 +
-.Required GCP permissions
+.Required {gcp-short} permissions
 [%collapsible]
 ====
 * compute.machineTypes.list
@@ -392,7 +392,7 @@ ifeval::["{context}" == "installing-aws-outposts-remote-workers"]
 :!cco-multi-mode:
 endif::[]
 
-//GCP install assemblies
+//{gcp-short} install assemblies
 ifeval::["{context}" == "installing-gcp-customizations"]
 :!google-cloud-platform:
 :!cco-multi-mode:
