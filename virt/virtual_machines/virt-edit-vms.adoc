@@ -6,7 +6,10 @@ include::_attributes/common-attributes.adoc[]
 
 toc::[]
 
-You can update a virtual machine configuration using either the YAML editor in the web console or the OpenShift CLI on the command line. You can also update a subset of the parameters in the *Virtual Machine Details* screen.
+[role="_abstract"]
+You can update a virtual machine configuration using either the YAML editor in the web console or the {oc-first} on the command line. You can also update a subset of the parameters in the *Virtual Machine Details* screen.
+
+To configure storage class defaults, use storage profiles. For more information, see xref:../../virt/virtual_machines/virtual_disks/virt-creating-data-volumes.adoc#virt-customizing-storage-profile_virt-creating-data-volumes[Customizing the storage profile].
 
 include::modules/virt-editing-vm-web.adoc[leveloffset=+1]
 
@@ -16,8 +19,6 @@ include::modules/virt-editing-vm-cli.adoc[leveloffset=+1]
 
 include::modules/virt-add-disk-to-vm.adoc[leveloffset=+1]
 
-To configure storage class defaults, use storage profiles. For more information, see xref:../../virt/virtual_machines/virtual_disks/virt-creating-data-volumes.adoc#virt-customizing-storage-profile_virt-creating-data-volumes[Customizing the storage profile].
-
 include::modules/virt-edit-cdrom-vm.adoc[leveloffset=+2]
 
 include::modules/virt-storage-wizard-fields-web.adoc[leveloffset=+2]
@@ -26,7 +27,7 @@ include::modules/virt-add-nic-to-vm.adoc[leveloffset=+1]
 
 include::modules/virt-networking-wizard-fields-web.adoc[leveloffset=+2]
 
-[id="additional-resources_virt-edit-vms_{context}"]
 [role="_additional-resources"]
+[id="additional-resources_{context}"]
 == Additional resources
 * xref:../../virt/virtual_machines/virtual_disks/virt-creating-data-volumes.adoc#virt-customizing-storage-profile_virt-creating-data-volumes[Customizing the storage profile]
