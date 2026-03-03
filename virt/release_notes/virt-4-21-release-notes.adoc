@@ -304,3 +304,8 @@ To work around this problem, manually delete the stale boot source resources:
 . Delete the older, non-suffixed `DataSource` objects and the PVCs or `VolumeSnapshots` they reference.
 +
 link:https://issues.redhat.com/browse/CNV-75084[CNV-75084]
+
+[id="virt-maintenance-releases_{context}"]
+== Maintenance releases
+
+include::modules/virt-zstream-4-21-1.adoc[leveloffset=+2]

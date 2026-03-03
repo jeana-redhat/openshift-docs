@@ -1,0 +1,43 @@
+// Module included in the following assemblies:
+//
+// * virt/release_notes/virt-4-21-release-notes.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="virt-zstream-4-21-1_{context}"]
+= {VirtProductName} 4.21.1 updates
+
+[role="_abstract"]
+{VirtProductName} {product-version}.1 is now available with updates to packages and images that fix several bugs and add enhancements.
+
+[id="virt-4-21-1-new_{context}"]
+== New features and enhancements
+
+// Example release note format:
+//
+// Improved lorem installation workflow for clusters::
+// Lorem ipsum dolor sit amet, consectetur adipiscing elit. As a result, lorem updates complete more predictably on large clusters.
+// +
+// link:https://issues.redhat.com/browse/CNV-00001[CNV-00001]
+
+{VirtProductName} on {gcp-first} is generally available::
+Using {VirtProductName} on a {gcp-full} cluster with bare-metal nodes is now generally available. For more information, see the following articles in the Red{nbsp}Hat Knowledgebase:
+* link:https://access.redhat.com/articles/7139046[Storage configuration for {VirtProductName} {product-version}.x on {gcp-full}]
+* link:https://access.redhat.com/articles/7139682[{VirtProductName} on {gcp-full}: Known issues and limitations]
+
+[IMPORTANT]
+====
+* Running {VirtProductName} on {gcp-short} requires {product-title} 4.21.5 and {VirtProductName} 4.21.1, or later versions.
+* Resizing an attached Hyperdisk volume is not supported in RWX mode. For more information, see link:https://docs.cloud.google.com/compute/docs/disks/modify-hyperdisks#capacity_changes[Increase the capacity of a Hyperdisk volume] in the {gcp-short} documentation.
+
+* The {gcp-short} platform, by default, has limitations that are incompatible with the capabilities of {VirtProductName}. You can override these limitations by contacting Google to request project-level allow list approval:
+** Multi-writer mode (RWX) is currently not allowed for bare-metal machines. For more information, see link:https://docs.cloud.google.com/compute/docs/disks/sharing-disks-between-vms#mw-limitations[Limitations for sharing Hyperdisk volumes in multi-writer mode] in the {gcp-short} documentation.
+** While most machine types default to 127 volumes per node, certain bare-metal machine types have lower volume attachment limits. For more information, see link:https://docs.cloud.google.com/compute/docs/general-purpose-machines#disk_and_capacity_limits_8[Disk and capacity limits] in the {gcp-short} documentation and link:https://access.redhat.com/articles/7139682#volume-attachment-limit-per-node-2[Volume Attachment Limit Per Node] in the Red{nbsp}Hat Knowledgebase.
+====
+//+
+//can't seem to find a relevant public Jira link
+
+//[id="virt-4-21-1-fixed-issues_{context}"]
+//== Fixed issues
+
+//[id="virt-4-21-1-known-issues_{context}"]
+//== Known issues
