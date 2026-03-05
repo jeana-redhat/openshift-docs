@@ -2,11 +2,9 @@
 [id="zstream-4-13-62-about_{context}"]
 = RHSA-2025:22284 - {product-title} 4.13.62 bug fix and security update
 
-
-[role="_abstract"]
 Issued: 04 December 2025
 
-
+[role="_abstract"]
 {product-title} release 4.13.62, which includes security updates, is now available. The list of bug fixes that are included in the update is documented in the link:https://access.redhat.com/errata/RHSA-2025:22284[RHSA-2025:22284] advisory. The RPM packages that are included in the update are provided by the link:https://access.redhat.com/errata/RHBA-2025:22274[RHBA-2025:22274] advisory.
 
 

@@ -4655,4 +4655,11 @@ include::modules/zstream-4-13-63-about.adoc[leveloffset=+2]
 
 include::modules/zstream-4-13-63-bug-fixes.adoc[leveloffset=+2]
 
-include::modules/zstream-updating.adoc[leveloffset=+2]
+include::modules/zstream-4-13-63-updating.adoc[leveloffset=+2]
+
+//4.13.64
+include::modules/zstream-4-13-64-about.adoc[leveloffset=+2]
+
+include::modules/zstream-4-13-64-bug-fixes.adoc[leveloffset=+2]
+
+include::modules/zstream-4-13-64-updating.adoc[leveloffset=+2]

@@ -1,6 +1,6 @@
 :_mod-docs-content-type: REFERENCE
 [id="zstream-4-13-62-bug-fixes_{context}"]
-= Bug fixes
+= Fixed issues
 
 [role=”_abstract”]
-There are no notable bug fixes in this release.
+There are no notable fixed issues in this release.
