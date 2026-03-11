@@ -5343,26 +5343,35 @@ include::modules/zstream-4-12-83-about.adoc[leveloffset=+2]
 
 
 // 4.12.83 fixes
-include::modules/zstream-4-12-83-bug-fixes.adoc[leveloffset=+2]
+include::modules/zstream-4-12-83-bug-fixes.adoc[leveloffset=+3]
 
 
 // 4.12.83 updating
-include::modules/zstream-4-12-83-updating.adoc[leveloffset=+2]
+include::modules/zstream-4-12-83-updating.adoc[leveloffset=+3]
 
 // 4.12.84 about
 include::modules/zstream-4-12-84-about.adoc[leveloffset=+2]
 
 // 4.12.84 fixes
-include::modules/zstream-4-12-84-bug-fixes.adoc[leveloffset=+2]
+include::modules/zstream-4-12-84-bug-fixes.adoc[leveloffset=+3]
 
 // 4.12.84 updating
-include::modules/zstream-4-12-84-updating.adoc[leveloffset=+2]
+include::modules/zstream-4-12-84-updating.adoc[leveloffset=+3]
 
 // 4.12.85 about
 include::modules/zstream-4-12-85-about.adoc[leveloffset=+2]
 
 // 4.12.85 fixes
-include::modules/zstream-4-12-85-bug-fixes.adoc[leveloffset=+2]
+include::modules/zstream-4-12-85-bug-fixes.adoc[leveloffset=+3]
 
 // 4.12.85 updating
-include::modules/zstream-4-12-85-updating.adoc[leveloffset=+2]
+include::modules/zstream-4-12-85-updating.adoc[leveloffset=+3]
+
+// 4.12.86 about
+include::modules/zstream-4-12-86-about.adoc[leveloffset=+2]
+
+// 4.12.86 fixes
+include::modules/zstream-4-12-86-fixed-issues.adoc[leveloffset=+3]
+
+// 4.12.86 updating
+include::modules/zstream-4-12-86-updating.adoc[leveloffset=+3]
