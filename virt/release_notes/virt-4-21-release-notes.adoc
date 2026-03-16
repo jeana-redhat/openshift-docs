@@ -142,6 +142,11 @@ With this update, cluster administrators can integrate third-party solutions int
 +
 link:https://issues.redhat.com/browse/CNV-73256[CNV-73256]
 
+Customizable action menu added for Kubevirt plugin::
+With this update, the Kubevirt plugin introduces a customizable action menu, which allows you to load custom actions from dynamic plugins. This enhancement also offers dynamic loading of local actions, and de-duplication of action lists, resulting in a more flexible user interface.
++
+link:https://issues.redhat.com/browse/CNV-70667[CNV-70667]
+
 // Monitoring
 
 New metric to list VM labels as Prometheus labels::
