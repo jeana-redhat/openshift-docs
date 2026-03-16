@@ -4,6 +4,4 @@
 
 This section includes removed features for {product-title} {product-version}.
 
-Swap memory support has been removed::
-+
-The ability to configure swap memory is no longer available in {product-title} because using swap memory can prevent a node from properly safeguarding itself from failures.
+
