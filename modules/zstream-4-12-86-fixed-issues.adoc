@@ -1,0 +1,12 @@
+// Module included in the following assembly:
+//
+// * release_notes/ocp-4-12-release-notes.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="zstream-4-12-86-fixed-issues_{context}"]
+= Fixed issues
+
+[role="_abstract"]
+The following issue is fixed with this release:
+
+* Before this update, a bug occurred in {product-title} 4.12 because of an unsupported user configuration in {product-title} 4.13. As a consequence, the user experience in {product-title} 4.12 was disrupted. With this release, a bug fix in {product-title} 4.12.0-0.nightly-2026-03-04-014443 resolves the issue found only in {product-title} 4.12. As a result, system stability for users in {product-title} 4.12 is improved. (link:https://issues.redhat.com/browse/OCPBUGS-77403[OCPBUGS-77403])
