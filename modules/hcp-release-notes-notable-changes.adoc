@@ -9,13 +9,4 @@
 [role="_abstract"]
 Review the following notable technical changes introduced in this release.
 
-Updated hosted cluster and node pool version skew policy::
-+
-With this release, the version skew policy for compatibility between hosted cluster and node pools has been updated:
-+
---
-* Node pool versions up to 3 minor versions behind the hosted cluster version are supported.
-* Node pool versions cannot be higher than the hosted cluster version.
---
-+
-For more information, see xref:../hosted_control_planes/hcp-updating.adoc#hcp-np-version-skew_hcp-updating[Hosted cluster and node pool version skew policy].
+
