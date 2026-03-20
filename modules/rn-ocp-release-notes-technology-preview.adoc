@@ -42,7 +42,7 @@ In the following tables, features are marked with the following statuses:
 .Edge computing Technology Preview tracker
 [cols="4,1,1,1",options="header"]
 |====
-|Feature |4.19 |4.20 |4.21
+|Feature |4.20 |4.21 |4.22
 
 |Accelerated provisioning of {ztp}
 |Technology Preview
@@ -55,14 +55,14 @@ In the following tables, features are marked with the following statuses:
 |Technology Preview
 
 |Configuring a local arbiter node
-|Technology Preview
+|General Availability
 |General Availability
 |General Availability
 
 |Configuring a two-node {product-title} cluster with fencing
-|Not Available
 |Technology Preview
 |Technology Preview
+|General Availability
 |====
 
 
