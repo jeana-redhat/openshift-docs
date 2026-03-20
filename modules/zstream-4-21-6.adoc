@@ -20,6 +20,15 @@ You can view the container images in this release by running the following comma
 $ oc adm release info 4.21.6 --pullspecs
 ----
 
+[id="zstream-4-21-6-new-features_{context}"]
+== New features
+
+* KMS v2 support for etcd encryption (Technology Preview)
++
+You can now use the Kubernetes KMS v2 interface to encrypt etcd data, including secrets, config maps, and OAuth tokens, using keys managed by an external Key Management Service (KMS). This Technology Preview release integrates with the HashiCorp Vault KMS plugin to offload encryption key storage and lifecycle management to an external Vault instance. This is a Technology Preview feature.
++
+For more information about Technology Preview feature support, see link:https://access.redhat.com/support/offerings/techpreview[Technology Preview Features - Scope of Support].
+
 [id="zstream-4-21-6-known-issues_{context}"]
 == Known issues
 

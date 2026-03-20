@@ -33,6 +33,11 @@ In the following tables, features are marked with the following statuses:
 |Technology Preview
 |General Availability
 |General Availability
+
+|KMS Plugin
+|Not Available
+|Not Available
+|Technology Preview
 |====
 
 
