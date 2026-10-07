@@ -1878,7 +1878,7 @@ How to fix these errors:
 <div class="sect2">
 <h3 id="enable-automated-machine-management-on-user-provisioned-infrastructure-con_enable-automated-machine-management-on-user-provisioned-infrastructure">Enable automated machine management on user-provisioned infrastructure</h3>
 <div class="paragraph _abstract">
-<p>On a cluster you provisioned yourself, the Machine API cannot manage compute nodes until the cluster supplies what it needs: the infrastructure ID, vCenter credentials in the openshift-machine-api namespace, and a valid Ignition configuration. An installer-provisioned cluster already has all three.</p>
+<p>On a cluster you provisioned yourself, the Machine API cannot manage compute nodes unless you provide some of the settings and information that installer-provisioned clusters have.</p>
 </div>
 <div class="sect3">
 <h4 id="compute-machineset-upi-reqs_creating-machineset-vsphere">Requirements for clusters with user-provisioned infrastructure to use compute machine sets</h4>
