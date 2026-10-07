@@ -477,44 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </style>
 <!-- navmap-right-toc-end -->
-<!-- navmap-preview-warning-start -->
-<style>
-  .navmap-preview-warning {
-    background: #fff1f1;
-    border: 2px solid #c9190b;
-    border-radius: 4px;
-    color: #3b0a0a;
-    font-family: "Open Sans", "DejaVu Sans", sans-serif;
-    margin: 1em auto;
-    max-width: 70em;
-    padding: 1em 1.25em;
-  }
-  .navmap-preview-warning strong { color: #a30000; }
-  .navmap-preview-warning details { margin-top: .75em; }
-  .navmap-preview-warning pre {
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    max-height: 20em;
-    overflow: auto;
-    padding: .75em;
-    white-space: pre-wrap;
-  }
-</style>
-<!-- navmap-preview-warning-end -->
 </head>
 <body id="provision-multus-secondary-networks-and-addressing-con_provision-multus-secondary-networks-and-addressing" class="book toc2 toc-left navmap-has-right-toc">
-<div class="navmap-preview-warning" role="alert"><strong>Preview warning: this preview is incomplete.</strong><p>One or more AsciiDoc includes are missing. Content may be absent from this page or from related pages.</p><details><summary>Show missing-include report</summary><pre>Include preflight failed for maps/ocp/navigation.adoc
-
-Missing include targets:
-  maps/ocp/troubleshoot.adoc:53
-    include::ocp-jobs/use-the-vsphere-problem-detector-operator.adoc[leveloffset=+1]
-    expected: maps/ocp/ocp-jobs/use-the-vsphere-problem-detector-operator.adoc
-
-How to fix these errors:
-  1. Restore or create the expected .adoc file, preserving the path relative to the referring map; or
-  2. Change the include directive to the path of the existing source file if the topic was renamed or moved.
-  Then rerun this audit and the preview. Do not ignore the error: Asciidoctor can otherwise generate incomplete HTML.
-</pre></details><details><summary>How to remediate missing content</summary><ol><li>Restore or create the expected <code>.adoc</code> file at the reported path, including its required content and attributes.</li><li>If the topic was renamed or moved, update the reported <code>include::</code> directive to point to the existing file. The path is relative to the file containing the directive.</li><li>If the topic is intentionally not ready, remove the include from the map and track the content gap separately.</li></ol><p>After fixing the includes, rebuild the preview with <code>./preview-map &lt;distro&gt;</code>.</p></details></div>
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -905,29 +869,29 @@ How to fix these errors:
 <li><a href="_disconnected_environments.html">Disconnected environments</a>
 
 <ul class="sectlevel2">
-<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Understand disconnected environments</a>
+<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Disconnected environment concepts</a>
 </li>
-<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Installing a cluster with the Agent-based Installer</a>
+<li><a href="plan-a-disconnected-installation-intro_plan-a-disconnected-installation.html">Plan a disconnected installation</a>
 </li>
-<li><a href="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Prerequisites</a>
+<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Install a cluster with the Agent-based Installer</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">About oc-mirror plugin v2</a>
+<li><a href="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Create a mirror registry with mirror registry for Red Hat OpenShift</a>
 </li>
-<li><a href="prerequisites_mirror-images-to-a-mirror-registry-using-the-oc-adm-release-mirror-command.html">Prerequisites</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a>
 </li>
-<li><a href="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2.html">Changes from oc-mirror plugin v1 to v2</a>
-</li>
-<li><a href="olm-restricted-network-prereqs_manage-olm-operators-in-a-disconnected-environment.html">Prerequisites</a>
+<li><a href="manage-olm-operators-disconnected-intro_manage-olm-operators-in-a-disconnected-environment.html">Manage OLM Operators in a disconnected environment</a>
 </li>
 <li><a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a>
 </li>
-<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Using the OpenShift Update Service in a disconnected environment</a>
+<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Use the OpenShift Update Service in a disconnected environment</a>
 </li>
-<li><a href="updating-cli-prereqs_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Prerequisites for a cluster update</a>
+<li><a href="update-disconnected_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Updating the disconnected cluster</a>
 </li>
-<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstalling the OpenShift Update Service from a cluster</a>
+<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstall the OpenShift Update Service from a cluster</a>
 </li>
-<li><a href="installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected.html">About the mirror registry</a>
+<li><a href="configure-trust-and-mirroring-con_configure-trust-and-mirroring.html">Configure trust and mirroring</a>
+</li>
+<li><a href="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected.html">Convert a connected cluster to disconnected</a>
 </li>
 <li><a href="deploying-hosted-control-planes-in-a-disconnected-environment-intro_deploying-hosted-control-planes-in-a-disconnected-environment.html">Deploying hosted control planes in a disconnected environment</a>
 </li>
@@ -1183,7 +1147,7 @@ How to fix these errors:
 </li>
 <li><a href="about-kmm_manage-kernel-modules-across-cluster-nodes.html">About the Kernel Module Management Operator</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">About oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">oc-mirror plugin v2</a>
 </li>
 <li><a href="organize-image-versions-with-tags-con_organize-image-versions-with-tags.html">Organize image versions with tags</a>
 </li>
@@ -1931,7 +1895,7 @@ How to fix these errors:
 <p>The following section highlights the supported features of the <code>UserDefinedNetwork</code> and <code>NetworkAttachmentDefinition</code> CRs when used as either the primary or secondary network. A separate table for the <code>ClusterUserDefinedNetwork</code> CR is also included.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 712. Primary network support matrix for <code>UserDefinedNetwork</code> and <code>NetworkAttachmentDefinition</code> CRs</caption>
+<caption class="title">Table 713. Primary network support matrix for <code>UserDefinedNetwork</code> and <code>NetworkAttachmentDefinition</code> CRs</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -2251,7 +2215,7 @@ How to fix these errors:
 </dl>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 713. Secondary network support matrix for <code>UserDefinedNetwork</code> and <code>NetworkAttachmentDefinition</code> CRs</caption>
+<caption class="title">Table 714. Secondary network support matrix for <code>UserDefinedNetwork</code> and <code>NetworkAttachmentDefinition</code> CRs</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2651,7 +2615,7 @@ How to fix these errors:
 <p>The Localnet topology is unavailable for use with the <code>UserDefinedNetwork</code> CR. It is only supported on secondary networks for <code>NetworkAttachmentDefinition</code> CRs.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 714. Support matrix for <code>ClusterUserDefinedNetwork</code> CRs</caption>
+<caption class="title">Table 715. Support matrix for <code>ClusterUserDefinedNetwork</code> CRs</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -3097,7 +3061,7 @@ How to fix these errors:
 <p>The configuration for the API is described in the following table:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 715. <code>NetworkAttachmentDefinition</code> API fields</caption>
+<caption class="title">Table 716. <code>NetworkAttachmentDefinition</code> API fields</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 20%;">
@@ -3319,7 +3283,7 @@ How to fix these errors:
 <p>The following table describes the configuration parameters for the Bond CNI plugin:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 716. Bond CNI plugin JSON configuration object</caption>
+<caption class="title">Table 717. Bond CNI plugin JSON configuration object</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4357,7 +4321,7 @@ worker      rendered-worker-d6c9ca107fba6cd76cdcbfcedcafa0f2      True      Fals
 <p>The following table describes the configuration for static IP address assignment:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 717. <code>ipam</code> static configuration object</caption>
+<caption class="title">Table 718. <code>ipam</code> static configuration object</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4397,7 +4361,7 @@ worker      rendered-worker-d6c9ca107fba6cd76cdcbfcedcafa0f2      True      Fals
 <p>The <code>addresses</code> array requires objects with the following fields:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 718. <code>ipam.addresses[]</code> array</caption>
+<caption class="title">Table 719. <code>ipam.addresses[]</code> array</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4424,7 +4388,7 @@ worker      rendered-worker-d6c9ca107fba6cd76cdcbfcedcafa0f2      True      Fals
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 719. <code>ipam.routes[]</code> array</caption>
+<caption class="title">Table 720. <code>ipam.routes[]</code> array</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4451,7 +4415,7 @@ worker      rendered-worker-d6c9ca107fba6cd76cdcbfcedcafa0f2      True      Fals
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 720. <code>ipam.dns</code> object</caption>
+<caption class="title">Table 721. <code>ipam.dns</code> object</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4570,7 +4534,7 @@ spec:
 <p>The following table describes the configuration objects for dynamic IP address assignment with Whereabouts:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 721. <code>ipam</code> whereabouts configuration parameters</caption>
+<caption class="title">Table 722. <code>ipam</code> whereabouts configuration parameters</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">

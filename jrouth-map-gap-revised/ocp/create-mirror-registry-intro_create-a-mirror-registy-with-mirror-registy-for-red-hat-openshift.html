@@ -477,44 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </style>
 <!-- navmap-right-toc-end -->
-<!-- navmap-preview-warning-start -->
-<style>
-  .navmap-preview-warning {
-    background: #fff1f1;
-    border: 2px solid #c9190b;
-    border-radius: 4px;
-    color: #3b0a0a;
-    font-family: "Open Sans", "DejaVu Sans", sans-serif;
-    margin: 1em auto;
-    max-width: 70em;
-    padding: 1em 1.25em;
-  }
-  .navmap-preview-warning strong { color: #a30000; }
-  .navmap-preview-warning details { margin-top: .75em; }
-  .navmap-preview-warning pre {
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    max-height: 20em;
-    overflow: auto;
-    padding: .75em;
-    white-space: pre-wrap;
-  }
-</style>
-<!-- navmap-preview-warning-end -->
 </head>
-<body id="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift" class="book toc2 toc-left navmap-has-right-toc">
-<div class="navmap-preview-warning" role="alert"><strong>Preview warning: this preview is incomplete.</strong><p>One or more AsciiDoc includes are missing. Content may be absent from this page or from related pages.</p><details><summary>Show missing-include report</summary><pre>Include preflight failed for maps/ocp/navigation.adoc
-
-Missing include targets:
-  maps/ocp/troubleshoot.adoc:53
-    include::ocp-jobs/use-the-vsphere-problem-detector-operator.adoc[leveloffset=+1]
-    expected: maps/ocp/ocp-jobs/use-the-vsphere-problem-detector-operator.adoc
-
-How to fix these errors:
-  1. Restore or create the expected .adoc file, preserving the path relative to the referring map; or
-  2. Change the include directive to the path of the existing source file if the topic was renamed or moved.
-  Then rerun this audit and the preview. Do not ignore the error: Asciidoctor can otherwise generate incomplete HTML.
-</pre></details><details><summary>How to remediate missing content</summary><ol><li>Restore or create the expected <code>.adoc</code> file at the reported path, including its required content and attributes.</li><li>If the topic was renamed or moved, update the reported <code>include::</code> directive to point to the existing file. The path is relative to the file containing the directive.</li><li>If the topic is intentionally not ready, remove the include from the map and track the content gap separately.</li></ol><p>After fixing the includes, rebuild the preview with <code>./preview-map &lt;distro&gt;</code>.</p></details></div>
+<body id="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift" class="book toc2 toc-left navmap-has-right-toc">
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -904,29 +868,29 @@ How to fix these errors:
 </li>
 <li><a href="_disconnected_environments.html">Disconnected environments</a>
 <ul class="sectlevel2">
-<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Understand disconnected environments</a>
+<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Disconnected environment concepts</a>
 </li>
-<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Installing a cluster with the Agent-based Installer</a>
+<li><a href="plan-a-disconnected-installation-intro_plan-a-disconnected-installation.html">Plan a disconnected installation</a>
 </li>
-<li><a href="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html"><span class="toc-current">Prerequisites</span></a>
+<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Install a cluster with the Agent-based Installer</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">About oc-mirror plugin v2</a>
+<li><a href="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html"><span class="toc-current">Create a mirror registry with mirror registry for Red Hat OpenShift</span></a>
 </li>
-<li><a href="prerequisites_mirror-images-to-a-mirror-registry-using-the-oc-adm-release-mirror-command.html">Prerequisites</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a>
 </li>
-<li><a href="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2.html">Changes from oc-mirror plugin v1 to v2</a>
-</li>
-<li><a href="olm-restricted-network-prereqs_manage-olm-operators-in-a-disconnected-environment.html">Prerequisites</a>
+<li><a href="manage-olm-operators-disconnected-intro_manage-olm-operators-in-a-disconnected-environment.html">Manage OLM Operators in a disconnected environment</a>
 </li>
 <li><a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a>
 </li>
-<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Using the OpenShift Update Service in a disconnected environment</a>
+<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Use the OpenShift Update Service in a disconnected environment</a>
 </li>
-<li><a href="updating-cli-prereqs_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Prerequisites for a cluster update</a>
+<li><a href="update-disconnected_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Updating the disconnected cluster</a>
 </li>
-<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstalling the OpenShift Update Service from a cluster</a>
+<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstall the OpenShift Update Service from a cluster</a>
 </li>
-<li><a href="installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected.html">About the mirror registry</a>
+<li><a href="configure-trust-and-mirroring-con_configure-trust-and-mirroring.html">Configure trust and mirroring</a>
+</li>
+<li><a href="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected.html">Convert a connected cluster to disconnected</a>
 </li>
 <li><a href="deploying-hosted-control-planes-in-a-disconnected-environment-intro_deploying-hosted-control-planes-in-a-disconnected-environment.html">Deploying hosted control planes in a disconnected environment</a>
 </li>
@@ -1182,7 +1146,7 @@ How to fix these errors:
 </li>
 <li><a href="about-kmm_manage-kernel-modules-across-cluster-nodes.html">About the Kernel Module Management Operator</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">About oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">oc-mirror plugin v2</a>
 </li>
 <li><a href="organize-image-versions-with-tags-con_organize-image-versions-with-tags.html">Organize image versions with tags</a>
 </li>
@@ -1873,61 +1837,12 @@ How to fix these errors:
 </ul>
 </div>
 </div>
-<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#mirror-registry-introduction_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirror registry for Red Hat OpenShift introduction</a></li><li class="level-5"><a href="#mirror-registry-limitations_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirror registry for Red Hat OpenShift limitations</a></li><li class="level-4"><a href="#configuring-rootless-podman_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Configuring rootless Podman networking</a></li><li class="level-4"><a href="#mirror-registry-localhost_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirroring on a local host with mirror registry for Red Hat OpenShift</a></li><li class="level-4"><a href="#mirror-registry-remote_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirroring on a remote host with mirror registry for Red Hat OpenShift</a></li></ul></aside>
+<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#mirror-registry-introduction_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirror registry for Red Hat OpenShift introduction</a></li><li class="level-5"><a href="#mirror-registry-limitations_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirror registry for Red Hat OpenShift limitations</a></li><li class="level-4"><a href="#prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Prerequisites for creating a mirror registry</a></li><li class="level-4"><a href="#configuring-rootless-podman_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Configuring rootless Podman networking</a></li><li class="level-4"><a href="#mirror-registry-localhost_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirroring on a local host with mirror registry for Red Hat OpenShift</a></li><li class="level-4"><a href="#mirror-registry-remote_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirroring on a remote host with mirror registry for Red Hat OpenShift</a></li></ul></aside>
 <div id="content">
 <div class="sect2">
-<h3 id="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Prerequisites</h3>
+<h3 id="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Create a mirror registry with mirror registry for Red Hat OpenShift</h3>
 <div class="paragraph _abstract">
-<p>There are several prerequisites that you must meet before you can create a mirror registry.</p>
-</div>
-<div class="paragraph">
-<p>The following prerequisites must be met:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>An Red&#160;Hat OpenShift Container Platform subscription.</p>
-</li>
-<li>
-<p>Red&#160;Hat Enterprise Linux (RHEL) 8 and 9 with Podman 3.4.2 or later and OpenSSL installed. If you are using Podman 5.7 or later, see "Configuring rootless Podman networking".</p>
-</li>
-<li>
-<p>Fully qualified domain name for the Red&#160;Hat Quay service, which must resolve through a DNS server.</p>
-</li>
-<li>
-<p>Key-based SSH connectivity on the target host. SSH keys are automatically generated for local installs. For remote hosts, you must generate your own SSH keys.</p>
-</li>
-<li>
-<p>2 or more vCPUs.</p>
-</li>
-<li>
-<p>8 GB of RAM.</p>
-</li>
-<li>
-<p>About 12 GB for Red&#160;Hat OpenShift Container Platform {product-version} release images, or about 358 GB for Red&#160;Hat OpenShift Container Platform {product-version} release images and Red&#160;Hat OpenShift Container Platform {product-version} Red&#160;Hat Operator images.</p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="data:image/png;base64," alt="Important">
-</td>
-<td class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Up to 1 TB per stream or more is suggested.</p>
-</li>
-<li>
-<p>These requirements are based on local testing results with only release images and Operator images. Storage requirements can vary based on your organization&#8217;s needs. You might require more space, for example, when you mirror multiple z-streams. You can use standard <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/use_red_hat_quay/index">Red&#160;Hat Quay functionality</a> or the proper <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/3/html-single/red_hat_quay_api_guide/index#deletefulltag">API callout</a> to remove unnecessary images and free up space.</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ul>
+<p>To mirror container images for a disconnected installation, you need a local container registry. You can deploy the mirror registry for Red&#160;Hat OpenShift to quickly set up a supported registry that meets your mirroring needs.</p>
 </div>
 <div class="sect3">
 <h4 id="mirror-registry-introduction_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Mirror registry for Red Hat OpenShift introduction</h4>
@@ -1987,6 +1902,61 @@ How to fix these errors:
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift">Prerequisites for creating a mirror registry</h4>
+<div class="paragraph _abstract">
+<p>There are several prerequisites that you must meet before you can create a mirror registry.</p>
+</div>
+<div class="paragraph">
+<p>The following prerequisites must be met:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An Red&#160;Hat OpenShift Container Platform subscription.</p>
+</li>
+<li>
+<p>Red&#160;Hat Enterprise Linux (RHEL) 8 and 9 with Podman 3.4.2 or later and OpenSSL installed. If you are using Podman 5.7 or later, see "Configuring rootless Podman networking".</p>
+</li>
+<li>
+<p>Fully qualified domain name for the Red&#160;Hat Quay service, which must resolve through a DNS server.</p>
+</li>
+<li>
+<p>Key-based SSH connectivity on the target host. SSH keys are automatically generated for local installs. For remote hosts, you must generate your own SSH keys.</p>
+</li>
+<li>
+<p>2 or more vCPUs.</p>
+</li>
+<li>
+<p>8 GB of RAM.</p>
+</li>
+<li>
+<p>About 12 GB for Red&#160;Hat OpenShift Container Platform {product-version} release images, or about 358 GB for Red&#160;Hat OpenShift Container Platform {product-version} release images and Red&#160;Hat OpenShift Container Platform {product-version} Red&#160;Hat Operator images.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="data:image/png;base64," alt="Important">
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Up to 1 TB per stream or more is suggested.</p>
+</li>
+<li>
+<p>These requirements are based on local testing results with only release images and Operator images. Storage requirements can vary based on your organization&#8217;s needs. You might require more space, for example, when you mirror multiple z-streams. You can use standard <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/use_red_hat_quay/index">Red&#160;Hat Quay functionality</a> or the proper <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/3/html-single/red_hat_quay_api_guide/index#deletefulltag">API callout</a> to remove unnecessary images and free up space.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
@@ -2230,7 +2200,7 @@ default_rootless_network_cmd = "slirp4netns"
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Installing a cluster with the Agent-based Installer</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">About oc-mirror plugin v2</a> →</p>
+<p>← Previous: <a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Install a cluster with the Agent-based Installer</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a> →</p>
 </div>
 </div>
 <div id="footer">

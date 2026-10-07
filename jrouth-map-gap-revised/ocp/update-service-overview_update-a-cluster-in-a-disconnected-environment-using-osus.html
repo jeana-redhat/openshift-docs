@@ -477,44 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </style>
 <!-- navmap-right-toc-end -->
-<!-- navmap-preview-warning-start -->
-<style>
-  .navmap-preview-warning {
-    background: #fff1f1;
-    border: 2px solid #c9190b;
-    border-radius: 4px;
-    color: #3b0a0a;
-    font-family: "Open Sans", "DejaVu Sans", sans-serif;
-    margin: 1em auto;
-    max-width: 70em;
-    padding: 1em 1.25em;
-  }
-  .navmap-preview-warning strong { color: #a30000; }
-  .navmap-preview-warning details { margin-top: .75em; }
-  .navmap-preview-warning pre {
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    max-height: 20em;
-    overflow: auto;
-    padding: .75em;
-    white-space: pre-wrap;
-  }
-</style>
-<!-- navmap-preview-warning-end -->
 </head>
 <body id="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus" class="book toc2 toc-left navmap-has-right-toc">
-<div class="navmap-preview-warning" role="alert"><strong>Preview warning: this preview is incomplete.</strong><p>One or more AsciiDoc includes are missing. Content may be absent from this page or from related pages.</p><details><summary>Show missing-include report</summary><pre>Include preflight failed for maps/ocp/navigation.adoc
-
-Missing include targets:
-  maps/ocp/troubleshoot.adoc:53
-    include::ocp-jobs/use-the-vsphere-problem-detector-operator.adoc[leveloffset=+1]
-    expected: maps/ocp/ocp-jobs/use-the-vsphere-problem-detector-operator.adoc
-
-How to fix these errors:
-  1. Restore or create the expected .adoc file, preserving the path relative to the referring map; or
-  2. Change the include directive to the path of the existing source file if the topic was renamed or moved.
-  Then rerun this audit and the preview. Do not ignore the error: Asciidoctor can otherwise generate incomplete HTML.
-</pre></details><details><summary>How to remediate missing content</summary><ol><li>Restore or create the expected <code>.adoc</code> file at the reported path, including its required content and attributes.</li><li>If the topic was renamed or moved, update the reported <code>include::</code> directive to point to the existing file. The path is relative to the file containing the directive.</li><li>If the topic is intentionally not ready, remove the include from the map and track the content gap separately.</li></ol><p>After fixing the includes, rebuild the preview with <code>./preview-map &lt;distro&gt;</code>.</p></details></div>
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -904,29 +868,29 @@ How to fix these errors:
 </li>
 <li><a href="_disconnected_environments.html">Disconnected environments</a>
 <ul class="sectlevel2">
-<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Understand disconnected environments</a>
+<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Disconnected environment concepts</a>
 </li>
-<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Installing a cluster with the Agent-based Installer</a>
+<li><a href="plan-a-disconnected-installation-intro_plan-a-disconnected-installation.html">Plan a disconnected installation</a>
 </li>
-<li><a href="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Prerequisites</a>
+<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Install a cluster with the Agent-based Installer</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">About oc-mirror plugin v2</a>
+<li><a href="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Create a mirror registry with mirror registry for Red Hat OpenShift</a>
 </li>
-<li><a href="prerequisites_mirror-images-to-a-mirror-registry-using-the-oc-adm-release-mirror-command.html">Prerequisites</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a>
 </li>
-<li><a href="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2.html">Changes from oc-mirror plugin v1 to v2</a>
-</li>
-<li><a href="olm-restricted-network-prereqs_manage-olm-operators-in-a-disconnected-environment.html">Prerequisites</a>
+<li><a href="manage-olm-operators-disconnected-intro_manage-olm-operators-in-a-disconnected-environment.html">Manage OLM Operators in a disconnected environment</a>
 </li>
 <li><a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a>
 </li>
-<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html"><span class="toc-current">Using the OpenShift Update Service in a disconnected environment</span></a>
+<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html"><span class="toc-current">Use the OpenShift Update Service in a disconnected environment</span></a>
 </li>
-<li><a href="updating-cli-prereqs_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Prerequisites for a cluster update</a>
+<li><a href="update-disconnected_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Updating the disconnected cluster</a>
 </li>
-<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstalling the OpenShift Update Service from a cluster</a>
+<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstall the OpenShift Update Service from a cluster</a>
 </li>
-<li><a href="installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected.html">About the mirror registry</a>
+<li><a href="configure-trust-and-mirroring-con_configure-trust-and-mirroring.html">Configure trust and mirroring</a>
+</li>
+<li><a href="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected.html">Convert a connected cluster to disconnected</a>
 </li>
 <li><a href="deploying-hosted-control-planes-in-a-disconnected-environment-intro_deploying-hosted-control-planes-in-a-disconnected-environment.html">Deploying hosted control planes in a disconnected environment</a>
 </li>
@@ -1182,7 +1146,7 @@ How to fix these errors:
 </li>
 <li><a href="about-kmm_manage-kernel-modules-across-cluster-nodes.html">About the Kernel Module Management Operator</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">About oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">oc-mirror plugin v2</a>
 </li>
 <li><a href="organize-image-versions-with-tags-con_organize-image-versions-with-tags.html">Organize image versions with tags</a>
 </li>
@@ -1876,7 +1840,7 @@ How to fix these errors:
 <aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#registry-configuration-for-update-service_update-a-cluster-in-a-disconnected-environment-using-osus">Configuring access to a secured registry for the OpenShift Update Service</a></li><li class="level-4"><a href="#images-update-global-pull-secret_update-a-cluster-in-a-disconnected-environment-using-osus">Update the global cluster pull secret</a></li><li class="level-4"><a href="#update-service-install_update-a-cluster-in-a-disconnected-environment-using-osus">Installing the OpenShift Update Service Operator</a></li><li class="level-5"><a href="#update-service-install-web-console_update-a-cluster-in-a-disconnected-environment-using-osus">Installing the OpenShift Update Service Operator by using the web console</a></li><li class="level-5"><a href="#update-service-install-cli_update-a-cluster-in-a-disconnected-environment-using-osus">Installing the OpenShift Update Service Operator by using the CLI</a></li><li class="level-4"><a href="#update-service-graph-data_update-a-cluster-in-a-disconnected-environment-using-osus">Creating the OpenShift Update Service graph data container image</a></li><li class="level-4"><a href="#update-service-create-service_update-a-cluster-in-a-disconnected-environment-using-osus">Creating an OpenShift Update Service application</a></li><li class="level-5"><a href="#update-service-create-service-web-console_update-a-cluster-in-a-disconnected-environment-using-osus">Creating an OpenShift Update Service application by using the web console</a></li><li class="level-5"><a href="#update-service-create-service-cli_update-a-cluster-in-a-disconnected-environment-using-osus">Creating an OpenShift Update Service application by using the CLI</a></li><li class="level-4"><a href="#update-service-configure-cvo">Configuring the Cluster Version Operator (CVO)</a></li><li class="level-4"><a href="#verifying-local-osus-installation_update-a-cluster-in-a-disconnected-environment-using-osus">Verifying your local OSUS installation</a></li></ul></aside>
 <div id="content">
 <div class="sect2">
-<h3 id="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus">Using the OpenShift Update Service in a disconnected environment</h3>
+<h3 id="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus">Use the OpenShift Update Service in a disconnected environment</h3>
 <div class="paragraph _abstract">
 <p>The OpenShift Update Service (OSUS) provides update recommendations to Red&#160;Hat OpenShift Container Platform clusters. Red&#160;Hat publicly hosts the OpenShift Update Service, and clusters in a connected environment can connect to the service through public APIs to retrieve update recommendations.</p>
 </div>
@@ -2796,7 +2760,7 @@ For more information about how to update your OLM catalog in a disconnected envi
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="updating-cli-prereqs_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Prerequisites for a cluster update</a> →</p>
+<p>← Previous: <a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="update-disconnected_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Updating the disconnected cluster</a> →</p>
 </div>
 </div>
 <div id="footer">

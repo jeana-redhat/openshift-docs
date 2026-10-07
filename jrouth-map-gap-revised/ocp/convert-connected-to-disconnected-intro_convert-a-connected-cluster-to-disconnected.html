@@ -477,44 +477,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </style>
 <!-- navmap-right-toc-end -->
-<!-- navmap-preview-warning-start -->
-<style>
-  .navmap-preview-warning {
-    background: #fff1f1;
-    border: 2px solid #c9190b;
-    border-radius: 4px;
-    color: #3b0a0a;
-    font-family: "Open Sans", "DejaVu Sans", sans-serif;
-    margin: 1em auto;
-    max-width: 70em;
-    padding: 1em 1.25em;
-  }
-  .navmap-preview-warning strong { color: #a30000; }
-  .navmap-preview-warning details { margin-top: .75em; }
-  .navmap-preview-warning pre {
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    max-height: 20em;
-    overflow: auto;
-    padding: .75em;
-    white-space: pre-wrap;
-  }
-</style>
-<!-- navmap-preview-warning-end -->
 </head>
-<body id="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2" class="book toc2 toc-left navmap-has-right-toc">
-<div class="navmap-preview-warning" role="alert"><strong>Preview warning: this preview is incomplete.</strong><p>One or more AsciiDoc includes are missing. Content may be absent from this page or from related pages.</p><details><summary>Show missing-include report</summary><pre>Include preflight failed for maps/ocp/navigation.adoc
-
-Missing include targets:
-  maps/ocp/troubleshoot.adoc:53
-    include::ocp-jobs/use-the-vsphere-problem-detector-operator.adoc[leveloffset=+1]
-    expected: maps/ocp/ocp-jobs/use-the-vsphere-problem-detector-operator.adoc
-
-How to fix these errors:
-  1. Restore or create the expected .adoc file, preserving the path relative to the referring map; or
-  2. Change the include directive to the path of the existing source file if the topic was renamed or moved.
-  Then rerun this audit and the preview. Do not ignore the error: Asciidoctor can otherwise generate incomplete HTML.
-</pre></details><details><summary>How to remediate missing content</summary><ol><li>Restore or create the expected <code>.adoc</code> file at the reported path, including its required content and attributes.</li><li>If the topic was renamed or moved, update the reported <code>include::</code> directive to point to the existing file. The path is relative to the file containing the directive.</li><li>If the topic is intentionally not ready, remove the include from the map and track the content gap separately.</li></ol><p>After fixing the includes, rebuild the preview with <code>./preview-map &lt;distro&gt;</code>.</p></details></div>
+<body id="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected" class="book toc2 toc-left navmap-has-right-toc">
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -904,29 +868,29 @@ How to fix these errors:
 </li>
 <li><a href="_disconnected_environments.html">Disconnected environments</a>
 <ul class="sectlevel2">
-<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Understand disconnected environments</a>
+<li><a href="understand-disconnected-environments-intro_understand-disconnected-environments.html">Disconnected environment concepts</a>
 </li>
-<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Installing a cluster with the Agent-based Installer</a>
+<li><a href="plan-a-disconnected-installation-intro_plan-a-disconnected-installation.html">Plan a disconnected installation</a>
 </li>
-<li><a href="prerequisites_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Prerequisites</a>
+<li><a href="installing-agent_install-a-cluster-in-a-disconnected-environment.html">Install a cluster with the Agent-based Installer</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">About oc-mirror plugin v2</a>
+<li><a href="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Create a mirror registry with mirror registry for Red Hat OpenShift</a>
 </li>
-<li><a href="prerequisites_mirror-images-to-a-mirror-registry-using-the-oc-adm-release-mirror-command.html">Prerequisites</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a>
 </li>
-<li><a href="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2.html"><span class="toc-current">Changes from oc-mirror plugin v1 to v2</span></a>
-</li>
-<li><a href="olm-restricted-network-prereqs_manage-olm-operators-in-a-disconnected-environment.html">Prerequisites</a>
+<li><a href="manage-olm-operators-disconnected-intro_manage-olm-operators-in-a-disconnected-environment.html">Manage OLM Operators in a disconnected environment</a>
 </li>
 <li><a href="mirror-images-for-a-cluster-update-in-a-disconnected-environment-intro_mirror-images-for-a-cluster-update-in-a-disconnected-environment.html">Mirror images for a cluster update in a disconnected environment</a>
 </li>
-<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Using the OpenShift Update Service in a disconnected environment</a>
+<li><a href="update-service-overview_update-a-cluster-in-a-disconnected-environment-using-osus.html">Use the OpenShift Update Service in a disconnected environment</a>
 </li>
-<li><a href="updating-cli-prereqs_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Prerequisites for a cluster update</a>
+<li><a href="update-disconnected_update-a-cluster-in-a-disconnected-environment-without-using-osus.html">Updating the disconnected cluster</a>
 </li>
-<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstalling the OpenShift Update Service from a cluster</a>
+<li><a href="about-disconnected-updates-uninstalling-osus_uninstall-osus-from-a-cluster.html">Uninstall the OpenShift Update Service from a cluster</a>
 </li>
-<li><a href="installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected.html">About the mirror registry</a>
+<li><a href="configure-trust-and-mirroring-con_configure-trust-and-mirroring.html">Configure trust and mirroring</a>
+</li>
+<li><a href="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected.html"><span class="toc-current">Convert a connected cluster to disconnected</span></a>
 </li>
 <li><a href="deploying-hosted-control-planes-in-a-disconnected-environment-intro_deploying-hosted-control-planes-in-a-disconnected-environment.html">Deploying hosted control planes in a disconnected environment</a>
 </li>
@@ -1182,7 +1146,7 @@ How to fix these errors:
 </li>
 <li><a href="about-kmm_manage-kernel-modules-across-cluster-nodes.html">About the Kernel Module Management Operator</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">About oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">oc-mirror plugin v2</a>
 </li>
 <li><a href="organize-image-versions-with-tags-con_organize-image-versions-with-tags.html">Organize image versions with tags</a>
 </li>
@@ -1873,37 +1837,46 @@ How to fix these errors:
 </ul>
 </div>
 </div>
-<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#oc-mirror-migration-process_migrate-from-oc-mirror-v1-to-v2">Migrating to oc-mirror plugin v2</a></li></ul></aside>
+<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected">Mirror registry</a></li><li class="level-4"><a href="#prerequisites_connected-to-disconnected_convert-a-connected-cluster-to-disconnected">Prerequisites for converting a connected cluster to a disconnected cluster</a></li><li class="level-4"><a href="#connected-to-disconnected-prepare-mirror_convert-a-connected-cluster-to-disconnected">Preparing the cluster for mirroring</a></li><li class="level-4"><a href="#connected-to-disconnected-mirror-images_convert-a-connected-cluster-to-disconnected">Mirroring the images</a></li><li class="level-4"><a href="#connected-to-disconnected-config-registry_convert-a-connected-cluster-to-disconnected">Configuring the cluster for the mirror registry</a></li><li class="level-4"><a href="#connected-to-disconnected-verify_convert-a-connected-cluster-to-disconnected">Ensure applications continue to work</a></li><li class="level-4"><a href="#connected-to-disconnected-disconnect_convert-a-connected-cluster-to-disconnected">Disconnect the cluster from the network</a></li><li class="level-4"><a href="#connected-to-disconnected-restore-insights_convert-a-connected-cluster-to-disconnected">Restoring a degraded Insights Operator</a></li><li class="level-4"><a href="#connected-to-disconnected-restore_convert-a-connected-cluster-to-disconnected">Restoring the network</a></li></ul></aside>
 <div id="content">
 <div class="sect2">
-<h3 id="oc-mirror-migration-differences_migrate-from-oc-mirror-v1-to-v2">Changes from oc-mirror plugin v1 to v2</h3>
+<h3 id="convert-connected-to-disconnected-intro_convert-a-connected-cluster-to-disconnected">Convert a connected cluster to disconnected</h3>
 <div class="paragraph _abstract">
-<p>Before migrating from oc-mirror plugin v1 to v2, you must review the updated mirroring workflow commands, which have changed to align with the new v2 workflow.</p>
+<p>After you install a cluster in a connected environment and prepare the required resources, you can disconnect the cluster from the internet. Converting to a disconnected environment lets you manage the cluster without external network access.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>For mirror-to-disk, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror --config isc.yaml file://&lt;directory_name&gt; --v2</code></pre>
+<div class="sect3">
+<h4 id="installation-about-mirror-registry_convert-a-connected-cluster-to-disconnected">Mirror registry</h4>
+<div class="paragraph _abstract">
+<p>You must have access to the internet to obtain the necessary container images. Using an alternative registry means that you place the mirror registry on a mirror host that has access to both your network and the internet.</p>
 </div>
+<div class="paragraph">
+<p>You can mirror the images that are required for Red&#160;Hat OpenShift Container Platform installation and subsequent product updates to a container mirror registry such as Red&#160;Hat Quay, JFrog Artifactory, Sonatype Nexus Repository, or Harbor. If you do not have access to a large-scale container registry, you can use the <em>mirror registry for Red&#160;Hat OpenShift</em>, a small-scale container registry included with Red&#160;Hat OpenShift Container Platform subscriptions.</p>
 </div>
-</li>
-<li>
-<p>For disk-to-mirror, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror --config isc.yaml --from file://&lt;directory_name&gt; docker://&lt;remote_registry&gt; --v2</code></pre>
+<div class="paragraph">
+<p>You can use any container registry that supports Docker v2-2, such as Red&#160;Hat Quay, the <em>mirror registry for Red&#160;Hat OpenShift</em>, Artifactory, Sonatype Nexus Repository, or Harbor. Regardless of your chosen registry, the procedure to mirror content from Red Hat hosted sites on the internet to an isolated image registry is the same. After you mirror the content, you configure each cluster to retrieve this content from your mirror registry.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="data:image/png;base64," alt="Important">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The OpenShift image registry cannot be used as the target registry because it does not support pushing without a tag, which is required during the mirroring process.</p>
 </div>
-</li>
-<li>
-<p>For mirror-to-mirror, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror --config isc.yaml --workspace file://&lt;directory_name&gt; docker://&lt;remote_registry&gt; --v2</code></pre>
+</td>
+</tr>
+</table>
 </div>
+<div class="paragraph">
+<p>If choosing a container registry that is not the <em>mirror registry for Red&#160;Hat OpenShift</em>, it must be reachable by every machine in the clusters that you provision. If the registry is unreachable, installation, updating, or normal operations such as workload relocation might fail. For that reason, you must run mirror registries in a highly available way, and the mirror registries must at least match the production availability of your Red&#160;Hat OpenShift Container Platform clusters.</p>
+</div>
+<div class="paragraph">
+<p>When you populate your mirror registry with Red&#160;Hat OpenShift Container Platform images, you can follow two scenarios. If you have a host that can access both the internet and your mirror registry, but not your cluster nodes, you can directly mirror the content from that machine. This process is referred to as <em>connected mirroring</em>. If you have no such host, you must mirror the images to a file system and then bring that host or removable media into your restricted environment. This process is referred to as <em>disconnected mirroring</em>.</p>
+</div>
+<div class="paragraph">
+<p>For mirrored registries, to view the source of pulled images, you must review the <code>Trying to access</code> log entry in the CRI-O logs. Other methods to view the image pull source, such as using the <code>crictl images</code> command on a node, show the non-mirrored image name, even though the image is pulled from the mirrored location.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1913,253 +1886,187 @@ How to fix these errors:
 </td>
 <td class="content">
 <div class="paragraph">
-<p><code>--workspace</code> is now required for mirror-to-mirror operation.</p>
+<p>Red&#160;Hat does not test third party registries with Red&#160;Hat OpenShift Container Platform.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>API version update: The <code>ImageSetConfiguration</code> API version changes from <code>v1alpha2</code> (v1) to <code>v2alpha1</code> (v2). You must manually update the configuration files before migration.</p>
-</li>
-<li>
-<p>Configuration changes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>storageConfig</code> must be removed in oc-mirror plugin v2.</p>
-</li>
-<li>
-<p>Incremental mirroring is now handled automatically through the working directory or local cache.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Changes in results directory: All custom resources to be applied to the disconnected cluster are generated in the <code>&lt;workspace_path&gt;/working-dir/cluster-resources</code> directory after the migration.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Outputs in oc-mirror plugin v2 are not stored in the same location as oc-mirror plugin v1.</p>
-</li>
-<li>
-<p>You must check the <code>cluster-resources</code> folder under the working directory for the following resources:</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><code>ImageDigestMirrorSet</code> (IDMS)</p>
-</li>
-<li>
-<p><code>ImageTagMirrorSet</code> (ITMS)</p>
-</li>
-<li>
-<p><code>CatalogSource</code></p>
-</li>
-<li>
-<p><code>ClusterCatalog</code></p>
-</li>
-<li>
-<p><code>UpdateService</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Workspace and directory naming: Follow the new oc-mirror v2 convention to prevent any potential data inconsistencies when transitioning between versions.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The oc-mirror plugin v1 <code>oc-mirror-workspace</code> directory is no longer needed.</p>
-</li>
-<li>
-<p>Use a new directory for oc-mirror plugin v2 to avoid conflicts.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Replacing <code>ImageContentSourcePolicy</code> (ICSP) resources with IDMS/ITMS:</p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="data:image/png;base64," alt="Important">
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Deleting all <code>ImageContentSourcePolicy</code> (ICSP) resources might remove configurations unrelated to oc-mirror.</p>
-</div>
-<div class="paragraph">
-<p>To avoid unintended deletions, identify ICSP resources generated by oc-mirror before removing them. If you are unsure, check with your cluster administrator. For more information, see "Mirroring images for a disconnected installation by using the oc-mirror plugin v2".</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>In oc-mirror plugin v2, the ICSP resource is replaced by <code>ImageDigestMirrorSet</code> (IDMS) and <code>ImageTagMirrorSet</code> (ITMS) resources.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
 </div>
 <div class="sect3">
-<h4 id="oc-mirror-migration-process_migrate-from-oc-mirror-v1-to-v2">Migrating to oc-mirror plugin v2</h4>
+<h4 id="prerequisites_connected-to-disconnected_convert-a-connected-cluster-to-disconnected">Prerequisites for converting a connected cluster to a disconnected cluster</h4>
 <div class="paragraph _abstract">
-<p>To migrate from oc-mirror plugin v1 to v2, you must manually update the <code>ImageSetConfiguration</code> file, modify mirroring commands, and clean up v1 artifacts.</p>
+<p>You must meet several prerequisites before converting a connected cluster to a disconnected cluster.</p>
+</div>
+<div class="paragraph">
+<p>The following prerequisites must be met:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>oc</code> client is installed.</p>
+</li>
+<li>
+<p>A running cluster.</p>
+</li>
+<li>
+<p>An installed mirror registry, which is a container image registry that supports Docker v2-2 in the location that will host the Red&#160;Hat OpenShift Container Platform cluster, such as one of the following registries:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Red&#160;Hat Quay</p>
+</li>
+<li>
+<p>JFrog Artifactory</p>
+</li>
+<li>
+<p>Sonatype Nexus Repository</p>
+</li>
+<li>
+<p>Harbor</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>If you have a subscription to Red&#160;Hat Quay, see the documentation on "Deploying Red&#160;Hat Quay for proof-of-concept purposes" or "Deploying Red&#160;Hat Quay by using the Quay Operator".</p>
+</div>
+</li>
+<li>
+<p>The mirror repository must be configured to share images. For example, a Red&#160;Hat Quay repository requires organizations to share images. For more information, see the "Red&#160;Hat Quay documentation on organizations".</p>
+</li>
+<li>
+<p>Access to the internet to obtain the necessary container images.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-prepare-mirror_convert-a-connected-cluster-to-disconnected">Preparing the cluster for mirroring</h4>
+<div class="paragraph _abstract">
+<p>Before disconnecting your cluster, you must mirror, or copy, the images to a mirror registry that is reachable by every node in your disconnected cluster.</p>
+</div>
+<div class="paragraph">
+<p>To mirror the images, you must prepare your cluster by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adding the mirror registry certificates to the list of trusted CAs on your host.</p>
+</li>
+<li>
+<p>Creating a <code>.dockerconfigjson</code> file that contains your image pull secret, which is from the <code>cloud.openshift.com</code> token.</p>
+</li>
+</ul>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Modify the API version and remove deprecated fields in your <code>ImageSetConfiguration</code>.</p>
-<div class="listingblock">
-<div class="title">Example <code>ImageSetConfiguration</code> file with oc-mirror plugin v1 configuration</div>
-<div class="content">
-<pre class="highlight"><code class="language-yaml" data-lang="yaml">kind: ImageSetConfiguration
-apiVersion: mirror.openshift.io/v1alpha2
-mirror:
-  platform:
-    channels:
-      - name: stable-4.17
-    graph: true
-  helm:
-    repositories:
-      - name: sbo
-        url: https://redhat-developer.github.io/service-binding-operator-helm-chart/
-  additionalImages:
-    - name: registry.redhat.io/ubi8/ubi:latest
-    - name: quay.io/openshifttest/hello-openshift@sha256:example_hash
-  operators:
-    - catalog: oci:///test/redhat-operator-index
-      packages:
-        - name: aws-load-balancer-operator
-storageConfig:  # REMOVE this field in v2
-  local:
-    path: /var/lib/oc-mirror</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Example <code>ImageSetConfiguration</code> file with oc-mirror plugin v2 configuration</div>
-<div class="content">
-<pre class="highlight"><code class="language-yaml" data-lang="yaml">kind: ImageSetConfiguration
-apiVersion: mirror.openshift.io/v2alpha1
-mirror:
-  platform:
-    channels:
-      - name: stable-4.17
-    graph: true
-  helm:
-    repositories:
-      - name: sbo
-        url: https://redhat-developer.github.io/service-binding-operator-helm-chart/
-  additionalImages:
-    - name: registry.redhat.io/ubi8/ubi:latest
-    - name: quay.io/openshifttest/hello-openshift@sha256:example_hash
-  operators:
-    - catalog: oci:///test/redhat-operator-index
-      packages:
-        - name: aws-load-balancer-operator</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="data:image/png;base64," alt="Note">
-</td>
-<td class="content">
-<div class="paragraph">
-<p>When migrating from oc-mirror plugin v1 to v2, you must use explicit registry hostnames for all images listed under <code>additionalImages</code>. Otherwise, images are mirrored to incorrect target paths.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Check the <code>cluster-resources</code> directory inside the working directory for IDMS, ITMS, <code>CatalogSource</code>, and <code>ClusterCatalog</code> resources by running the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ ls &lt;v2_workspace&gt;/working-dir/cluster-resources/</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Once the migration is complete, verify that mirrored images and catalogs are available:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Ensure that no errors or warnings occurred during mirroring.</p>
-</li>
-<li>
-<p>Ensure that no error file was generated (<code>working-dir/logs/mirroring_errors_YYYYMMdd_HHmmss.txt</code>).</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Verify that mirrored images and catalogs are available using the following the commands:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get catalogsource -n openshift-marketplace</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get imagedigestmirrorset,imagetagmirrorset</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For more information, refer to "Mirroring images for a disconnected installation using oc-mirror plugin v2".</p>
-</div>
-</li>
-<li>
-<p>Optional: Remove images mirrored using oc-mirror plugin v1:</p>
+<p>Configuring credentials that allow image mirroring:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Mirror the images using oc-mirror plugin v1.</p>
-</li>
-<li>
-<p>Update the API version in the <code>ImageSetConfiguration</code> file from <code>v1alpha2</code> (v1) to <code>v2alpha1</code> (v2), then run the following command:</p>
+<p>Add the CA certificate for the mirror registry, in the simple PEM or DER file formats, to the list of trusted CAs. For example:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror -c isc.yaml file://some-dir --v2</code></pre>
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ cp &lt;/path/to/cert.crt&gt; /usr/share/pki/ca-trust-source/anchors/</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="data:image/png;base64," alt="Note">
-</td>
-<td class="content">
+<div class="openblock">
+<div class="content">
 <div class="paragraph">
-<p><code>storageConfig</code> is not a valid field in the <code>ImageSetConfiguration</code> and <code>DeleteImageSetConfiguration</code> files. Remove this field when updating to oc-mirror plugin v2.</p>
+<p>where:</p>
 </div>
-</td>
-</tr>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>&lt;/path/to/cert.crt&gt;</code></dt>
+<dd>
+<p>Specifies the path to the certificate on your local file system.</p>
+</dd>
+</dl>
+</div>
+</div>
 </div>
 </li>
 <li>
-<p>Generate a delete manifest and delete v1 images by running the following command:</p>
+<p>Update the CA trust. For example, in Linux:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror delete --config=delete-isc.yaml --generate --delete-v1-images --workspace file://some-dir docker://registry.example:5000  --v2</code></pre>
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ update-ca-trust</code></pre>
 </div>
+</div>
+</li>
+<li>
+<p>Extract the <code>.dockerconfigjson</code> file from the global pull secret:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc extract secret/pull-secret -n openshift-config --confirm --to=.</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">.dockerconfigjson</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Edit the <code>.dockerconfigjson</code> file to add your mirror registry and authentication credentials and save it as a new file:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">{"auths":{"&lt;local_registry&gt;": {"auth": "&lt;credentials&gt;","email": "you@example.com"},"&lt;registry&gt;:&lt;port&gt;/&lt;namespace&gt;/":{"auth":"&lt;token&gt;"}}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>&lt;local_registry&gt;</code></dt>
+<dd>
+<p>Specifies the registry domain name, and optionally the port, that your mirror registry uses to serve content.</p>
+</dd>
+<dt class="hdlist1"><code>auth</code></dt>
+<dd>
+<p>Specifies the base64-encoded user name and password for your mirror registry.</p>
+</dd>
+<dt class="hdlist1"><code>&lt;registry&gt;:&lt;port&gt;/&lt;namespace&gt;</code></dt>
+<dd>
+<p>Specifies the mirror registry details.</p>
+</dd>
+<dt class="hdlist1"><code>&lt;token&gt;</code></dt>
+<dd>
+<p>Specifies  the base64-encoded <code>username:password</code> for your mirror registry.</p>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ {"auths":{"cloud.openshift.com":{"auth":"b3BlbnNoaWZ0Y3UjhGOVZPT0lOMEFaUjdPUzRGTA==","email":"user@example.com"},
+"quay.io":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGOVZPT0lOMEFaUGSTd4VGVGVUjdPUzRGTA==","email":"user@example.com"},
+"registry.connect.redhat.com"{"auth":"NTE3MTMwNDB8dWhjLTFEZlN3VHkxOSTd4VGVGVU1MdTpleUpoYkdjaUailA==","email":"user@example.com"},
+"registry.redhat.io":{"auth":"NTE3MTMwNDB8dWhjLTFEZlN3VH3BGSTd4VGVGVU1MdTpleUpoYkdjaU9fZw==","email":"user@example.com"},
+"registry.svc.ci.openshift.org":{"auth":"dXNlcjpyWjAwWVFjSEJiT2RKVW1pSmg4dW92dGp1SXRxQ3RGN1pwajJhN1ZXeTRV"},"my-registry:5000/my-namespace/":{"auth":"dXNlcm5hbWU6cGFzc3dvcmQ="}}}</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-mirror-images_convert-a-connected-cluster-to-disconnected">Mirroring the images</h4>
+<div class="paragraph _abstract">
+<p>After the cluster is properly configured, you can mirror the images from your external repositories to the mirror repository.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -2169,25 +2076,639 @@ mirror:
 </td>
 <td class="content">
 <div class="paragraph">
-<p>oc-mirror plugin v2 does not automatically prune the destination registry, unlike oc-mirror plugin v1. To clean up images that are no longer needed, use the delete functionality in v2 with the <code>--delete-v1-images</code> command flag.</p>
+<p>The <code>oc adm release mirror</code> command is deprecated as of Red&#160;Hat OpenShift Container Platform 4.22 and will be removed in a future release.</p>
 </div>
 <div class="paragraph">
-<p>Once all images mirrored with oc-mirror plugin v1 are removed, you no longer need to use this flag. If you need to delete images mirrored with oc-mirror plugin v2, do not set <code>--delete-v1-images</code>.</p>
+<p>As an alternative, use the oc-mirror plugin v2.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Mirror the Operator Lifecycle Manager (OLM) images:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm catalog mirror registry.redhat.io/redhat/redhat-operator-index:v{product-version} &lt;mirror_registry&gt;:&lt;port&gt;/olm -a &lt;reg_creds&gt;</code></pre>
+</div>
+</div>
+<div class="openblock">
+<div class="content">
 <div class="paragraph">
-<p>For more information about deleting images, see "Deletion of images from your disconnected environment".</p>
+<p>where:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>product-version</code></dt>
+<dd>
+<p>Specifies the tag that corresponds to the version of Red&#160;Hat OpenShift Container Platform to install, such as <code>4.8</code>.</p>
+</dd>
+<dt class="hdlist1"><code>mirror_registry</code></dt>
+<dd>
+<p>Specifies the fully qualified domain name (FQDN) for the target registry and namespace to mirror the Operator content to, where <code>&lt;namespace&gt;</code> is any existing namespace on the registry.</p>
+</dd>
+<dt class="hdlist1"><code>reg_creds</code></dt>
+<dd>
+<p>Specifies the location of your modified <code>.dockerconfigjson</code> file.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm catalog mirror registry.redhat.io/redhat/redhat-operator-index:v4.8 mirror.registry.com:443/olm -a ./.dockerconfigjson  --index-filter-by-os='.*'</code></pre>
+</div>
 </div>
 </li>
 <li>
-<p>Delete images based on the generated manifest by running the following command:</p>
+<p>Mirror the content for any other Red Hat-provided Operator:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc-mirror delete --delete-yaml-file some-dir/working-dir/delete/delete-images.yaml docker://registry.example:5000 --v2</code></pre>
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm catalog mirror &lt;index_image&gt; &lt;mirror_registry&gt;:&lt;port&gt;/&lt;namespace&gt; -a &lt;reg_creds&gt;</code></pre>
 </div>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>where:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>index_image</code></dt>
+<dd>
+<p>Specifies the index image for the catalog that you want to mirror.</p>
+</dd>
+<dt class="hdlist1"><code>mirror_registry</code></dt>
+<dd>
+<p>Specifies the FQDN for the target registry and namespace to mirror the Operator content to, where <code>&lt;namespace&gt;</code> is any existing namespace on the registry.</p>
+</dd>
+<dt class="hdlist1"><code>reg_creds</code></dt>
+<dd>
+<p>Optional: Specifies the location of your registry credentials file, if required.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm catalog mirror registry.redhat.io/redhat/community-operator-index:v4.8 mirror.registry.com:443/olm -a ./.dockerconfigjson  --index-filter-by-os='.*'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Mirror the Red&#160;Hat OpenShift Container Platform image repository:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm release mirror -a .dockerconfigjson --from=quay.io/openshift-release-dev/ocp-release:v&lt;product-version&gt;-&lt;architecture&gt; --to=&lt;local_registry&gt;/&lt;local_repository&gt; --to-release-image=&lt;local_registry&gt;/&lt;local_repository&gt;:v&lt;product-version&gt;-&lt;architecture&gt;</code></pre>
+</div>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>where:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>product-version</code></dt>
+<dd>
+<p>Specifies the tag that corresponds to the version of Red&#160;Hat OpenShift Container Platform to install, such as <code>4.8.15-x86_64</code>.</p>
+</dd>
+<dt class="hdlist1"><code>architecture</code></dt>
+<dd>
+<p>Specifies the type of architecture for your server, such as <code>x86_64</code>.</p>
+</dd>
+<dt class="hdlist1"><code>local_registry</code></dt>
+<dd>
+<p>Specifies the registry domain name for your mirror repository.</p>
+</dd>
+<dt class="hdlist1"><code>local_repository</code></dt>
+<dd>
+<p>Specifies the name of the repository to create in your registry, such as <code>ocp4/openshift4</code>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm release mirror -a .dockerconfigjson --from=quay.io/openshift-release-dev/ocp-release:4.8.15-x86_64 --to=mirror.registry.com:443/ocp/release --to-release-image=mirror.registry.com:443/ocp/release:4.8.15-x86_64</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">info: Mirroring 109 images to mirror.registry.com/ocp/release ...
+mirror.registry.com:443/
+  ocp/release
+	manifests:
+  	sha256:086224cadce475029065a0efc5244923f43fb9bb3bb47637e0aaf1f32b9cad47 -&gt; 4.8.15-x86_64-thanos
+  	sha256:0a214f12737cb1cfbec473cc301aa2c289d4837224c9603e99d1e90fc00328db -&gt; 4.8.15-x86_64-kuryr-controller
+  	sha256:0cf5fd36ac4b95f9de506623b902118a90ff17a07b663aad5d57c425ca44038c -&gt; 4.8.15-x86_64-pod
+  	sha256:0d1c356c26d6e5945a488ab2b050b75a8b838fc948a75c0fa13a9084974680cb -&gt; 4.8.15-x86_64-kube-client-agent
+
+…..
+sha256:66e37d2532607e6c91eedf23b9600b4db904ce68e92b43c43d5b417ca6c8e63c mirror.registry.com:443/ocp/release:4.5.41-multus-admission-controller
+sha256:d36efdbf8d5b2cbc4dcdbd64297107d88a31ef6b0ec4a39695915c10db4973f1 mirror.registry.com:443/ocp/release:4.5.41-cluster-kube-scheduler-operator
+sha256:bd1baa5c8239b23ecdf76819ddb63cd1cd6091119fecdbf1a0db1fb3760321a2 mirror.registry.com:443/ocp/release:4.5.41-aws-machine-controllers
+info: Mirroring completed in 2.02s (0B/s)
+
+Success
+Update image:  mirror.registry.com:443/ocp/release:4.5.41-x86_64
+Mirror prefix: mirror.registry.com:443/ocp/release</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Mirror any other registries, as needed:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc image mirror &lt;online_registry&gt;/my/image:latest &lt;mirror_registry&gt;</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-config-registry_convert-a-connected-cluster-to-disconnected">Configuring the cluster for the mirror registry</h4>
+<div class="paragraph _abstract">
+<p>After creating and mirroring the images to the mirror registry, you must modify your cluster so that pods can pull images from the mirror registry.</p>
+</div>
+<div class="paragraph">
+<p>You must:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add the mirror registry credentials to the global pull secret.</p>
+</li>
+<li>
+<p>Add the mirror registry server certificate to the cluster.</p>
+</li>
+<li>
+<p>Create an <code>ImageContentSourcePolicy</code> custom resource (ICSP), which associates the mirror registry with the source registry.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Add mirror registry credential to the cluster global pull-secret:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=&lt;pull_secret_location&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For <code>&lt;pull_secret_location&gt;</code>, provide the path to the new pull secret file.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=.mirrorsecretconfigjson</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the CA-signed mirror registry server certificate to the nodes in the cluster:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Create a config map that includes the server certificate for the mirror registry:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc create configmap &lt;config_map_name&gt; --from-file=&lt;mirror_address_host&gt;..&lt;port&gt;=$path/ca.crt -n openshift-config</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc create configmap registry-config --from-file=mirror.registry.com..443=/root/certs/ca-chain.cert.pem -n openshift-config</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the config map to update the <code>image.config.openshift.io/cluster</code> custom resource (CR). Red&#160;Hat OpenShift Container Platform applies the changes to this CR to all nodes in the cluster:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc patch image.config.openshift.io/cluster --patch '{"spec":{"additionalTrustedCA":{"name":"&lt;config_map_name&gt;"}}}' --type=merge</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc patch image.config.openshift.io/cluster --patch '{"spec":{"additionalTrustedCA":{"name":"registry-config"}}}' --type=merge</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create an ICSP to redirect container pull requests from the online registries to the mirror registry:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Create the <code>ImageContentSourcePolicy</code> custom resource:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: mirror-ocp
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - mirror.registry.com:443/ocp/release
+    source: quay.io/openshift-release-dev/ocp-release
+  - mirrors:
+    - mirror.registry.com:443/ocp/release
+    source: quay.io/openshift-release-dev/ocp-v4.0-art-dev</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>spec.mirrors</code></dt>
+<dd>
+<p>Specifies the name of the mirror image registry and repository.</p>
+</dd>
+<dt class="hdlist1"><code>spec.source</code></dt>
+<dd>
+<p>Specifies the online registry and repository containing the content that is mirrored.</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>Create the ICSP object:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc create -f registryrepomirror.yaml</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">imagecontentsourcepolicy.operator.openshift.io/mirror-ocp created</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Red&#160;Hat OpenShift Container Platform applies the changes to this CR to all nodes in the cluster.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Verify that the credentials, CA, and ICSP for mirror registry are added:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Log in to a node:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc debug node/&lt;node_name&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set <code>/host</code> as the root directory within the debug shell:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# chroot /host</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check the <code>config.json</code> file for the credentials:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# cat /var/lib/kubelet/config.json</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">{"auths":{"brew.registry.redhat.io":{"xx=="},"brewregistry.stage.redhat.io":{"auth":"xxx=="},"mirror.registry.com:443":{"auth":"xx="}}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ensure that the mirror registry and credentials are present.</p>
+</div>
+</li>
+<li>
+<p>Change to the <code>certs.d</code> directory:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# cd /etc/docker/certs.d/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>List the certificates in the <code>certs.d</code> directory:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# ls</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">image-registry.openshift-image-registry.svc.cluster.local:5000
+image-registry.openshift-image-registry.svc:5000
+mirror.registry.com:443</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For <code>mirror.registry.com:443</code>, ensure that the mirror registry is in the list.</p>
+</div>
+</li>
+<li>
+<p>Check that the ICSP added the mirror registry to the <code>registries.conf</code> file:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# cat /etc/containers/registries.conf</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
+
+[[registry]]
+  prefix = ""
+  location = "quay.io/openshift-release-dev/ocp-release"
+  mirror-by-digest-only = true
+
+  [[registry.mirror]]
+    location = "mirror.registry.com:443/ocp/release"
+
+[[registry]]
+  prefix = ""
+  location = "quay.io/openshift-release-dev/ocp-v4.0-art-dev"
+  mirror-by-digest-only = true
+
+  [[registry.mirror]]
+    location = "mirror.registry.com:443/ocp/release"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>registry.mirror</code> parameters indicate that the mirror registry is searched before the original registry.</p>
+</div>
+</li>
+<li>
+<p>Exit the node.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# exit</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-verify_convert-a-connected-cluster-to-disconnected">Ensure applications continue to work</h4>
+<div class="paragraph _abstract">
+<p>Before disconnecting the cluster from the network, ensure that your cluster is working as expected and all of your applications are working as expected.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Use the following commands to check the status of your cluster:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ensure your pods are running:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get pods --all-namespaces</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">NAMESPACE                                          NAME                                                          READY   STATUS      RESTARTS   AGE
+kube-system                                        apiserver-watcher-ci-ln-47ltxtb-f76d1-mrffg-master-0          1/1     Running     0          39m
+kube-system                                        apiserver-watcher-ci-ln-47ltxtb-f76d1-mrffg-master-1          1/1     Running     0          39m
+kube-system                                        apiserver-watcher-ci-ln-47ltxtb-f76d1-mrffg-master-2          1/1     Running     0          39m
+openshift-apiserver-operator                       openshift-apiserver-operator-79c7c646fd-5rvr5                 1/1     Running     3          45m
+openshift-apiserver                                apiserver-b944c4645-q694g                                     2/2     Running     0          29m
+openshift-apiserver                                apiserver-b944c4645-shdxb                                     2/2     Running     0          31m
+openshift-apiserver                                apiserver-b944c4645-x7rf2                                     2/2     Running     0          33m
+ ...</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Ensure your nodes are in the READY status:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get nodes</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">NAME                                       STATUS   ROLES    AGE   VERSION
+ci-ln-47ltxtb-f76d1-mrffg-master-0         Ready    master   42m   v1.36.3
+ci-ln-47ltxtb-f76d1-mrffg-master-1         Ready    master   42m   v1.36.3
+ci-ln-47ltxtb-f76d1-mrffg-master-2         Ready    master   42m   v1.36.3
+ci-ln-47ltxtb-f76d1-mrffg-worker-a-gsxbz   Ready    worker   35m   v1.36.3
+ci-ln-47ltxtb-f76d1-mrffg-worker-b-5qqdx   Ready    worker   35m   v1.36.3
+ci-ln-47ltxtb-f76d1-mrffg-worker-c-rjkpq   Ready    worker   34m   v1.36.3</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-disconnect_convert-a-connected-cluster-to-disconnected">Disconnect the cluster from the network</h4>
+<div class="paragraph _abstract">
+<p>After mirroring all the required repositories and configuring your cluster to work as a disconnected cluster, you can disconnect the cluster from the network.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="data:image/png;base64," alt="Note">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Insights Operator is degraded when the cluster loses its Internet connection. You can avoid this problem by temporarily disabling the Insights Operator until you can restore it. For more information, see "Disabling the Insights Operator".</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-restore-insights_convert-a-connected-cluster-to-disconnected">Restoring a degraded Insights Operator</h4>
+<div class="paragraph _abstract">
+<p>Disconnecting the cluster from the network necessarily causes the cluster to lose the Internet connection. The Insights Operator becomes degraded because it requires access to Red&#160;Hat Lightspeed.</p>
+</div>
+<div class="paragraph">
+<p>For more information, see documentation on "Red&#160;Hat Lightspeed".</p>
+</div>
+<div class="paragraph">
+<p>Use the following procedure to recover from a degraded Insights Operator.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Edit your <code>.dockerconfigjson</code> file to remove the <code>cloud.openshift.com</code> entry, for example:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">"cloud.openshift.com":{"auth":"&lt;hash&gt;","email":"user@example.com"}</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save the file.</p>
+</li>
+<li>
+<p>Update the cluster secret with the edited <code>.dockerconfigjson</code> file:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=./.dockerconfigjson</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Verify that the Insights Operator is no longer degraded:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get co insights</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">NAME       VERSION   AVAILABLE   PROGRESSING   DEGRADED   SINCE
+insights   4.5.41    True        False         False      3d</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connected-to-disconnected-restore_convert-a-connected-cluster-to-disconnected">Restoring the network</h4>
+<div class="paragraph _abstract">
+<p>If you want to reconnect a disconnected cluster and pull images from online registries, delete the cluster&#8217;s ImageContentSourcePolicy (ICSP) objects. Without the ICSP, pull requests to external registries are no longer redirected to the mirror registry.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>View the ICSP objects in your cluster:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc get imagecontentsourcepolicy</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">NAME                 AGE
+mirror-ocp           6d20h
+ocp4-index-0         6d18h
+qe45-index-0         6d15h</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Delete all the ICSP objects you created when disconnecting your cluster:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc delete imagecontentsourcepolicy &lt;icsp_name&gt; &lt;icsp_name&gt; &lt;icsp_name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc delete imagecontentsourcepolicy mirror-ocp ocp4-index-0 qe45-index-0</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">imagecontentsourcepolicy.operator.openshift.io "mirror-ocp" deleted
+imagecontentsourcepolicy.operator.openshift.io "ocp4-index-0" deleted
+imagecontentsourcepolicy.operator.openshift.io "qe45-index-0" deleted</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Wait for all the nodes to restart and return to the READY status and verify that the <code>registries.conf</code> file is pointing to the original registries and not the mirror registries:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Log in to a node:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc debug node/&lt;node_name&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set <code>/host</code> as the root directory within the debug shell:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# chroot /host</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Examine the <code>registries.conf</code> file:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-4.4# cat /etc/containers/registries.conf</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>registry</code> and <code>registry.mirror</code> entries created by the ICSPs you deleted are removed.</p>
 </div>
 </li>
 </ol>
@@ -2198,7 +2719,7 @@ mirror:
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="prerequisites_mirror-images-to-a-mirror-registry-using-the-oc-adm-release-mirror-command.html">Prerequisites</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="olm-restricted-network-prereqs_manage-olm-operators-in-a-disconnected-environment.html">Prerequisites</a> →</p>
+<p>← Previous: <a href="configure-trust-and-mirroring-con_configure-trust-and-mirroring.html">Configure trust and mirroring</a> | ↑ Up: <a href="_disconnected_environments.html">Disconnected environments</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="deploying-hosted-control-planes-in-a-disconnected-environment-intro_deploying-hosted-control-planes-in-a-disconnected-environment.html">Deploying hosted control planes in a disconnected environment</a> →</p>
 </div>
 </div>
 <div id="footer">
