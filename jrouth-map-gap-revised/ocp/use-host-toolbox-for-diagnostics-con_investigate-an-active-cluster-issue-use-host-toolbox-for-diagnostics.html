@@ -478,7 +478,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <!-- navmap-right-toc-end -->
 </head>
-<body id="oadp-running-must-gather_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support" class="book toc2 toc-left navmap-has-right-toc">
+<body id="use-host-toolbox-for-diagnostics-con_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics" class="book toc2 toc-left navmap-has-right-toc">
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -488,6 +488,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 <ul class="sectlevel2">
 <li><a href="about-kmm_review-kmm-releases-and-updates.html">About the Kernel Module Management Operator</a>
+</li>
+<li><a href="hosted-control-planes-release-notes_hosted-control-planes-release-notes.html">Hosted control planes release notes</a>
 </li>
 </ul>
 </li>
@@ -877,7 +879,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="create-mirror-registry-intro_create-a-mirror-registy-with-mirror-registy-for-red-hat-openshift.html">Create a mirror registry with mirror registry for Red Hat OpenShift</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-images-to-a-mirror-registry-using-oc-mirror-v2.html">Mirror images to a mirror registry using oc-mirror v2</a>
 </li>
 <li><a href="manage-olm-operators-disconnected-intro_manage-olm-operators-in-a-disconnected-environment.html">Manage OLM Operators in a disconnected environment</a>
 </li>
@@ -1147,7 +1149,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="about-kmm_manage-kernel-modules-across-cluster-nodes.html">About the Kernel Module Management Operator</a>
 </li>
-<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">oc-mirror plugin v2</a>
+<li><a href="installation-oc-mirror-v2-about_mirror-container-images-to-a-local-registry.html">Mirror images to a mirror registry using oc-mirror v2</a>
 </li>
 <li><a href="organize-image-versions-with-tags-con_organize-image-versions-with-tags.html">Organize image versions with tags</a>
 </li>
@@ -1679,6 +1681,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-bare-metal-con_troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-bare-metal.html">Troubleshoot hosted clusters on bare metal</a>
 </li>
+<li><a href="troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-ibmz-con_troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-ibmz.html">Troubleshoot hosted clusters on IBM Z</a>
+</li>
 <li><a href="troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-openshift-virtualization-con_troubleshoot-hosted-clusters-by-platform-troubleshoot-hosted-clusters-on-openshift-virtualization.html">Troubleshoot hosted clusters on OpenShift Virtualization</a>
 </li>
 <li><a href="troubleshoot-hosted-clusters-by-platform-con_troubleshoot-hosted-clusters-by-platform.html">Troubleshoot hosted clusters by platform</a>
@@ -1696,6 +1700,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="hcp-backup-etcd-snapshot-restore_control-plane-disaster-recovery.html">Restoring etcd data by using the etcd snapshot method</a>
 </li>
 <li><a href="nw-pod-network-connectivity-checks_troubleshoot-network-issues.html">Connection health checks that are performed</a>
+</li>
+<li><a href="troubleshoot-network-issues-diagnose-node-networking-and-ovs-con_troubleshoot-network-issues-diagnose-node-networking-and-ovs.html">Diagnose node networking and Open vSwitch</a>
 </li>
 <li><a href="restore-replace-unhealthy-etcd-member_replace-unhealthy-etcd-members.html">Replacing the unhealthy etcd member</a>
 </li>
@@ -1761,6 +1767,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="investigating-master-node-installation-issues_manage-kernel-modules-across-cluster-nodes-troubleshoot-kernel-module-loading-issues.html">Investigating control plane node installation issues</a>
 </li>
+<li><a href="troubleshoot-operating-system-issues-con_troubleshoot-operating-system-issues.html">Troubleshoot operating system issues</a>
+</li>
 <li><a href="nw-ovn-kubernetes-pod-connectivity-checks_connectivity-troubleshooting-11-diagnose-failed-connections-between-pods-and-services.html">Checking the OVN-Kubernetes pod network connectivity</a>
 </li>
 <li><a href="nw-pod-network-connectivity-checks_connectivity-troubleshooting-12-identify-traffic-blocked-by-network-policies.html">Connection health checks that are performed</a>
@@ -1787,7 +1795,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="gathering-operator-logs_investigate-an-active-cluster-issue-extract-diagnostic-data-using-remote-health-tools.html">Gathering Operator logs</a>
 </li>
-<li><a href="oadp-running-must-gather_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support.html"><span class="toc-current">Using the must-gather tool</span></a>
+<li><a href="collect-comprehensive-data-for-vendor-support-con_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support.html">Collect comprehensive data for vendor support</a>
+</li>
+<li><a href="collect-host-sosreports-and-journal-logs-con_investigate-an-active-cluster-issue-collect-host-sosreports-and-journal-logs.html">Collect host sosreports and journal logs</a>
+</li>
+<li><a href="capture-network-traces-for-support-con_investigate-an-active-cluster-issue-capture-network-traces-for-support.html">Capture network traces for support</a>
+</li>
+<li><a href="use-host-toolbox-for-diagnostics-con_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics.html"><span class="toc-current">Use the host toolbox for diagnostics</span></a>
 </li>
 <li><a href="understanding-oc-log-levels_investigate-an-active-cluster-issue-summarize-cluster-specifications.html">Understanding OpenShift CLI (<code>oc</code>) log levels</a>
 </li>
@@ -1837,201 +1851,191 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#oadp-cli-must-gather_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support">Collect diagnostic data</a></li><li class="level-4"><a href="#hcp-must-gather-day-2_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support">Gathering Red Hat OpenShift Container Platform data for a hosted cluster</a></li></ul></aside>
+<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#about-toolbox_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">About Toolbx</a></li><li class="level-4"><a href="#installing-packages-to-a-toolbox-container_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">Installing packages to a Toolbx container</a></li><li class="level-4"><a href="#starting-an-alternative-image-with-toolbox_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">Starting an alternative image with Toolbx</a></li></ul></aside>
 <div id="content">
 <div class="sect2">
-<h3 id="oadp-running-must-gather_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support">Using the must-gather tool</h3>
+<h3 id="use-host-toolbox-for-diagnostics-con_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">Use the host toolbox for diagnostics</h3>
 <div class="paragraph _abstract">
-<p>Run the <code>must-gather</code> tool with the default configuration, timeout, and insecure TLS options. To use an option, add a flag corresponding to that option in the <code>must-gather</code> command.</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Default configuration</dt>
-<dd>
-<p>This configuration collects pod logs, OADP, and <code>Velero</code> custom resource (CR) information for all namespaces where the OADP Operator is installed.</p>
-</dd>
-<dt class="hdlist1">Timeout</dt>
-<dd>
-<p>Data collection can take a long time if there are many failed <code>Backup</code> CRs. You can improve performance by setting a timeout value.</p>
-</dd>
-<dt class="hdlist1">Insecure TLS connections</dt>
-<dd>
-<p>If a custom CA certificate is used, use the <code>must-gather</code> tool with insecure TLS connections.</p>
-</dd>
-</dl>
-</div>
-<div class="paragraph">
-<p>The <code>must-gather</code> tool generates a Markdown output file with the collected information. The Markdown file is located in a cluster directory.</p>
-</div>
-<div class="paragraph">
-<p>For more information about the supported flags, use the help flag with the <code>must-gather</code> tool as shown in the following example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm must-gather --image={must-gather-v1-5} -- /usr/bin/gather -h</code></pre>
-</div>
-</div>
-<div class="ulist">
-<div class="title">Prerequisites</div>
-<ul>
-<li>
-<p>You have logged in to the Red&#160;Hat OpenShift Container Platform cluster as a user with the <code>cluster-admin</code> role.</p>
-</li>
-<li>
-<p>You have installed the OpenShift CLI (<code>oc</code>).</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure</div>
-<ol class="arabic">
-<li>
-<p>Navigate to the directory where you want to store the <code>must-gather</code> data.</p>
-</li>
-<li>
-<p>Run the <code>oc adm must-gather</code> command for one of the following data collection options:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>To use the default configuration of the <code>must-gather</code> tool, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm must-gather --image={must-gather-v1-5}</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>To use the timeout flag with the <code>must-gather</code> tool, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm must-gather --image={must-gather-v1-5} -- /usr/bin/gather --request-timeout 1m</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In this example, the timeout is 1 minute.</p>
-</div>
-</li>
-<li>
-<p>To use the insecure TLS connection flag with the <code>must-gather</code> tool, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm must-gather --image={must-gather-v1-5} -- /usr/bin/gather --skip-tls</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>To use a combination of the insecure TLS connection and the timeout flags with the <code>must-gather</code> tool, run the following command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc adm must-gather --image={must-gather-v1-5} -- /usr/bin/gather --request-timeout 15s --skip-tls</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In this example, the timeout is 15 seconds. By default, the <code>--skip-tls</code> flag value is <code>false</code>. Set the value to <code>true</code> to allow insecure TLS connections.</p>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="olist arabic">
-<div class="title">Verification</div>
-<ol class="arabic">
-<li>
-<p>Verify that the Markdown output file is generated at the following location: <code>must-gather.local.89&#8230;&#8203;054550/registry.redhat.io/oadp/oadp-mustgather-rhel9:v1.5-sha256-0&#8230;&#8203;84/clusters/a4&#8230;&#8203;86/oadp-must-gather-summary.md</code></p>
-</li>
-<li>
-<p>Review the <code>must-gather</code> data in the Markdown file by opening the file in a Markdown previewer. For an example output, refer to the following image. You can upload this output file to a support case on the <a href="https://access.redhat.com/">Red&#160;Hat Customer Portal</a>.</p>
-<div class="imageblock">
-<div class="content">
-<img src="data:image/png;base64," alt="must-gather markdown output">
-</div>
-<div class="title">Figure 95. Example markdown output of must-gather tool</div>
-</div>
-</li>
-</ol>
+<p>When you need diagnostic tools that are not available on a Red&#160;Hat OpenShift Container Platform node by default, you use the toolbox container to run commands directly on the host or install additional packages. You can also start an alternative diagnostic image and use the toolbox to gather diagnostic information for Red&#160;Hat support.</p>
 </div>
 <div class="sect3">
-<h4 id="oadp-cli-must-gather_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support">Collect diagnostic data</h4>
+<h4 id="about-toolbox_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">About Toolbx</h4>
 <div class="paragraph _abstract">
-<p>You can use the OADP command-line interface (CLI) to collect diagnostic information for OADP installations. The <code>must-gather</code> command runs the OADP must-gather tool to collect logs and cluster state information needed for troubleshooting and support cases.</p>
+<p>Toolbx is a tool for creating persistent containers on a Red Hat Enterprise Linux CoreOS (RHCOS) system. Because RHCOS is immutable, you can use Toolbx containers to install and run your favorite debugging or administration tools, even if they are not included in the RHCOS base image.</p>
+</div>
+<div class="paragraph">
+<p>You can use Toolbx to gather diagnostic information and provide it to Red Hat Support.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="installing-packages-to-a-toolbox-container_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">Installing packages to a Toolbx container</h4>
+<div class="paragraph _abstract">
+<p>You can collect node-specific data that requires a support tool that is not part of the image by using Toolbx to install additional packages.</p>
+</div>
+<div class="paragraph">
+<p>By default, running the <code>toolbox enter -y</code> command starts a Toolbx container with the default Red Hat Universal Base Image (UBI) for the matching Red&#160;Hat Enterprise Linux (RHEL) version, for example, <code>registry.access.redhat.com/ubi10/toolbox:10.2</code>. If the package you need is not in that base image, you can launch a Toolbx container and install that package.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
 <ul>
 <li>
-<p>The OADP CLI plugin is installed and configured in admin mode.</p>
-</li>
-<li>
-<p>You are logged in to the Red&#160;Hat OpenShift Container Platform cluster as a user with <code>cluster-admin</code> privileges.</p>
-</li>
-<li>
-<p>The <code>oc</code> CLI is installed and available on your <code>PATH</code>.</p>
+<p>You can access your system as a user with root privileges.</p>
 </li>
 </ul>
 </div>
-<div class="ulist">
+<div class="olist arabic">
 <div class="title">Procedure</div>
-<ul>
+<ol class="arabic">
 <li>
-<p>Collect OADP diagnostic information:</p>
+<p>Access a node by running the following command.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc oadp must-gather [flags]</code></pre>
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc debug node/&lt;node_name&gt;</code></pre>
 </div>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 804. Flags for the <code>oc oadp must-gather</code> command</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
+<div class="paragraph">
+<p>Replace <code>&lt;node_name&gt;</code> with the name of the node.</p>
+</div>
+</li>
+<li>
+<p>Access the host namespaces by using the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-5.1# nsenter -a -t 1</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter a Toolbx container to execute commands by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">-sh-5.2# toolbox enter -y</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Install the additional package, such as <code>wget</code>, by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">⬢ [root@toolbx /]# dnf install -y &lt;package_name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Replace <code>&lt;package_name&gt;</code> with the name of the additional package.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="starting-an-alternative-image-with-toolbox_investigate-an-active-cluster-issue-use-host-toolbox-for-diagnostics">Starting an alternative image with Toolbx</h4>
+<div class="paragraph _abstract">
+<p>The Toolbx commands create a container from the default Red Hat Universal Base Image (UBI) Toolbx image for the matching Red&#160;Hat Enterprise Linux (RHEL) version. You can create a container from an alternative image by running the <code>toolbox create</code> command with the path to the image you want to run.</p>
+</div>
+<div class="admonitionblock note">
+<table>
 <tr>
-<th class="tableblock halign-left valign-top">Flag</th>
-<th class="tableblock halign-left valign-top">Description</th>
+<td class="icon">
+<img src="data:image/png;base64," alt="Note">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Running older RHEL-based images is not supported on Red&#160;Hat OpenShift Container Platform {product-version}.</p>
+</div>
+</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--dest-dir</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The directory where the must-gather output is stored. The default value is <code>./must-gather</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--request-timeout</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The timeout for the gather script, for example, <code>30s</code> or <code>1m</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--skip-tls</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies whether to skip Transport Layer Security (TLS) verification.</p></td>
-</tr>
-</tbody>
 </table>
-<div class="listingblock">
-<div class="title">Example of the must-gather command</div>
-<div class="content">
-<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc oadp must-gather --dest-dir=/tmp/oadp-diagnostics --request-timeout=1m</code></pre>
 </div>
-</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You can access your system as a user with root privileges.</p>
 </li>
 </ul>
 </div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Access a node by running the following command.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ oc debug node/&lt;node_name&gt;</code></pre>
 </div>
-<div class="sect3">
-<h4 id="hcp-must-gather-day-2_investigate-an-active-cluster-issue-collect-comprehensive-data-for-vendor-support">Gathering Red&#160;Hat OpenShift Container Platform data for a hosted cluster</h4>
-<div class="paragraph _abstract">
-<p>You can gather Red&#160;Hat OpenShift Container Platform debugging information for a hosted cluster by using the multicluster engine Operator web console or by using the CLI.</p>
+</div>
+<div class="paragraph">
+<p>Replace <code>&lt;node_name&gt;</code> with the name of the node.</p>
+</div>
+</li>
+<li>
+<p>Access the host namespaces by using the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">sh-5.1# nsenter -a -t 1</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Specify the image to use as an alternative image by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">-sh-5.2# toolbox create --image &lt;image-url&gt; &lt;image_name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Replace <code>&lt;image-url&gt;</code> with path to the alternative image you want to use. Optionally, specify a name for the resulting Toolbx container. If you do not specify a name, Toolbx assigns a name.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example command</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">-sh-5.2# toolbox create --image quay.io/toolbx/ubuntu-toolbox:latest ubuntu-dev</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="data:image/png;base64," alt="Note">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If an existing <code>toolbox</code> container is already running, Toolbx outputs an error. Remove the existing Toolbx container by running the <code>toolbox rm &lt;name&gt;</code> command, where <code>&lt;name&gt;</code> is the name of the container. Then spawn a new toolbox container.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">Created container: ubuntu-dev
+Enter with: toolbox enter ubuntu-dev</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the Toolbx container by entering the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">-sh-5.2# toolbox enter &lt;container_name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Replace <code>&lt;container_name&gt;</code> with the name of the container.</p>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
 <div class="paragraph nav-footer">
-<p>← Previous: <a href="gathering-operator-logs_investigate-an-active-cluster-issue-extract-diagnostic-data-using-remote-health-tools.html">Gathering Operator logs</a> | ↑ Up: <a href="_troubleshoot.html">Troubleshoot</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="understanding-oc-log-levels_investigate-an-active-cluster-issue-summarize-cluster-specifications.html">Understanding OpenShift CLI (&lt;code&gt;oc&lt;/code&gt;) log levels</a> →</p>
+<p>← Previous: <a href="capture-network-traces-for-support-con_investigate-an-active-cluster-issue-capture-network-traces-for-support.html">Capture network traces for support</a> | ↑ Up: <a href="_troubleshoot.html">Troubleshoot</a> | ⌂ Home: <a href="navigation.html">Red Hat OpenShift Container Platform</a> | Next: <a href="understanding-oc-log-levels_investigate-an-active-cluster-issue-summarize-cluster-specifications.html">Understanding OpenShift CLI (&lt;code&gt;oc&lt;/code&gt;) log levels</a> →</p>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-10-07 14:15:31 -0400
+Last updated 2026-10-08 11:00:39 -0400
 </div>
 </div>
 <style>
