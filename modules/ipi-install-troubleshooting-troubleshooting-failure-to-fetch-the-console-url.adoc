@@ -1,4 +1,4 @@
-// This module is included in the following assemblies: 
+// This module is included in the following assemblies:
 //
 // installing/installing_bare_metal/ipi/ipi-install-troubleshooting.adoc
 
@@ -7,7 +7,7 @@
 = Troubleshooting a failure to fetch the console URL
 
 [role="_abstract"]
-The installation program retrieves the URL for the {product-title} console by using `[route][route-object]` within the `openshift-console` namespace. 
+The installation program retrieves the URL for the {product-title} console by using `[route][route-object]` within the `openshift-console` namespace.
 
 If the installation program fails the retrieve the URL for the console, use the following procedure.
 

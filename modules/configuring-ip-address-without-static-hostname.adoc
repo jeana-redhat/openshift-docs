@@ -20,7 +20,7 @@
 = Configuring an IP address without a static hostname
 
 [role="_abstract"]
-You can configure an IP address without assigning a static hostname. If a static hostname is not set by the user, the static hostname gets picked up and automatically set by a reverse DNS lookup. 
+You can configure an IP address without assigning a static hostname. If a static hostname is not set by the user, the static hostname gets picked up and automatically set by a reverse DNS lookup.
 
 The configuration examples in the procedure, update the IP addresses for the following components:
 
@@ -30,7 +30,7 @@ The configuration examples in the procedure, update the IP addresses for the fol
 * The DNS server address to `4.4.4.41`
 * The auto-configuration value to `none`. No auto-configuration is required when IP networking is configured statically.
 
-.Procedure 
+.Procedure
 
 * To configure an IP address without a static hostname, enter a command like the following command:
 +

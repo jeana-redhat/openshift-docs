@@ -20,4 +20,3 @@ include::use-red-hat-bare-metal-as-a-service-for-openshift.adoc[leveloffset=+1]
 include::troubleshoot-bare-metal-ipi-installation.adoc[leveloffset=+1]
 
 include::configure-bare-metal-post-installation.adoc[leveloffset=+1]
-

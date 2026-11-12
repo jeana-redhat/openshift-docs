@@ -26,4 +26,3 @@ $ tar -xvf openshift-install-rhel9-amd64.tar.gz
 ----
 
 . Proceed with cluster installation, replacing all instances of the `openshift-install` command with `openshift-install-fips`.
-

@@ -7,7 +7,7 @@
 = Creating an ARM or AMD NodePool object on {aws-short} hosted clusters
 
 [role="_abstract"]
-You can schedule application workloads that are the `NodePool` objects on 64-bit ARM and AMD from the same hosted control plane. To set the required processor architecture for the `NodePool` object, you define the `arch` field in the `NodePool` specification. 
+You can schedule application workloads that are the `NodePool` objects on 64-bit ARM and AMD from the same hosted control plane. To set the required processor architecture for the `NodePool` object, you define the `arch` field in the `NodePool` specification.
 
 The valid values for the `arch` field are as follows:
 

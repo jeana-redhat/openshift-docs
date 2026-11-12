@@ -7,7 +7,7 @@
 = Creating a hosted cluster by using the external DNS on {aws-short}
 
 [role="_abstract"]
-When you create a hosted cluster on {aws-short}, using external DNS provides advantages over standard installation methods. With external DNS, you can automatically synchronize your cluster's service endpoints with {aws-short} Route 53. 
+When you create a hosted cluster on {aws-short}, using external DNS provides advantages over standard installation methods. With external DNS, you can automatically synchronize your cluster's service endpoints with {aws-short} Route 53.
 
 Without external DNS, you must manually manage DNS records for every new service or ingress, which increases the risk of configuration errors and downtime.
 

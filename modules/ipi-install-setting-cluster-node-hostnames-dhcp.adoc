@@ -7,7 +7,7 @@
 = Setting the cluster node hostnames through DHCP
 
 [role="_abstract"]
-On {op-system-first} machines, `NetworkManager` sets the hostnames. By default, DHCP provides the hostnames to `NetworkManager`, which is the recommended method. 
+On {op-system-first} machines, `NetworkManager` sets the hostnames. By default, DHCP provides the hostnames to `NetworkManager`, which is the recommended method.
 
 The `NetworkManager` gets the hostnames through a reverse DNS lookup in the following cases:
 

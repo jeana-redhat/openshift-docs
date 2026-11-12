@@ -19,5 +19,5 @@ Review the available installer-provisioned methods for installing a {product-tit
 
 [NOTE]
 ====
-Installing {product-title} on {ibm-power-server-name} using user-provisioned infrastructure is the same as for {ibm-power-name}. 
+Installing {product-title} on {ibm-power-server-name} using user-provisioned infrastructure is the same as for {ibm-power-name}.
 ====

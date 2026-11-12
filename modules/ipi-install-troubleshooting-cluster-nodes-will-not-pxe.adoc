@@ -1,5 +1,5 @@
 // Module included in the following assemblies:
-// 
+//
 //installing/installing_bare_metal/ipi/ipi-install-troubleshooting.adoc
 
 :_mod-docs-content-type: PROCEDURE
@@ -8,7 +8,7 @@
 = Cluster nodes do not PXE boot
 
 [role="_abstract"]
-When {product-title} cluster nodes do not PXE boot, run the troubleshooting checks on the cluster nodes that do not PXE boot. 
+When {product-title} cluster nodes do not PXE boot, run the troubleshooting checks on the cluster nodes that do not PXE boot.
 
 This procedure does not apply when installing an {product-title} cluster without the `provisioning` network.
 
@@ -18,7 +18,7 @@ This procedure does not apply when installing an {product-title} cluster without
 
 . Ensure PXE is enabled on the NIC for the `provisioning` network and PXE is disabled for all other NICs.
 
-. Verify that the `install-config.yaml` configuration file includes the `rootDeviceHints` parameter and boot MAC address for the NIC connected to the `provisioning` network. 
+. Verify that the `install-config.yaml` configuration file includes the `rootDeviceHints` parameter and boot MAC address for the NIC connected to the `provisioning` network.
 +
 For example:
 +

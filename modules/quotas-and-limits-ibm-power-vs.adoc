@@ -52,4 +52,3 @@ The installation program creates the following nodes:
 * One bootstrap machine, which the installation process removes after the installation is complete
 * Three control plane nodes
 * Three compute nodes
-

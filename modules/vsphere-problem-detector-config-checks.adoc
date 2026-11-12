@@ -72,4 +72,3 @@ If this check fails, reference the {vmw-short} product documentation on how to s
 |`CollectNodeHWVersion`
 |Reports the virtual machine hardware version for a node.
 |===
-

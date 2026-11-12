@@ -7,7 +7,7 @@
 = Required data for installation
 
 [role="_abstract"]
-Before you deploy {product-title}, collect the essential information required for your environment. 
+Before you deploy {product-title}, collect the essential information required for your environment.
 
 Gather the following information from all cluster nodes:
 

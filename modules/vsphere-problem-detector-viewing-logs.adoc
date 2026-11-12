@@ -7,7 +7,7 @@
 = Viewing the logs from the {operator-name}
 
 [role="_abstract"]
-After the {operator-name} runs and performs the configuration checks, the Operator creates log records that you can view from the command-line interface (CLI) or from the {product-title} web console. Log lines that indicate `passed` means that you do not need to perform any actions. 
+After the {operator-name} runs and performs the configuration checks, the Operator creates log records that you can view from the command-line interface (CLI) or from the {product-title} web console. Log lines that indicate `passed` means that you do not need to perform any actions.
 
 The ideal output for a log line indicates `passed` or `0 problems`. If a log line indicates `failure` or 1 or more problems, see the information in the "Configuration checks run by the {operator-name}" document.
 
@@ -45,4 +45,3 @@ I0108 08:32:28.480685       1 operator.go:271] CheckNodeProviderID:<host_name> p
 .. Click the link for the `vsphere-problem-detector-operator` pod.
 +
 .. Click the *Logs* tab on the *Pod details* page to view the logs.
-

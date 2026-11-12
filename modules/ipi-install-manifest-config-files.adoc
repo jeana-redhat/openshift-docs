@@ -8,4 +8,3 @@
 
 [role="_abstract"]
 You can customize your cluster installation by editing the manifest configuration files.
-

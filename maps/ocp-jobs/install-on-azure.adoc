@@ -30,4 +30,3 @@ include::uninstall-a-cluster-on-azure.adoc[leveloffset=+1]
 include::prepare-to-install-on-azure-stack-hub.adoc[leveloffset=+1]
 
 include::install-on-azure-stack-hub.adoc[leveloffset=+1]
-

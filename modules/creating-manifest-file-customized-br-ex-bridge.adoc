@@ -45,7 +45,7 @@ Consider using the customized `br-ex` bridge configuration for any of the follow
 
 [NOTE]
 ====
-Use the default OVS `br-ex` bridge for standard environments. 
+Use the default OVS `br-ex` bridge for standard environments.
 
 Use the default OVS `br-ex` bridge mechanism for single network interface controller (NIC) environments with default network settings.
 ====

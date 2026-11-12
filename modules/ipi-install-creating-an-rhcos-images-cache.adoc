@@ -132,7 +132,7 @@ $ echo "    bootstrapOSImage=${BOOTSTRAP_OS_IMAGE}"
 ----
 platform:
   baremetal:
-    bootstrapOSImage: <bootstrap_os_image> 
+    bootstrapOSImage: <bootstrap_os_image>
 ----
 +
 Replace `<bootstrap_os_image>` with the value of `$BOOTSTRAP_OS_IMAGE`.

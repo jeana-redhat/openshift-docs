@@ -34,4 +34,3 @@ include::install-a-three-node-cluster-on-aws.adoc[leveloffset=+1]
 include::uninstall-a-cluster-on-aws.adoc[leveloffset=+1]
 
 include::configure-aws-compute-edge-zone-tasks.adoc[leveloffset=+1]
-

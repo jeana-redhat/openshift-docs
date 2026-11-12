@@ -14,4 +14,3 @@ include::install-a-three-node-cluster-on-nutanix.adoc[leveloffset=+1]
 include::uninstall-a-cluster-on-nutanix.adoc[leveloffset=+1]
 
 include::configure-nutanix-failure-domains.adoc[leveloffset=+1]
-

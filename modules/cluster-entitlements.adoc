@@ -109,7 +109,6 @@ endif::[]
 
 :_mod-docs-content-type: CONCEPT
 [id="cluster-entitlements_{context}"]
-ifndef::openshift-origin[]
 = Internet access for {product-title}
 
 [role="_abstract"]
@@ -135,7 +134,6 @@ If your cluster cannot have direct internet access, you can perform a restricted
 endif::restricted[]
 
 endif::openshift-enterprise[]
-endif::openshift-origin[]
 
 ifeval::["{context}" == "installing-restricted-networks-bare-metal"]
 :!restricted:

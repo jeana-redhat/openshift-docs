@@ -11,7 +11,7 @@ For certain situations, you might need to make disruptive changes to a `br-ex` b
 
 A `br-ex` bridge is a gateway for all external network traffic from your workloads, so any change to the bridge might temporarily disconnect pods and virtual machines (VMs) from an external network.
 
-The following procedure shows how to make disruptive changes to a `br-ex` bridge while minimizing the impact to running cluster workloads. 
+The following procedure shows how to make disruptive changes to a `br-ex` bridge while minimizing the impact to running cluster workloads.
 
 For all the nodes in your cluster to receive the `br-ex` bridge changes, you must reboot your cluster. Editing the existing `MachineConfig` object does not force a reboot operation. You must create an additional `MachineConfig` object to force a cluster reboot.
 
@@ -22,7 +22,7 @@ Red Hat does not support changing IP addresses for nodes as a postinstallation t
 
 .Prerequisites
 
-* You created a manifest object that includes a `br-ex` bridge. 
+* You created a manifest object that includes a `br-ex` bridge.
 * You deployed your cluster that has the configured `br-ex` bridge.
 
 .Procedure
@@ -45,7 +45,7 @@ $ base64 -w0 <nmstate_configuration>.yml
 +
 Replace `<nmstate_configuration>` with the name of your NMState resource YAML file.
 
-. Update the `MachineConfig` manifest file that you created during cluster installation and re-define the customized `br-ex` bridge network interface. 
+. Update the `MachineConfig` manifest file that you created during cluster installation and re-define the customized `br-ex` bridge network interface.
 
 . Apply the updates from the `MachineConfig` object to your cluster by entering the following command:
 +
@@ -103,7 +103,7 @@ spec:
 $ oc apply -f <bare_machine_config>.yml
 ----
 
-. Check that each node in your cluster has the `Ready` status to indicate that they have finished rebooting by entering the following command: 
+. Check that each node in your cluster has the `Ready` status to indicate that they have finished rebooting by entering the following command:
 +
 [source,terminal]
 ----
@@ -125,4 +125,3 @@ $ oc delete machineconfig <machine_config_name>
 ----
 $ sudo nmstatectl show br-ex
 ----
-

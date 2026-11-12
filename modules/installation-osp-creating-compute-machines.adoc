@@ -30,4 +30,3 @@ $ ansible-playbook -i inventory.yaml compute-nodes.yaml
 .Next steps
 
 * Approve the certificate signing requests for the machines.
-

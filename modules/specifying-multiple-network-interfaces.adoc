@@ -39,4 +39,3 @@ ip=10.10.10.3::10.10.10.254:255.255.255.0:core0.example.com:enp2s0:none
 nameserver=1.1.1.1
 nameserver=8.8.8.8
 ----
-

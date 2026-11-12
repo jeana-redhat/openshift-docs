@@ -148,7 +148,7 @@ spec:
         platform: VSphere
         vsphere:
         - name: <failure_domain_1_name>
-        - name: <failure_domain_2_name> 
+        - name: <failure_domain_2_name>
 # ...
 ----
 +

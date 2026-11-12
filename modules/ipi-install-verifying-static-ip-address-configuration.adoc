@@ -9,7 +9,7 @@
 [role="_abstract"]
 Ensure that all required steps are complete and verify the network configuration is working properly.
 
-If the DHCP reservation for a cluster node specifies an infinite lease, after the installer successfully provisions the node, the dispatcher script checks the node's network configuration. 
+If the DHCP reservation for a cluster node specifies an infinite lease, after the installer successfully provisions the node, the dispatcher script checks the node's network configuration.
 
 If the script determines that the network configuration contains an infinite DHCP lease, it creates a new connection by using the IP address of the DHCP lease as a static IP address.
 

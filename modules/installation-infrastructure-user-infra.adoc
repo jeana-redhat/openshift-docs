@@ -90,7 +90,7 @@ endif::ibm-z-kvm[]
 +
 [IMPORTANT]
 ====
-By default, port `1936` is accessible for an {product-title} cluster, because each control plane node needs access to this port. 
+By default, port `1936` is accessible for an {product-title} cluster, because each control plane node needs access to this port.
 
 For ingress health check probes, the `/healthz/ready` endpoint is available on this port.
 

@@ -11,7 +11,7 @@ You can enable managed Secure Boot when deploying an installer-provisioned clust
 
 .Procedure
 
-* Add the `bootMode` configuration setting for each node to enable managed Secure Boot. 
+* Add the `bootMode` configuration setting for each node to enable managed Secure Boot.
 +
 .Example
 [source,yaml]

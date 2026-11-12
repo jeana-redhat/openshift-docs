@@ -16,7 +16,7 @@ If the cluster nodes are not getting the correct IPv6 address over DHCP, check t
 
 . Ensure the reserved IPv6 addresses reside outside the DHCP range.
 
-. In the IP address reservation on the DHCP server, ensure the reservation specifies the correct DHCP Unique Identifier (DUID). 
+. In the IP address reservation on the DHCP server, ensure the reservation specifies the correct DHCP Unique Identifier (DUID).
 +
 For example:
 +

@@ -97,4 +97,4 @@ additionalTrustBundle: |
 * `networking.machineNetwork` specifies the CIDR of the subnet. The CIDR of the subnet specified in this field must match the CIDR of the subnet that is specified in the `controlPlanePort` section.
 * `platform.openstack.ingressVIPs` and `platform.openstack.apiVIPs` specify the virtual IP addresses. Use the address from the ports you generated in the earlier steps as the values for these parameters.
 * `platform.openstack.controlPlanePort.fixedIPs` and `platform.openstack.controlPlanePort.network` specify the control plane port configuration. Items under these keys can contain an ID, a name, or both.
-* `imageContentSources` specifies the mirror details. For more information on configuring a local image registry, see "Creating a mirror registry with mirror registry for Red Hat OpenShift". 
+* `imageContentSources` specifies the mirror details. For more information on configuring a local image registry, see "Creating a mirror registry with mirror registry for Red Hat OpenShift".

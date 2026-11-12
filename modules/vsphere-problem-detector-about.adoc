@@ -20,4 +20,3 @@ The Operator runs the checks according to the following schedule:
 * When all checks pass, the schedule returns to an hour interval.
 
 After a failure, the Operator increases its check frequency to quickly report success when the failure condition gets resolved. You can run the Operator manually for immediate troubleshooting information.
-

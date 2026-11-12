@@ -24,4 +24,3 @@ include::ibm-cloud-install-config-params.adoc[leveloffset=+1]
 include::install-on-ibm-cloud-bare-metal-classic.adoc[leveloffset=+1]
 
 include::uninstall-a-cluster-on-ibm-cloud.adoc[leveloffset=+1]
-

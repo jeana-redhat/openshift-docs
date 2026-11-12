@@ -15,4 +15,3 @@ include::modules/prepare-to-install-on-ibm-cloud-intro.adoc[leveloffset=+0]
 
 // Content in this module pulled from installing/installing_ibm_cloud/preparing-to-install-on-ibm-cloud.adoc assembly content
 include::modules/install-ibm-cloud-ipi.adoc[leveloffset=+1]
-

@@ -7,4 +7,4 @@
 = Creating a hosted cluster on bare metal
 
 [role="_abstract"]
-You can create a hosted cluster on bare metal with the Agent platform by using the command-line interface (CLI), the console, or by using a mirror registry. 
+You can create a hosted cluster on bare metal with the Agent platform by using the command-line interface (CLI), the console, or by using a mirror registry.

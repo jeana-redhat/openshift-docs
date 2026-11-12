@@ -95,4 +95,3 @@ $ coreos-installer pxe customize rhcos-<version>-live-initramfs.x86_64.img \
 endif::[]
 +
 Network settings are applied to the live system and are carried over to the destination system.
-

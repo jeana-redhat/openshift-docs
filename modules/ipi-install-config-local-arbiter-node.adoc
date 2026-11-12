@@ -57,7 +57,7 @@ platform:
         role: arbiter
 # ...
 ----
-where: 
+where:
 
 `arbiter`:: Specifies the arbiter machine pool. You must configure this field to deploy a cluster with an arbiter node.
 `arbiter.replicas`:: Specifies the value for the `arbiter.replicas` parameter. Set the `replicas` field to `1` for the arbiter pool. You cannot set this field to a value that is greater than 1.

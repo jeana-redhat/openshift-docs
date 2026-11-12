@@ -8,7 +8,7 @@
 = Addressing the "No disk found with matching rootDeviceHints" error message
 
 [role="_abstract"]
-To ensure the installer can locate and configure the target storage drive on your node, troubleshoot the No disk found with matching `rootDeviceHints` error. 
+To ensure the installer can locate and configure the target storage drive on your node, troubleshoot the No disk found with matching `rootDeviceHints` error.
 
 After you deploy a cluster, you might receive the following error message:
 

@@ -12,4 +12,3 @@ include::install-on-oracle-edge-cloud-with-assisted-installer.adoc[leveloffset=+
 include::install-on-oracle-edge-cloud-with-agent-based-installer.adoc[leveloffset=+1]
 
 include::install-on-oracle-database-appliance.adoc[leveloffset=+1]
-

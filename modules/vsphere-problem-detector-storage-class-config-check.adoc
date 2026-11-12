@@ -7,7 +7,7 @@
 = About the storage class configuration check
 
 [role="_abstract"]
-The datastore name and cluster ID relate to the names for persistent volumes that use {vmw-full} storage. After the creation of a persistent volume, `systemd` creates a mount unit for the persistent volume. 
+The datastore name and cluster ID relate to the names for persistent volumes that use {vmw-full} storage. After the creation of a persistent volume, `systemd` creates a mount unit for the persistent volume.
 
 The `systemd` process has a 255 character limit for the length of the fully qualified path to the virtual machine disk (VMDK) file. This path follows the naming conventions for `systemd` and {vmw-short}. The naming conventions use the following example pattern:
 

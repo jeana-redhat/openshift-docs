@@ -9,7 +9,7 @@
 = Support policy for unmanaged Operators
 
 [role="_abstract"]
-The _management state_ of an Operator determines whether the Operator actively manages its cluster resources. 
+The _management state_ of an Operator determines whether the Operator actively manages its cluster resources.
 When set to _unmanaged_, the Operator ignores configuration changes and no longer receives updates.
 
 While this can be helpful in non-production clusters or during debugging,

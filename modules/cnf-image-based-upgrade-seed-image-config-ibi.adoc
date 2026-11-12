@@ -116,6 +116,3 @@ The following list of resources and configurations can be applied as extra manif
 ====
 If you are using {ztp}, enable these resources by using {rh-rhacm} policies to ensure configuration changes can be applied throughout the cluster lifecycle.
 ====
-
-
-

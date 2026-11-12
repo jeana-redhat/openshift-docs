@@ -8,7 +8,7 @@
 = The OpenStack Cloud Controller Manager
 
 [role="_abstract"]
-Beginning with {product-title} 4.12, clusters that run on {rh-openstack-first} were switched from the legacy {rh-openstack} cloud provider to the external OpenStack Cloud Controller Manager (CCM). 
+Beginning with {product-title} 4.12, clusters that run on {rh-openstack-first} were switched from the legacy {rh-openstack} cloud provider to the external OpenStack Cloud Controller Manager (CCM).
 
 This change follows the move in Kubernetes from in-tree, legacy cloud providers to external cloud providers that are implemented by using the CCM.
 

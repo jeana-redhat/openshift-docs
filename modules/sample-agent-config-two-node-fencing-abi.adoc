@@ -1,4 +1,4 @@
-//module is included in 
+//module is included in
 // installing/installing_two_node_cluster/installing_tnf/install-tnf.adoc
 
 :_mod-docs-content-type: CONCEPT

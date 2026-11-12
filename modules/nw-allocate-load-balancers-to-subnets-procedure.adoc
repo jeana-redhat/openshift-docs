@@ -23,7 +23,7 @@ When defining entries for control plane load balancers in the `subnets` list, en
 # ...
 ----
 
-For the default public Ingress Controller, any subnet assigned the `IngressControllerLB` role in your `install-config.yaml` file must be a public subnet. For example, the subnet must have a route table entry in AWS that directs outbound traffic to an internet gateway (IGW). Ensure you list all necessary subnets, public and private across the AZs, and assign them appropriate roles according to your cluster architecture. 
+For the default public Ingress Controller, any subnet assigned the `IngressControllerLB` role in your `install-config.yaml` file must be a public subnet. For example, the subnet must have a route table entry in AWS that directs outbound traffic to an internet gateway (IGW). Ensure you list all necessary subnets, public and private across the AZs, and assign them appropriate roles according to your cluster architecture.
 
 Subnet IDs define the subnets in an existing VPC and can optionally specify their intended roles. If no roles are specified on any subnet, the subnet roles are decided automatically. In this case, the VPC must not contain any other non-cluster subnets without the `kubernetes.io/cluster/<cluster-id>` tag.
 
@@ -88,7 +88,7 @@ where:
 `region`:: Specifies the AWS region.
 `vpc`:: Specifies the VPC object under `platform.aws` contains the subnets list.
 `subnets`:: Specifies a list of all subnet objects that OpenShift will use. Each object defines a subnet id and its roles.
-`id`:: Specifies the AWS Subnet ID. 
+`id`:: Specifies the AWS Subnet ID.
 `type.IngressControllerLB`:: Specifies the `type: IngressControllerLB` role specifically designates this subnet for the default Ingress Controller's LoadBalancer. In private/internal cluster, the subnet with `IngressControllerLB` role must be private.
 `type.ClusterNode`:: Specifies the `type: ClusterNode` role designates this subnet for control plane and compute nodes. These are typically private subnets.
 `pullSecret`:: Specifies the pull secret.

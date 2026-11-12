@@ -20,4 +20,3 @@ include::install-on-gcp-dedicated.adoc[leveloffset=+1]
 include::install-on-gcp-upi.adoc[leveloffset=+1]
 
 include::uninstall-a-cluster-on-gcp.adoc[leveloffset=+1]
-

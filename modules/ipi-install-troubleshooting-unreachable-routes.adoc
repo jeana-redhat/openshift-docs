@@ -8,9 +8,9 @@
 = Addressing the routes not reaching endpoints error
 
 [role="_abstract"]
-To restore external network connectivity to your applications, troubleshoot {product-title} routes that do not reach their service endpoints. 
+To restore external network connectivity to your applications, troubleshoot {product-title} routes that do not reach their service endpoints.
 
-During the installation process, it is possible to encounter a Virtual Router Redundancy Protocol (VRRP) conflict. 
+During the installation process, it is possible to encounter a Virtual Router Redundancy Protocol (VRRP) conflict.
 
 This conflict occurs when a currently active {product-title} node from an older deployment uses your current {product-title} cluster name without actually being part of the new deployment.
 

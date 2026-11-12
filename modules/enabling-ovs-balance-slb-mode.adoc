@@ -12,7 +12,7 @@
 = Enabling OVS balance-slb mode for your cluster
 
 [role="_abstract"]
-You can enable the Open vSwitch (OVS) `balance-slb` mode so that two or more physical interfaces can share their network traffic. 
+You can enable the Open vSwitch (OVS) `balance-slb` mode so that two or more physical interfaces can share their network traffic.
 
 A `balance-slb` mode interface can give source load balancing (SLB) capabilities to a cluster that runs virtualization workloads, without requiring load balancing negotiation with the network switch.
 
@@ -26,7 +26,7 @@ image::552_OpenShift_slb_mode_0625.png[OVS `balance-slb` mode ` operating on a l
 You can integrate the `balance-slb` mode interface into primary or secondary network types by using OVS bonding. Note the following points about OVS bonding:
 
 * Supports the OVN-Kubernetes CNI plugin and easily integrates with the plugin.
-* Natively supports `balance-slb` mode. 
+* Natively supports `balance-slb` mode.
 
 .Prerequisites
 
@@ -74,7 +74,7 @@ networkConfig:
 +
 where:
 +
-`enp1s0`:: The interface for the provisioned network interface controller (NIC). 
+`enp1s0`:: The interface for the provisioned network interface controller (NIC).
 `enp2s0`:: The first bonded interface that pulls in the Ignition config file for the bond interface.
 `mtu`:: Manually set the `br-ex` maximum transmission unit (MTU) on the bond ports.
 `enp3s0`:: The second bonded interface is part of a minimal configuration that pulls ignition during cluster installation.
@@ -175,7 +175,7 @@ $ base64 -w0  <nmstate_configuration>.yml
 ----
 `<nmstate_configuration>`: Where the `-w0` option prevents line wrapping during the base64 encoding operation.
 
-. Create `MachineConfig` manifest files for the `master` role and the `worker` role. Ensure that you embed the base64-encoded string from an earlier command into each `MachineConfig` manifest file. The following example manifest file configures the `master` role for all nodes that exist in a cluster. You can also create a manifest file for `master` and `worker` roles specific to a node. 
+. Create `MachineConfig` manifest files for the `master` role and the `worker` role. Ensure that you embed the base64-encoded string from an earlier command into each `MachineConfig` manifest file. The following example manifest file configures the `master` role for all nodes that exist in a cluster. You can also create a manifest file for `master` and `worker` roles specific to a node.
 +
 [source,yaml]
 ----

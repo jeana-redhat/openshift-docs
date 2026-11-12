@@ -42,7 +42,7 @@ LOCATION="<my_region>"
 ----
 $ az group create \
   --name $RESOURCE_GROUP_NAME \
-  --location $LOCATION 
+  --location $LOCATION
 ----
 
 . Create the {azure-short} DNS zone by entering the following command:
@@ -51,7 +51,7 @@ $ az group create \
 ----
 $ az network dns zone create \
   --resource-group $RESOURCE_GROUP_NAME \
-  --name $DNS_ZONE_NAME  
+  --name $DNS_ZONE_NAME
 ----
 
 . If an existing name server record exists, delete it by entering the following command:

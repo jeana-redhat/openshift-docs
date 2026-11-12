@@ -20,4 +20,3 @@ include::install-on-ibm-z-kvm-disconnected.adoc[leveloffset=+1]
 include::ibm-z-install-config-params.adoc[leveloffset=+1]
 
 include::complete-ibm-z-post-installation-tasks.adoc[leveloffset=+1]
-

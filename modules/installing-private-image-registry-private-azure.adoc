@@ -71,7 +71,7 @@ spec:
           networkResourceGroupName: <vnet_resource_group>
           subnetName: <subnet_name>
           vnetName: <vnet_name>
-        type: Internal 
+        type: Internal
 ----
 +
 where:

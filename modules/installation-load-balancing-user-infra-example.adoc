@@ -24,7 +24,7 @@ ifndef::user-managed-lb[]
 = Example load balancer configuration for user-provisioned clusters
 
 [role="_abstract"]
-Reference the example API and application Ingress load balancer configuration so that you can understand how to meet the load balancing requirements for user-provisioned clusters. 
+Reference the example API and application Ingress load balancer configuration so that you can understand how to meet the load balancing requirements for user-provisioned clusters.
 
 The sample is an `/etc/haproxy/haproxy.cfg` configuration for an HAProxy load balancer. The example is not meant to provide advice for choosing one load balancing solution over another.
 endif::user-managed-lb[]

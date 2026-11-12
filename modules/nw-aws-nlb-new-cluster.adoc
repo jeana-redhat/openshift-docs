@@ -12,7 +12,7 @@ You can create an Ingress Controller backed by an {aws-full} Network Load Balanc
 
 .Prerequisites
 
-* Create and edit the `install-config.yaml` file. For instructions, see "Creating the installation configuration file" in the _Additonal resources_ section. 
+* Create and edit the `install-config.yaml` file. For instructions, see "Creating the installation configuration file" in the _Additonal resources_ section.
 
 .Procedure
 

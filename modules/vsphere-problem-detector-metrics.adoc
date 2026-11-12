@@ -35,4 +35,3 @@ The {operator-name} exposes the following metrics for use by the {product-title}
 |`vsphere_vcenter_info`
 |Information about the {vmw-short} vCenter Server.
 |===
-

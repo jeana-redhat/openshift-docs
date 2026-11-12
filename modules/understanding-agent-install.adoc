@@ -62,7 +62,7 @@ The following cluster resources are recommended for each topology:
 [options="header"]
 |====
 |Topology|Number of control plane nodes|Number of compute nodes|vCPU|Memory|Storage
-|Single-node cluster|1|0|8 vCPUs|16 GB of RAM| 120 GB 
+|Single-node cluster|1|0|8 vCPUs|16 GB of RAM| 120 GB
 .2+|Two-node OpenShift cluster with Arbiter|2 (control plane nodes)|0|4 vCPUs|16 GB of RAM|120 GB
 |1 (arbiter node)|0|2 vCPUs|8 GB of RAM|50 GB
 |Two-node OpenShift cluster with fencing (TNF)|2|0|4 vCPUs|16 GB of RAM|120 GB

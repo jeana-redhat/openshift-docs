@@ -6,7 +6,7 @@
 = Preparing a subnet for a private hosted cluster on {azure-short}
 
 [role="_abstract"]
-{azure-short} Private Link requires a dedicated subnet for network address translator (NAT) IP address allocation. You can manually create the subnet, or it can be automatically created during cluster creation. 
+{azure-short} Private Link requires a dedicated subnet for network address translator (NAT) IP address allocation. You can manually create the subnet, or it can be automatically created during cluster creation.
 
 By manually creating the subnet, you have control over classless inter-domain routing (CIDR) allocation and naming. The following steps apply to manually creating the subnet. If you want the subnet to be automatically created, skip this procedure.
 

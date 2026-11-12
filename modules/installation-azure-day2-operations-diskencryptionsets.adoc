@@ -7,7 +7,7 @@
 = Preparing an Azure Disk Encryption Set for Day2 Operator
 
 [role="_abstract"]
-The {product-title} installation program can use an existing Disk Encryption Set with a user-managed key. To enable this feature, create a `DiskEncryptionSet` object in Azure and provide the key to the installation program. 
+The {product-title} installation program can use an existing Disk Encryption Set with a user-managed key. To enable this feature, create a `DiskEncryptionSet` object in Azure and provide the key to the installation program.
 
 .Prerequisite
 
@@ -21,7 +21,7 @@ The {product-title} installation program can use an existing Disk Encryption Set
 $ oc adm cordon <node_name>
 ----
 
-. Evacuate the pods from the compute node. There are several ways to do this. For example, you can evacuate all the pods or the selected pods on a node: 
+. Evacuate the pods from the compute node. There are several ways to do this. For example, you can evacuate all the pods or the selected pods on a node:
 +
 [source,terminal]
 ----
@@ -30,7 +30,7 @@ $ oc adm drain <compute_node> [--pod-selector=<pod_selector>]
 +
 [NOTE]
 ====
-For other options to evacuate pods from a node, see the "Understanding how to evacuate pods on nodes" section. 
+For other options to evacuate pods from a node, see the "Understanding how to evacuate pods on nodes" section.
 ====
 
 . De-allocate the node by running the following command:

@@ -13,7 +13,7 @@ The following list details the requirements for user-defined labels:
 * A label key and value must have a minimum of 1 character and can have a maximum of 63 characters.
 * A label key and value must contain only lowercase letters, numeric characters, an underscore (`_`), and a dash (`-`).
 * A label key must start with a lowercase letter.
-* You can configure a maximum of 32 labels per resource. 
+* You can configure a maximum of 32 labels per resource.
 ** Each resource has a maximum of 64 labels, where {product-title} reserves 32 labels for internal use.
 
 The following list details the requirements for user-defined tags:

@@ -11,7 +11,7 @@ endif::[]
 = Applying a custom layered image during {product-title} installation
 
 [role="_abstract"]
-You can use the standard {product-title} installation process to apply a custom layered image to your nodes by adding a `MachineOSConfig` custom resource (CR) YAML and a push secret YAML to the `<installation_directory>/manifests/` directory. 
+You can use the standard {product-title} installation process to apply a custom layered image to your nodes by adding a `MachineOSConfig` custom resource (CR) YAML and a push secret YAML to the `<installation_directory>/manifests/` directory.
 
 This allows you to use {image-mode-os-lower} to apply additional functionality to specific nodes upon cluster installation.
 
@@ -41,7 +41,7 @@ RUN sed -i 's/\$stream/9-stream/g' /etc/yum.repos.d/centos*.repo && \
     ostree container commit
 ----
 
-* You have a repository and any needed secret where the MCO can push any updated custom layered images. 
+* You have a repository and any needed secret where the MCO can push any updated custom layered images.
 
 .Procedure
 
@@ -112,12 +112,12 @@ items:
       reason: PreBuiltImageSeeded
       status: "True"
       type: Seeded
-    currentImagePullSpec: image-registry.openshift-image-registry.svc:5000/openshift-machine-config-operator/layered-rhcos@sha256:3c8fc667adcb432ce0c83581f16086afec08a961dd28fed69bb6bad6db0a0754 
+    currentImagePullSpec: image-registry.openshift-image-registry.svc:5000/openshift-machine-config-operator/layered-rhcos@sha256:3c8fc667adcb432ce0c83581f16086afec08a961dd28fed69bb6bad6db0a0754
 ----
 +
 where:
 +
 --
-`items.status.conditions.reason.PreBuiltImageSeeded.True`:: Specifies that the associated nodes were created using your custom layered image. 
+`items.status.conditions.reason.PreBuiltImageSeeded.True`:: Specifies that the associated nodes were created using your custom layered image.
 `items.status.currentImagePullSpec`:: Specifies the digested image pull spec for the new custom layered image.
 --

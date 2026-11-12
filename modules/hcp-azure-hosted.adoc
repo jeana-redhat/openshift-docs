@@ -6,7 +6,7 @@
 = Creating a hosted cluster on {azure-short}
 
 [role="_abstract"]
-Hosted clusters are where your applications run. Each hosted cluster has its own control plane that runs on the management cluster and a set of compute node virtual machines (VMs) in {azure-short}. 
+Hosted clusters are where your applications run. Each hosted cluster has its own control plane that runs on the management cluster and a set of compute node virtual machines (VMs) in {azure-short}.
 
 The hosted cluster uses Workload Identities to securely access {azure-short} services without storing credentials.
 

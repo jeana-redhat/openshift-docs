@@ -1,4 +1,4 @@
-// This module is included in the following assemblies: 
+// This module is included in the following assemblies:
 //
 // installing/installing_bare_metal/ipi/ipi-install-troubleshooting.adoc
 
@@ -7,7 +7,7 @@
 = Troubleshooting SSH access to cluster nodes
 
 [role="_abstract"]
-For added security, you cannot SSH into the cluster from outside the cluster by default. However, you can access control plane and worker nodes from the provisioner node. If you cannot SSH into the cluster nodes from the provisioner node, the nodes might be waiting on the bootstrap VM. 
+For added security, you cannot SSH into the cluster from outside the cluster by default. However, you can access control plane and worker nodes from the provisioner node. If you cannot SSH into the cluster nodes from the provisioner node, the nodes might be waiting on the bootstrap VM.
 
 The control plane nodes retrieve their boot configuration from the bootstrap VM, and they cannot boot successfully if they do not retrieve the boot configuration.
 

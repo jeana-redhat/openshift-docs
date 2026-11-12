@@ -94,7 +94,7 @@ interfaces:
     ipv6:
       enabled: false
   - name: baremetal
-    type: linux-bridge 
+    type: linux-bridge
     state: up
     ipv4:
       enabled: true
@@ -119,7 +119,7 @@ where:
 `<gateway>`:: Replace `<gateway_ip>` with the IP address of the gateway.
 `<name>`:: Details the physical interface that you set as the bridge port.
 
-. Apply the network configuration from the YAML file to the network interfaces for the host by entering the following command: 
+. Apply the network configuration from the YAML file to the network interfaces for the host by entering the following command:
 +
 [source,terminal]
 ----

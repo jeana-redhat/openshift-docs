@@ -68,4 +68,3 @@ $ oc get infrastructures.config.openshift.io cluster -o=jsonpath-as-json='{.stat
     ]
 ]
 ----
-

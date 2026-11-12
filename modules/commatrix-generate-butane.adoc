@@ -90,7 +90,7 @@ storage:
 
                   # Allow established and related traffic
                   ct state established,related accept
-                  
+
                   # Allow ICMP on ipv4
                   ip protocol icmp accept
                   ip6 nexthdr ipv6-icmp accept

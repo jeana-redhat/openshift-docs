@@ -10,7 +10,7 @@
 [role="_abstract"]
 The {product-title} installation program transforms a set of assets into a running cluster, using an installation process that varies depending on your installation method.
 
-Except for the {ai-full}, when you install an {product-title} cluster, you must download the installation program from [.pr:microshift .pr:openshift-dedicated .pr:openshift-enterprise .pr:openshift-rosa .pr:openshift-rosa-hcp]#the appropriate *Cluster Type* page on the {cluster-manager} {hybrid-console-second}. This console manages:# [.pr:openshift-origin]#the OKD releases page.#
+Except for the {ai-full}, when you install an {product-title} cluster, you must download the installation program from [.pr:microshift .pr:openshift-dedicated .pr:openshift-enterprise .pr:openshift-rosa .pr:openshift-rosa-hcp]#the appropriate *Cluster Type* page on the {cluster-manager} {hybrid-console-second}. This console manages:#
 
 [role="pr:microshift pr:openshift-dedicated pr:openshift-enterprise pr:openshift-rosa pr:openshift-rosa-hcp"]
 --
@@ -19,23 +19,23 @@ Except for the {ai-full}, when you install an {product-title} cluster, you must 
 * Cluster registration, which associates the cluster identity to your Red Hat account to facilitate the gathering of usage metrics.
 --
 
-In {product-title} {product-version}, the installation program is a Go binary file that performs a series of file transformations on a set of assets. 
-The way you interact with the installation program differs depending on your installation type. 
+In {product-title} {product-version}, the installation program is a Go binary file that performs a series of file transformations on a set of assets.
+The way you interact with the installation program differs depending on your installation type.
 Consider the following installation use cases:
 
-*  To deploy a cluster with the {ai-full}, you must configure the cluster settings by using the {ai-full}. 
-There is no installation program to download and configure. 
-After you finish setting the cluster configuration, you download a discovery ISO and then boot cluster machines with that image. 
-You can install clusters with the {ai-full} on Nutanix, vSphere, and bare metal with full integration, and other platforms without integration. 
+*  To deploy a cluster with the {ai-full}, you must configure the cluster settings by using the {ai-full}.
+There is no installation program to download and configure.
+After you finish setting the cluster configuration, you download a discovery ISO and then boot cluster machines with that image.
+You can install clusters with the {ai-full} on Nutanix, vSphere, and bare metal with full integration, and other platforms without integration.
 If you install on bare metal, you must provide all of the cluster infrastructure and resources, including the networking, load balancing, storage, and individual cluster machines.
 
-* To deploy clusters with the Agent-based Installer, you can download the Agent-based Installer first. 
-You can then configure the cluster and generate a discovery image. 
-You boot cluster machines with the discovery image, which installs an agent that communicates with the installation program and handles the provisioning for you instead of you interacting with the installation program or setting up a provisioner machine yourself. 
+* To deploy clusters with the Agent-based Installer, you can download the Agent-based Installer first.
+You can then configure the cluster and generate a discovery image.
+You boot cluster machines with the discovery image, which installs an agent that communicates with the installation program and handles the provisioning for you instead of you interacting with the installation program or setting up a provisioner machine yourself.
 You must provide all of the cluster infrastructure and resources, including the networking, load balancing, storage, and individual cluster machines. This approach is ideal for disconnected environments.
 
-* For clusters with installer-provisioned infrastructure, you delegate the infrastructure bootstrapping and provisioning to the installation program instead of doing it yourself. 
-The installation program creates all of the networking, machines, and operating systems that are required to support the cluster, except if you install on bare metal. 
+* For clusters with installer-provisioned infrastructure, you delegate the infrastructure bootstrapping and provisioning to the installation program instead of doing it yourself.
+The installation program creates all of the networking, machines, and operating systems that are required to support the cluster, except if you install on bare metal.
 If you install on bare metal, you must provide all of the cluster infrastructure and resources, including the bootstrap machine, networking, load balancing, storage, and individual cluster machines.
 
 * If you provision and manage the infrastructure for your cluster, you must provide all of the cluster infrastructure and resources, including the bootstrap machine, networking, load balancing, storage, and individual cluster machines.
@@ -44,9 +44,9 @@ The installation program uses three sets of files during installation: an instal
 
 [IMPORTANT]
 ====
-You can modify Kubernetes and the Ignition config files that control the underlying {op-system} operating system during installation. 
-However, no validation is available to confirm the suitability of any modifications that you make to these objects. 
-If you modify these objects, you might render your cluster non-functional. 
+You can modify Kubernetes and the Ignition config files that control the underlying {op-system} operating system during installation.
+However, no validation is available to confirm the suitability of any modifications that you make to these objects.
+If you modify these objects, you might render your cluster non-functional.
 Because of this risk, modifying Kubernetes and Ignition config files is not supported unless you are following documented procedures or are instructed to do so by Red Hat support.
 ====
 
@@ -105,4 +105,3 @@ If you do not use infrastructure that the installation program provisioned, you 
 * Storage for the cluster infrastructure and applications
 +
 If your cluster uses user-provisioned infrastructure, you have the option of adding {op-system-base} compute machines to your cluster.
-

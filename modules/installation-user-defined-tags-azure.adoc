@@ -6,7 +6,7 @@
 = Configuring user-defined tags for {azure-short}
 
 [role="_abstract"]
-In {product-title}, you can use tags for grouping resources and for managing resource access and cost. 
+In {product-title}, you can use tags for grouping resources and for managing resource access and cost.
 
 Tags are applied only to the resources created by the {product-title} installation program and its core Operators such as Machine API Operator, Cluster Ingress Operator, Cluster Image Registry Operator. The {product-title} consists of the following types of tags:
 

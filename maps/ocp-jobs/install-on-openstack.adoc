@@ -20,4 +20,3 @@ include::install-on-openstack-in-a-disconnected-environment.adoc[leveloffset=+1]
 include::install-a-three-node-cluster-on-openstack.adoc[leveloffset=+1]
 
 include::uninstall-a-cluster-on-openstack.adoc[leveloffset=+1]
-

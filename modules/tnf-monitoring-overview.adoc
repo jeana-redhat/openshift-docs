@@ -7,7 +7,7 @@
 = Overview of monitoring in a two-node OpenShift cluster with fencing
 
 [role="_abstract"]
-You can monitor the fencing layer of your two-node {product-title} cluster by using the same observability tools you use for the rest of the cluster. 
+You can monitor the fencing layer of your two-node {product-title} cluster by using the same observability tools you use for the rest of the cluster.
 
 Integrated Prometheus metrics and alerts for Pacemaker help you detect node failures, fence device issues, and resource problems before they compromise high availability.
 

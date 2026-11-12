@@ -7,4 +7,3 @@ include::modules/ibm-cloud-install-config-params-intro.adoc[leveloffset=+0]
 :platform: {ibm-cloud-title}
 include::modules/installation-configuration-parameters.adoc[leveloffset=+1]
 :!platform:
-

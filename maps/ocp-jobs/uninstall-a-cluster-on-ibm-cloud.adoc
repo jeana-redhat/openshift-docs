@@ -5,4 +5,3 @@ include::modules/uninstall-a-cluster-on-ibm-cloud-intro.adoc[leveloffset=+0]
 
 // Decomposed from installing/installing_ibm_cloud/uninstalling-cluster-ibm-cloud.adoc
 include::modules/installation-uninstall-clouds.adoc[leveloffset=+1]
-

@@ -16,7 +16,7 @@ Virtualized control planes require an {product-title} cluster with {VirtProductN
 
 The following high-level steps outline the deployment process:
 
-. Install and configure KubeVirt Redfish on the hosting cluster. 
+. Install and configure KubeVirt Redfish on the hosting cluster.
 +
 This includes defining which VMs to expose through the Redfish API, configuring authentication credentials, and creating a `Route` CR to expose the endpoint externally.
 

@@ -7,7 +7,7 @@
 = Creating the public DNS hosted zone
 
 [role="_abstract"]
-You can create the public DNS hosted zone to use as the external DNS domain filter. The External DNS Operator uses the public DNS hosted zone to create your public hosted cluster. 
+You can create the public DNS hosted zone to use as the external DNS domain filter. The External DNS Operator uses the public DNS hosted zone to create your public hosted cluster.
 
 .Procedure
 

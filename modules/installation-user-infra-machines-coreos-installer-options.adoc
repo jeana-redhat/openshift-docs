@@ -285,4 +285,3 @@ a|`ignition.config.url`
 
 a|Optional: The URL of the Ignition config for the live boot. For example, this can be used to customize how `coreos-installer` is invoked, or to run code before or after the installation. This is different from `coreos.inst.ignition_url`, which is the Ignition config for the installed system.
 |===
-

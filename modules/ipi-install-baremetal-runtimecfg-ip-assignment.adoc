@@ -11,8 +11,8 @@ To prevent incorrect IP address assignments, learn how the `baremetal-runtimecfg
 
 The `baremetal-runtimecfg` tool uses the following selection logic sequence to determine the IP address for a node:
 
-. The tool looks at the `NODEIP_HINT` and all API and Ingress VIP addresses. 
-. The tool selects an IP address on the same subnet. 
+. The tool looks at the `NODEIP_HINT` and all API and Ingress VIP addresses.
+. The tool selects an IP address on the same subnet.
 . If no address match is found, the tool looks at the default route and selects an IP address from the interface used by that route.
 
 The `baremetal-runtimecfg` tool uses the following component order of precedence to sort IP addresses for a node:

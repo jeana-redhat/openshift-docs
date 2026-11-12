@@ -7,4 +7,3 @@
 
 [role="_abstract"]
 Before you can create management and hosted clusters for your deployment of {hcp} on {azure-short}, you need to set up an OIDC issuer, Workload Identities, and your {azure-short} infrastructure.
- 

@@ -12,7 +12,7 @@
 = Defining a custom DNS name
 
 [role="_abstract"]
-As a cluster administrator, you can create a hosted cluster with an external API DNS name that differs from the internal endpoint that gets used for node bootstraps and control plane communication. 
+As a cluster administrator, you can create a hosted cluster with an external API DNS name that differs from the internal endpoint that gets used for node bootstraps and control plane communication.
 
 You might want to define a different DNS name for the following reasons:
 

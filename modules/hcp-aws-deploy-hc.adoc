@@ -7,7 +7,7 @@
 = Creating a hosted cluster on {aws-short} by using the CLI
 
 [role="_abstract"]
-To create a hosted cluster on {aws-first}, you can use the hosted control plane command-line interface (`hcp`). 
+To create a hosted cluster on {aws-first}, you can use the hosted control plane command-line interface (`hcp`).
 
 .Prerequisites
 

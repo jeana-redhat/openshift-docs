@@ -7,23 +7,23 @@ You must configure an external Ingress load balancer (LB) before you install a t
 
 .Prerequisites
 
-* You have two control plane nodes with fencing enabled.  
-* You have network connectivity from the load balancer to both control plane nodes.  
-* You created DNS records for `api.<cluster_name>.<base_domain>` and `*.apps.<cluster_name>.<base_domain>`.  
-* You have an external load balancer that supports health checks on endpoints.  
+* You have two control plane nodes with fencing enabled.
+* You have network connectivity from the load balancer to both control plane nodes.
+* You created DNS records for `api.<cluster_name>.<base_domain>` and `*.apps.<cluster_name>.<base_domain>`.
+* You have an external load balancer that supports health checks on endpoints.
 
 .Procedure
 
 . Configure the load balancer to forward traffic for the following ports:
 +
-* `6443`: Kubernetes API server  
+* `6443`: Kubernetes API server
 * `80` and `443`: Application ingress
 +
 You must forward traffic to both control plane nodes.
 
 . Configure health checks on the load balancer. You must monitor the backend endpoints so that the load balancer only sends traffic to nodes that respond.
 
-. Configure the load balancer to forward traffic to both control plane nodes. The following example shows how to configure two control plane nodes:  
+. Configure the load balancer to forward traffic to both control plane nodes. The following example shows how to configure two control plane nodes:
 +
 [source,terminal]
 ----

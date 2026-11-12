@@ -7,7 +7,7 @@
 = Verifying hosted cluster creation on non-bare-metal agent machines
 
 [role="_abstract"]
-After the deployment process is complete, you can verify that the hosted cluster was created successfully. 
+After the deployment process is complete, you can verify that the hosted cluster was created successfully.
 
 Follow these steps a few minutes after you create the hosted cluster.
 

@@ -7,7 +7,7 @@
 = Out-of-band management
 
 [role="_abstract"]
-Out-of-band management uses baseboard management controllers (BMCs) to provide the provisioner node with access to your cluster nodes. 
+Out-of-band management uses baseboard management controllers (BMCs) to provide the provisioner node with access to your cluster nodes.
 
 Nodes typically have an additional NIC used by the BMCs. These BMCs must be accessible from the provisioner node.
 
@@ -23,4 +23,3 @@ The bootstrap VM features a maximum of two network interfaces. If you configure 
 * the provisioning network
 * the management network routed through one of the network interfaces
 ====
-

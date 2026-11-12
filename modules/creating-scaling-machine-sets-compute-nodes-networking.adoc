@@ -12,7 +12,7 @@
 = Scaling each machine set to compute nodes
 
 [role="_abstract"]
-To scale each machine set to compute nodes, you must apply a customized `br-ex` bridge configuration to all compute nodes in your {product-title} cluster. You must then edit your `MachineConfig` custom resource (CR) and modify its roles. 
+To scale each machine set to compute nodes, you must apply a customized `br-ex` bridge configuration to all compute nodes in your {product-title} cluster. You must then edit your `MachineConfig` custom resource (CR) and modify its roles.
 
 Additionally, you must create a `BareMetalHost` CR that defines information for your bare-metal machine, such as hostname, credentials, and your other required parameters. After you configure these resources, you must scale machine sets, so that the machine sets can apply the resource configuration to each compute node and reboot the nodes.
 

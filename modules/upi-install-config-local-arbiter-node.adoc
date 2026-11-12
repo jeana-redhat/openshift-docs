@@ -29,11 +29,11 @@ compute:
     name: worker
     platform: {}
     replicas: 0
-   
-arbiter: 
+
+arbiter:
   architecture: amd64
   hyperthreading: Enabled
-  replicas: 1 
+  replicas: 1
   name: <Specifies a name for the arbiter machine pool>
   platform:
     baremetal: {}
@@ -43,7 +43,7 @@ controlPlane:
   name: master
   platform:
     baremetal: {}
-  replicas: 2 
+  replicas: 2
 
 platform:
   none: {}

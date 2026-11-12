@@ -20,7 +20,7 @@ If you are not installing to a shared Virtual Private Cloud (VPC), you can skip 
 
 [IMPORTANT]
 ====
-When installing a cluster on a shared VPC by using short-lived credentials, you must grant the `compute.subnetworks.use` permission in the host project to Day 2 Operator service accounts. 
+When installing a cluster on a shared VPC by using short-lived credentials, you must grant the `compute.subnetworks.use` permission in the host project to Day 2 Operator service accounts.
 
 After using the `ccoctl` utility to generate the {gcp-short} credentials, manually grant this permission to the {cluster-capi-operator} and Machine API Operator service accounts.
 ====

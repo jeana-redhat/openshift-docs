@@ -89,4 +89,3 @@ where:
 ** `--assign-identity-roles` specifies that automatic RBAC role assignment is enabled for Workload Identities.
 ** `--dns-zone-rg-name` specifies the name of the resource group that contains your public DNS zone.
 ** `--output-file` specifies the file where the details of the infrastructure are stored in YAML format.
-

@@ -41,7 +41,7 @@ endif::[]
 = Example DNS configuration for user-provisioned clusters
 
 [role="_abstract"]
-Reference the example DNS configurations to understand how A and PTR record configuration samples meet the DNS requirements for deploying {product-title} on user-provisioned infrastructure. 
+Reference the example DNS configurations to understand how A and PTR record configuration samples meet the DNS requirements for deploying {product-title} on user-provisioned infrastructure.
 
 The DNS configuration examples provided here are for reference only and are not meant to provide advice for choosing one DNS solution over another.
 

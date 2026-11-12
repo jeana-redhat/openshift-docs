@@ -337,7 +337,7 @@ Alternatively, if you choose to not use a wildcard for AWS APIs, you must includ
 |Required for all third-party images and certified operators.
 |===
 
-. If you use a default Red Hat Network Time Protocol (NTP) server, allow the following URLs. NTP operates on User Datagram Protocol (UDP) port 123, so this port must be opened on the firewall. 
+. If you use a default Red Hat Network Time Protocol (NTP) server, allow the following URLs. NTP operates on User Datagram Protocol (UDP) port 123, so this port must be opened on the firewall.
 +
 [cols="3,2,4",options="header"]
 |===

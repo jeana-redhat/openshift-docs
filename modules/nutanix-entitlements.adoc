@@ -7,4 +7,3 @@
 
 [role="_abstract"]
 Prism Central requires internet access to obtain the {op-system-first} image that is required to install the cluster. The {op-system} image for Nutanix is available at `rhcos.mirror.openshift.com`.
-

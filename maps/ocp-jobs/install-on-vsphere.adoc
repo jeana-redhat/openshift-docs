@@ -24,4 +24,3 @@ include::uninstall-a-cluster-on-vsphere.adoc[leveloffset=+1]
 include::configure-vsphere-zones-and-regions-post-installation.adoc[leveloffset=+1]
 
 include::configure-vsphere-post-installation-settings.adoc[leveloffset=+1]
-

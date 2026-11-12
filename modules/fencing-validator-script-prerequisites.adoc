@@ -7,7 +7,7 @@
 = Fencing validator script prerequisites
 
 [role="_abstract"]
-Use the `fencing_validator` script to verify your fencing configuration on a two-node {product-title} cluster. 
+Use the `fencing_validator` script to verify your fencing configuration on a two-node {product-title} cluster.
 
 This script, deployed automatically by the Machine Config Operator, ensures that power management interfaces are correctly configured to prevent data corruption during a node failure. To run it, ensure the `jq` utility is installed, and you have both Kubernetes API access (`oc`) and SSH access to the control-plane nodes.
 

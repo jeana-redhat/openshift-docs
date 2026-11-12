@@ -66,4 +66,3 @@ For bonded interfaces:
 * No changes are required in the default kernel command-line parameters.
 * To install nodes by using bonded interfaces, provide the appropriate bond configuration in the `agent-config` file.
 ====
-

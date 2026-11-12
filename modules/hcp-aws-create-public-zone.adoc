@@ -7,7 +7,7 @@
 = Creating a routable public zone for hosted clusters
 
 [role="_abstract"]
-In order to access applications in your hosted clusters, you must configure the routable public zone. 
+In order to access applications in your hosted clusters, you must configure the routable public zone.
 
 If the public zone exists, skip this step. Otherwise, the public zone affects the existing functions.
 

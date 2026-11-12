@@ -21,11 +21,11 @@ The `--transport` flag supports the following options:
 
 ** Authentication: Use the `--ssh-key` flag to provide a specific SSH key for all connections.
 
-* `oc debug`: Connects by running the following command against each node: 
+* `oc debug`: Connects by running the following command against each node:
 +
 [source,terminal]
 ----
-$ oc debug node/<node> --chroot /host 
+$ oc debug node/<node> --chroot /host
 ----
 
 You do not need SSH access. The `fencing_validator` script only requires a valid `KUBECONFIG` with `cluster-admin` privileges.

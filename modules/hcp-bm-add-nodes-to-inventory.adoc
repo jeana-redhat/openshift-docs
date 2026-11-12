@@ -107,7 +107,7 @@ $ oc get infraenv <namespace_example> -o jsonpath='{.status.isoDownloadURL}' -n 
 
 .. Boot the ISO. The node communicates with the Assisted Service and registers as an agent in the same namespace as the `InfraEnv` resource.
 
-.. For each agent, set the installation disk ID and hostname, and approve it to indicate that the agent is ready for use. 
+.. For each agent, set the installation disk ID and hostname, and approve it to indicate that the agent is ready for use.
 
 ... Enter the following command to get the agents for your hosted control plane namespace:
 +
@@ -262,7 +262,7 @@ where:
 +
 [NOTE]
 ====
-When you apply this YAML file, the following objects are created: 
+When you apply this YAML file, the following objects are created:
 
 * Secrets with credentials for the Baseboard Management Controller (BMCs)
 * The `BareMetalHost` objects

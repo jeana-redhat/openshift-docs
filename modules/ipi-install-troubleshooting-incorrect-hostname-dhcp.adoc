@@ -8,7 +8,7 @@
 = Addressing the cluster nodes not getting the correct hostname over DHCP error
 
 [role="_abstract"]
-During IPv6 deployment, cluster nodes must get their hostname over DHCP. Sometimes the `NetworkManager` does not assign the hostname immediately. 
+During IPv6 deployment, cluster nodes must get their hostname over DHCP. Sometimes the `NetworkManager` does not assign the hostname immediately.
 
 A control plane node might report an error such as:
 

@@ -6,7 +6,7 @@
 = Bootstrap VM cannot boot up the cluster nodes
 
 [role="_abstract"]
-During the deployment, it is possible for the bootstrap VM to fail to boot the cluster nodes, which prevents the VM from provisioning the nodes with the {op-system} image. 
+During the deployment, it is possible for the bootstrap VM to fail to boot the cluster nodes, which prevents the VM from provisioning the nodes with the {op-system} image.
 
 This scenario can arise due to:
 

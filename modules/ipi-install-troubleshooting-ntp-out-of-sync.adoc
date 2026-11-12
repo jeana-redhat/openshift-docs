@@ -1,5 +1,5 @@
 // Module included in the following assemblies:
-// 
+//
 //installing/installing_bare_metal/ipi/ipi-install-troubleshooting.adoc
 
 :_mod-docs-content-type: PROCEDURE
@@ -61,7 +61,7 @@ System clock synchronized: no
               NTP service: active
           RTC in local TZ: no
 ----
-Ensure that the `System clock synchronized` value is **yes** before proceeding with the installation. 
+Ensure that the `System clock synchronized` value is **yes** before proceeding with the installation.
 
 . Resolve clock drift based on your deployment stage:
 
